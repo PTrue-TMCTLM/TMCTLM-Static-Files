@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ap" version="0.1.3">
+ <settings>
+  <title>Un niño diferente en nuestra escuela</title>
+  <revision description="created" date="5/8/13" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="9/20/13">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Marta Pérez Calvo" mail="martaperezcalvo@hotmail.com" />
+  <author name="Sara Ferrer Pérez" rol="Dibujos" />
+  <author name="Pablo Ferrer Pérez" rol="Voz" />
+  <organization name="CEIP Cesáreo Alierta" mail="cpcalzaragoza@educa.aragon.es" url="http://www.cesareoalierta.com/" city="Zaragoza" state="Aragón" />
+  <language>español</language>
+  <description>
+   <p>Ejercicios de comprensión lectora a partir de un cuento con ilustraciones. Existen dos niveles: infantil y primaria. en cada nivel se puede encontrar el cuento adaptado según la etapa y actividades para cada nivel. A estos se accede a través de menús de elección de itinerario.&lt;p&gt;</p>
+   <p>El cuento y las actividades de infantil están en mayúsculas y tienen audio, mientras que las de primer ciclo de primaria están en cursiva y sin audio.</p>
+  </description>
+  <descriptors area="Lenguas" level="Infantil (3-6), Primaria (6-12)">aprendizaje de la lengua, comprensión escrita, lectura, vocabulario, comprensión lectora</descriptors>
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="1 Puzzle">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="2 Memoria" />
+  <item name="3 Asociacion" />
+  <item name="4 Crucigrama" />
+  <item name="5 Rellenar" />
+  <item name="6 Ordenar" />
+  <item name="7 Sopa">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@puzzles.ExchangePuzzle" name="1 Puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Coloca las piezas del puzzle correctamente y descubre el dibujo.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Fantástico!</p>
+    </cell>
+   </messages>
+   <settings margin="10" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="parrafo8-resized.jpg">
+    <style borderStroke="1.0" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="2 Memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Haz parejas con los personajes del cuento.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Genial!</p>
+    </cell>
+   </messages>
+   <settings margin="4" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="130.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="5.1" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell border="true" image="sara.jpg">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="26" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell border="true" image="pablo.jpg">
+     <style borderStroke="5.0" markerStroke="5.0">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell border="true" image="ana.jpg">
+     <style borderStroke="5.0" markerStroke="5.0">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell border="true" image="julio.jpg">
+     <style borderStroke="5.1" markerStroke="5.0">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell border="true" image="tj.jpg">
+     <style borderStroke="5.1" markerStroke="5.0">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="26" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>Sara</p>
+    </cell>
+    <cell>
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="26" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>Pablo</p>
+    </cell>
+    <cell>
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="26" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>Ana</p>
+    </cell>
+    <cell>
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="26" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>Julio</p>
+    </cell>
+    <cell>
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="26" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>T.J. 273X</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="3 Asociacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa las frases para que sean correctas.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Eres genial!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="350.0" cellHeight="75.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>Ana y Pablo son los mejores amigos de...</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>El profesor de Cono se llama...</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>El amigo robot de Sara se llama...</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>En realidad T.J. es un...</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="140.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>SARA.</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>JULIO.</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>T.J. 273X.</p>
+    </cell>
+    <cell border="true">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <p>ROBOT.</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="4 Crucigrama" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+     <p>Sigue las pistas y completa el crucigrama.</p>
+    </cell>
+    <cell type="final">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Fantástico!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <textGrid rows="12" columns="12" cellWidth="30.0" cellHeight="30.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>****A*C*****</row>
+     <row>SEGUNDO*****</row>
+     <row>****A*N*****</row>
+     <row>******O*****</row>
+     <row>****J*C*****</row>
+     <row>****U*I*****</row>
+     <row>****L*M*****</row>
+     <row>**TRIVIAL***</row>
+     <row>**R*O*E*****</row>
+     <row>**E***N*****</row>
+     <row>**X***TJ273X</row>
+     <row>******O*****</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="250.0" cellHeight="60.0" border="true" id="acrossClues">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color border="0x330066" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="1" item="0">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Curso al que va Sara.</p>
+    </cell>
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Nombre completo de T.J.</p>
+    </cell>
+    <cell id="10" item="0" />
+    <cell id="10" item="1" />
+    <cell id="9" item="1" />
+    <cell id="9" item="0" />
+    <cell id="9" item="1" />
+    <cell id="8" item="2" />
+    <cell id="8" item="0" />
+    <cell id="8" item="1" />
+    <cell id="8" item="2" />
+    <cell id="7" item="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Juego de mesa al que ganan Sara y T.J.</p>
+    </cell>
+    <cell id="7" item="0" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0" />
+    <cell id="6" item="1" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="5" item="2" />
+    <cell id="4" item="2" />
+    <cell id="4" item="0" />
+    <cell id="4" item="1" />
+    <cell id="1" item="3" />
+    <cell id="1" item="2" />
+    <cell id="0" item="1" />
+    <cell id="0" item="0" />
+    <cell id="3" item="1" />
+    <cell id="3" item="0" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="250.0" cellHeight="60.0" border="true" id="downClues">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color border="0x330066" />
+    </style>
+    <cell id="4" item="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Nombre del profesor de Conocimiento.</p>
+    </cell>
+    <cell id="5" item="0" />
+    <cell id="4" item="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Nombre de la amiga de Sara.</p>
+    </cell>
+    <cell id="2" item="1">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Mote que le ponen a T.J. </p>
+    </cell>
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="1" />
+    <cell id="9" item="0" />
+    <cell id="6" item="0">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Asignatura que aparece en el cuento.</p>
+    </cell>
+    <cell id="8" item="0" />
+    <cell id="8" item="1" />
+    <cell id="8" item="1" />
+    <cell id="7" item="0" />
+    <cell id="7" item="0" />
+    <cell id="7" item="1" />
+    <cell id="6" item="0" />
+    <cell id="6" item="0" />
+    <cell id="5" item="2" />
+    <cell id="5" item="2" />
+    <cell id="5" item="2" />
+    <cell id="4" item="3" />
+    <cell id="4" item="3" />
+    <cell id="4" item="3" />
+    <cell id="3" item="1" />
+    <cell id="3" item="1" />
+    <cell id="3" item="2" />
+    <cell id="2" item="2" />
+    <cell id="2" item="2" />
+    <cell id="1" item="0" />
+    <cell id="0" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="5 Rellenar" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Elige la palabra correcta para completar el cuento.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Increíble!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true">
+     <size width="652" height="398" />
+    </window>
+   </settings>
+   <checkButton>Haz clic aquí cuando termines.</checkButton>
+   <document>
+    <style name="default" italic="false" tabWidth="12" family="eDELFONTMED" size="18" bold="true" background="0xFFFFFF" />
+    <style name="target" base="default" target="true" foreground="0x0000FF" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Edelfontmed" background="0xFFFFFF">UN NIÑO DIFERENTE EN NUESTRA ESCUELA</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Edelfontmed" background="0xFFFFFF">Hola, soy </text>
+      <target>
+       <answer>Sara</answer>
+       <optionList>
+        <option>Pablo</option>
+        <option>Sara</option>
+        <option>Ana</option>
+        <option>Julio</option>
+       </optionList>
+       <text>Sara</text>
+      </target>
+      <text family="Edelfontmed" background="0xFFFFFF"> y hace unas semanas vino un niño nuevo </text>
+      <target>
+       <answer>a clase</answer>
+       <optionList>
+        <option>al parque</option>
+        <option>a casa</option>
+        <option>de excursión</option>
+        <option>a clase</option>
+       </optionList>
+       <text>a clase</text>
+      </target>
+      <text family="Edelfontmed" background="0xFFFFFF"> llamado T.J. Hablaba y se movía de forma extraña y sólo hablaba de </text>
+      <target>
+       <answer>dinosaurios</answer>
+       <optionList>
+        <option>dinosaurios</option>
+        <option>aviones</option>
+        <option>coches</option>
+        <option>fútbol</option>
+       </optionList>
+       <text>dinosaurios</text>
+      </target>
+      <text family="Edelfontmed" background="0xFFFFFF">. A todos nos hacía mucha gracia y nos reíamos mucho de él. Ninguno queríamos jugar con él. Le llamábamos T.REX. Y siempre que se nos acercaba le recibíamos haciendo un gruñido como de dinosaurio </text>
+      <target>
+       <answer>¡GRRR!</answer>
+       <optionList>
+        <option>¡GUAU!</option>
+        <option>¡MIAU!</option>
+        <option>¡GRRR!</option>
+        <option>¡AUUU!</option>
+       </optionList>
+       <text>¡GRRR!</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Edelfontmed" background="0xFFFFFF">La semana pasada el profe de </text>
+      <target>
+       <answer>Cono</answer>
+       <optionList>
+        <option>Lengua</option>
+        <option>Mates</option>
+        <option>Inglés</option>
+        <option>Cono</option>
+       </optionList>
+       <text>Cono</text>
+      </target>
+      <text family="Edelfontmed" background="0xFFFFFF"> nos preparó un juego y me  tocó con T.REX. Al principio no me gustó pero luego conocí mejor a T.J. y descubrí que era divertido y muy listo. Además ganamos el </text>
+      <target>
+       <answer>juego</answer>
+       <optionList>
+        <option>partido</option>
+        <option>sorteo</option>
+        <option>juego</option>
+        <option>tebeo</option>
+       </optionList>
+       <text>juego</text>
+      </target>
+      <text family="Edelfontmed" background="0xFFFFFF">. Desde entonces T.J. y yo somos amigos. Ayer me contó el secreto de porqué habla y se mueve de forma tan rara. Su nombre completo es T.J. 273X ¡¡Es un </text>
+      <target>
+       <answer>robot</answer>
+       <optionList>
+        <option>perro</option>
+        <option>niño</option>
+        <option>mago</option>
+        <option>robot</option>
+       </optionList>
+       <text>robot</text>
+      </target>
+      <text family="Edelfontmed" background="0xFFFFFF">!!... Pero eso a mí ya no me importa.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Order" name="6 Ordenar" code="" type="orderParagraphs">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Ordena el texto para que tenga sentido.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡OK!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true">
+     <size width="684" height="401" />
+    </window>
+   </settings>
+   <checkButton>Comprueba si lo has hecho bien</checkButton>
+   <document>
+    <style name="default" italic="false" tabWidth="12" family="Edelfontmed" size="20" bold="true" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x000000" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <target>Hola, soy Sara y hace unas semanas vino un niño nuevo a clase llamado T.J. Hablaba y se movía de forma extraña y sólo hablaba de dinosaurios. A todos nos hacía mucha gracia y nos reíamos mucho de él.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>Ninguno queríamos jugar con él. Le llamábamos T.REX. Y siempre que se nos acercaba le recibíamos haciendo un gruñido como de dinosaurio ¡GRRR!</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>La semana pasada el profe de Cono nos preparó un juego y me  tocó con T.REX. Al principio no me gustó pero luego conocí mejor a T.J. y descubrí que era divertido y muy listo. Además ganamos el juego.</target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <target>Desde entonces T.J. y yo somos amigos. Ayer me contó el secreto de porqué habla y se mueve de forma tan rara. Su nombre completo es T.J. 273X ¡¡Es un robot!!... Pero eso a mí ya no me importa.</target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@BasicEvaluator" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="7 Sopa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Busca los nombres de los personajes que aparecen en el cuento.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Así se hace!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="35.0" cellHeight="35.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Edelfontmed" size="20" />
+     <color background="0xFFFFFF" alternative="0x330066" />
+    </style>
+    <text>
+     <row>****P*****</row>
+     <row>****A*****</row>
+     <row>****B*****</row>
+     <row>**JULIO***</row>
+     <row>****O***S*</row>
+     <row>********A*</row>
+     <row>*ANA****R*</row>
+     <row>********A*</row>
+     <row>***TJ*****</row>
+     <row>**********</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PABLO</clue>
+    <clue id="1">JULIO</clue>
+    <clue id="2">TJ</clue>
+    <clue id="3">SARA</clue>
+    <clue id="4">ANA</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ana.jpg" file="ana.jpg" />
+  <media name="julio.jpg" file="julio.jpg" />
+  <media name="pablo.jpg" file="pablo.jpg" />
+  <media name="parrafo8-resized.jpg" file="parrafo8_resized.jpg" />
+  <media name="sara.jpg" file="sara.jpg" />
+  <media name="tj.jpg" file="tj.jpg" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="carton" version="0.1.3">
+ <settings>
+  <title>Reciclar desde el colegio</title>
+  <revision description="created" date="4/19/09" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="3/12/13">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Luis Manuel Blanco de Castro" mail="indioviejo@hotmail.com" />
+  <organization name="CP Cervantes" mail="13002472.cp@edu.jccm.es" url="http://edu.jccm.es/cp/cervantespuertollano/" city="Puertollano - Ciudad Real" state="Castilla - La Mancha" />
+  <organization name="CP José Maria del Moral" mail="13003041.cp@edu.jccm.es" url="http://colemoral.blogspot.com.es/" city="Tomelloso" state="Castilla - La Mancha" />
+  <language>español</language>
+  <description>
+   <p>&lt;i&gt;Reciclar desde el colegio&lt;/i&gt; es un proyecto para aprender a reciclar cualquier tipo de material. El proyecto está dividido en dos partes:</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;¿Qué es reciclar?</p>
+   <p>&lt;li&gt;Actividades</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;Papel y cartón</p>
+   <p>&lt;li&gt;Envases y plásticos</p>
+   <p>&lt;li&gt;Vidrio y cristal</p>
+   <p>&lt;li&gt;Basuras orgánicas</p>
+   <p>&lt;l&gt;Actividades resumen</p>
+   <p>&lt;/ul&gt;</p>
+   <p>&lt;/ul&gt;</p>
+  </description>
+  <descriptors area="Ciencias experimentales" level="Primaria (6-12)">reciclar</descriptors>
+ </settings>
+ <sequence>
+  <item id="vidrio" name="70" delay="15" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="71" delay="8" navButtons="back" />
+  <item name="72" delay="10" navButtons="back" />
+  <item name="72o" />
+  <item name="73" />
+  <item name="74" />
+  <item name="74o" />
+  <item name="74o1" delay="20" navButtons="back" />
+  <item name="74o1o" />
+  <item name="74o1oo" />
+  <item name="74o1ooo" />
+  <item name="74o1oooo" />
+  <item name="74o1ooooo" />
+  <item name="74o1o1" />
+  <item name="74o1o2" />
+  <item name="74o1o_2" />
+  <item name="74o1o_2o1" />
+  <item name="75" />
+  <item name="75o1" />
+  <item name="75o2" />
+  <item name="75o1o2" />
+  <item name="76" />
+  <item name="77" delay="25" navButtons="back" />
+  <item name="78" />
+  <item name="79" />
+  <item name="79o" />
+  <item name="79o1">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="70" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>LEE  CON  ATENCIÓN.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="849.0" cellHeight="538.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,bottom" image="contenedor gracioso vidrio redimensionado.jpg">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Soy Verdín, el contenedor de color verde, en mi podrás depositar todos los envases de vidrio, que se convertirán en más vidrio cuando se reciclen.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="71" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="891.0" cellHeight="529.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="contenedor gracioso vidrio redimensionado.jpg">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>En mi puedes depositar: Botellas, botellines, botes, tarros y frascos de vidrio.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="72" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Esta es mi familia, somos todos verdes.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="5" cellWidth="233.0" cellHeight="262.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="2" />
+    <cell image="C VIDRIO 2.jpg" />
+    <cell image="C VIDRIO APAÑO.jpg" />
+    <cell image="c vidrio color REDI 2.jpg" />
+    <cell image="C VIDRIO DIBUJO.jpg" />
+    <cell image="C VIDRIO GEMELOS.jpg" />
+    <cell image="c vidrio INTERMEDIO.jpg" />
+    <cell image="C VIDRIO PEQUE PEQUE.jpg" />
+    <cell image="C VIDRIO SIMPLE.jpg" />
+    <cell image="vidrio peque.jpg" />
+    <cell image="verde.jpg" />
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="72o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Organiza nuestras piezas!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Fantástico!!</p>
+    </cell>
+    <cell imgAlign="left,middle" border="false" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Deberías intentarlo otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="C VIDRIO GEMELOS.jpg">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="73" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="contenedor gracioso vidrio redimensionado.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja a los contenedores del vidrio.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Sí señor !!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado todos los intentos!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="22" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="317.0" cellHeight="254.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="c vidrio color REDI 2.jpg" />
+    <cell image="c vidrio INTERMEDIO.jpg" />
+    <cell image="C VIDRIO DIBUJO.jpg" />
+    <cell image="vidrio peque.jpg" />
+    <cell image="verde.jpg" />
+    <cell image="contenedor gracioso vidrio redimensionado.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="74" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja los contenedores verdes.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué guay, lo has conseguido!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado todos los intentos!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="22" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="2" cellWidth="459.0" cellHeight="188.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="3" />
+    <cell image="C VIDRIO 2.jpg" />
+    <cell image="C VIDRIO APAÑO.jpg" />
+    <cell image="C VIDRIO GEMELOS.jpg" />
+    <cell image="C VIDRIO PEQUE PEQUE.jpg" />
+    <cell image="C VIDRIO SIMPLE.jpg" />
+    <cell image="vidrio peque.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="74o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué tienes que hacer con el vidrio?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Tú si qué sabes!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="cartel de reciclar vidrio.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="74o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con muchísima atención.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="929.0" cellHeight="145.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0x9999FF" />
+     <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell border="false">
+     <style shadow="true">
+      <font family="Arial" size="28" bold="true" />
+      <color shadow="0xFFFF00" />
+      <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>BENEFICIOS DE LA RECOGIDA SELECTIVA DE VIDRIO</p>
+    </cell>
+    <cell txtAlign="left,bottom">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color shadow="0xFF0000" />
+      <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>1. Cada kilo de vidrio recogido y reciclado supone el ahorro de 1,2 kilos de materias primas.</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color shadow="0xFF0000" />
+      <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>2. Se reduce el consumo de energía y el volumen de residuos que llega a nuestros vertederos.</p>
+    </cell>
+    <cell txtAlign="left,top" imgAlign="left,top">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color shadow="0xFF0000" />
+      <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>3. Disminuye la contaminación atmósferica y de las aguas.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="74o1o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee y coloca en orden.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Lo has hecho muy bien!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="8" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  la  actividad  anterior  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.</p>
+    </helpWindow>
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="7" cols="1" cellWidth="779.0" cellHeight="86.0" border="true">
+    <style borderStroke="0.9" markerStroke="5.0">
+     <font family="Dialog" size="36" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0x9999FF" />
+     <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <p>Cada kilo</p>
+    </cell>
+    <cell>
+     <p>de vidrio </p>
+    </cell>
+    <cell>
+     <p>reciclado</p>
+    </cell>
+    <cell>
+     <p>supone</p>
+    </cell>
+    <cell>
+     <p>el ahorro de</p>
+    </cell>
+    <cell>
+     <p>1,2 kilos de</p>
+    </cell>
+    <cell>
+     <p>materias primas.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.Explore" name="74o1o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pincha en cada imagen y aprende su nombre.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="228.0" cellHeight="173.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="7" image="4 botellas de vidrio.gif" />
+    <cell id="1" image="tarro tomate.jpg" />
+    <cell id="2" image="botella shandy.jpg" />
+    <cell id="0" image="botella vidrio.jpg" />
+    <cell id="6" image="botellas cristal.jpg" />
+    <cell id="3" image="botellas de refrescos.jpg" />
+    <cell id="6" image="botellas vidrios.jpg" />
+    <cell id="4" image="botellin5e.jpg" />
+    <cell id="5" image="BOTELLA CRISTAL.jpg" />
+   </cells>
+   <cells rows="8" cols="1" cellWidth="500.0" cellHeight="59.0" border="true" id="secondary">
+    <style shadow="true">
+     <font family="Dialog" size="48" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" />
+     <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell>
+     <p>botellas de vidrio</p>
+    </cell>
+    <cell>
+     <p>tarro de vidrio</p>
+    </cell>
+    <cell>
+     <p>botellín de limonada</p>
+    </cell>
+    <cell>
+     <p>botellines de refrescos</p>
+    </cell>
+    <cell>
+     <p>botellín de cerveza</p>
+    </cell>
+    <cell>
+     <p>botella de vidrio transparente</p>
+    </cell>
+    <cell>
+     <p>botellas de vidrio oscuro</p>
+    </cell>
+    <cell>
+     <p>botellas de vidrio de distintos colores</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="74o1o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa el puzzle en menos de 19 movimientos.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ GENIAL !!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="20" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="reciclaje1.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@JigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="74o1o_2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pincha en cada imagen y escribe su nombre.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="12" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  dos  pantallas  y  copia  en  tu  cuaderno el  nombre  de  cada  una  de  las imágenes.</p>
+    </helpWindow>
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="230.0" cellHeight="174.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="7" image="4 botellas de vidrio.gif" />
+    <cell id="1" image="tarro tomate.jpg" />
+    <cell id="2" image="botella shandy.jpg" />
+    <cell id="0" image="botella vidrio.jpg" />
+    <cell id="6" image="botellas cristal.jpg" />
+    <cell id="3" image="botellas de refrescos.jpg" />
+    <cell id="6" image="botellas vidrios.jpg" />
+    <cell id="4" image="botellin5e.jpg" />
+    <cell id="5" image="BOTELLA CRISTAL.jpg" />
+   </cells>
+   <cells rows="8" cols="1" cellWidth="453.0" cellHeight="44.0" border="true" id="answers">
+    <style shadow="true">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" />
+     <gradient source="0x99CCFF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell>
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell>
+     <p>tarro de vidrio</p>
+    </cell>
+    <cell>
+     <p>botellín de limonada</p>
+    </cell>
+    <cell>
+     <p>botellines de refrescos</p>
+    </cell>
+    <cell>
+     <p>botellín de cerveza</p>
+    </cell>
+    <cell>
+     <p>botella de vidrio transparente</p>
+    </cell>
+    <cell>
+     <p>botellas de vidrio oscuro</p>
+    </cell>
+    <cell>
+     <p>botellas de vidrio de distintos colores</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="74o1o_2o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Cúantas vidas tiene el vidrio?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+     <p>¡¡Estupendo!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡Has agotado los intentos!!  Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="18" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="vidrio_0.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="74o1oo" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza las piezas de mi primo.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+     <p>¡¡Estupendo!!</p>
+    </cell>
+    <cell imgAlign="left,middle" type="finalError">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡Has agotado los intentos!! Empieza otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="14" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="c vidrio INTERMEDIO.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="74o1ooo" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza estas palabras.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="7" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.  Acuérdate  de  los  acentos  a  la  hora  de  escribir.</p>
+    </helpWindow>
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="7" cols="1" cellWidth="698.0" cellHeight="89.0" border="true">
+    <style borderStroke="0.9" markerStroke="5.0">
+     <font family="Dialog" size="36" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0x9999FF" />
+     <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <p>Se reduce</p>
+    </cell>
+    <cell>
+     <p>el consumo </p>
+    </cell>
+    <cell>
+     <p>de energía</p>
+    </cell>
+    <cell>
+     <p>y el volumen</p>
+    </cell>
+    <cell>
+     <p>de residuos</p>
+    </cell>
+    <cell>
+     <p>que llegan </p>
+    </cell>
+    <cell>
+     <p>a nuestros vertederos.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="74o1oooo" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Dale forma a las piezas!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="23" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="5" border="true" image="muñeco reciclando.jpg">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="5" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="74o1ooooo" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Què efectos tiene reciclar?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡No lo olvides!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="8" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.  Acuérdate  de  los  acentos  a  la  hora  de  escribir.</p>
+    </helpWindow>
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="7" cols="1" cellWidth="582.0" cellHeight="89.0" border="true">
+    <style borderStroke="0.9" markerStroke="5.0">
+     <font family="Dialog" size="36" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0x9999FF" />
+     <gradient source="0x3333FF" dest="0xFFFFFF" angle="0" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="7" />
+    <cell>
+     <p>Disminuye</p>
+    </cell>
+    <cell>
+     <p>la</p>
+    </cell>
+    <cell>
+     <p>contaminación atmosférica</p>
+    </cell>
+    <cell>
+     <p>y </p>
+    </cell>
+    <cell>
+     <p>de </p>
+    </cell>
+    <cell>
+     <p>las</p>
+    </cell>
+    <cell>
+     <p>aguas.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="75" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Deposita cada objeto en su lugar correcto.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Tu si qué sabes!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="18" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="204.0" cellHeight="152.0" border="true" id="primary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="1" image="4 botellas de vidrio.gif" />
+    <cell id="1" image="BOTELLA CRISTAL.jpg" />
+    <cell id="1" image="botella shandy.jpg" />
+    <cell id="1" image="botella vidrio.jpg" />
+    <cell id="0" image="REVISTAS2.jpg" />
+    <cell id="1" image="botellas de refrescos.jpg" />
+    <cell id="1" image="botellas vidrios.jpg" />
+    <cell id="1" image="botellin5e.jpg" />
+    <cell id="1" image="tarro tomate.jpg" />
+    <cell id="0" image="PERIODICO2.jpg" />
+    <cell id="0" image="carton.jpg" />
+    <cell id="0" image="actimel.jpg" />
+    <cell id="0" image="activa.jpg" />
+    <cell id="0" image="basura organica.jpg" />
+    <cell id="0" image="bolsas patatas.jpg" />
+    <cell id="0" image="brick puleva peque.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="241.0" cellHeight="192.0" border="true" id="secondary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>OTROS CONTENEDORES</p>
+    </cell>
+    <cell image="graciosos contenedor vidrio.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell imgAlign="left,middle" avoidOverlapping="true">
+     <p>Botellas de vidrio de distintos colores</p>
+    </cell>
+    <cell>
+     <p>Botella de cristal transparente</p>
+    </cell>
+    <cell>
+     <p>Botellín de limonada</p>
+    </cell>
+    <cell>
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell>
+     <p>Revistas</p>
+    </cell>
+    <cell>
+     <p>Botellines de refrescos</p>
+    </cell>
+    <cell>
+     <p>Botellas de vidrio oscuro</p>
+    </cell>
+    <cell>
+     <p>Botellín de cerveza</p>
+    </cell>
+    <cell>
+     <p>Tarro de vidrio</p>
+    </cell>
+    <cell>
+     <p>Periódicos</p>
+    </cell>
+    <cell>
+     <p>Caja de cartón</p>
+    </cell>
+    <cell>
+     <p>Envase de yoghurt líquido</p>
+    </cell>
+    <cell>
+     <p>Envase de yoghurt</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Envase de patatas fritas</p>
+    </cell>
+    <cell>
+     <p>Brick de leche</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="75o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza las piezas del puzzle.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Què gran gesto!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="28" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="5" border="true" image="mano reciclando redi.jpg">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="5" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="75o1o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Ponle nombre a cada imagen.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+     <p>Lo has hecho muy bien.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡Has agotado los intentos!! Empieza otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en tu  cuaderno  la  información  que  necesites. Recuerda  que  tienes  que  poner  los  acentos.</p>
+    </helpWindow>
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="170.0" cellHeight="122.0" border="true" id="primary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="4 botellas de vidrio.gif" />
+    <cell id="1" image="BOTELLA CRISTAL.jpg" />
+    <cell id="2" image="botella shandy.jpg" />
+    <cell id="3" image="botella vidrio.jpg" />
+    <cell id="4" image="REVISTAS2.jpg" />
+    <cell id="5" image="botellas de refrescos.jpg" />
+    <cell id="6" image="botellas vidrios.jpg" />
+    <cell id="7" image="botellin5e.jpg" />
+    <cell id="8" image="tarro tomate.jpg" />
+    <cell id="9" image="PERIODICO2.jpg" />
+    <cell id="10" image="carton.jpg" />
+    <cell id="11" image="actimel.jpg" />
+    <cell id="12" image="activa.jpg" />
+    <cell id="13" image="basura organica.jpg" />
+    <cell id="14" image="bolsas patatas.jpg" />
+    <cell id="15" image="brick puleva peque.jpg" />
+   </cells>
+   <cells rows="16" cols="1" cellWidth="516.0" cellHeight="30.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="16" />
+    <cell>
+     <p>Botellas de vidrio de distintos colores</p>
+    </cell>
+    <cell>
+     <p>Botella de cristal transparente</p>
+    </cell>
+    <cell>
+     <p>Botellín de limonada</p>
+    </cell>
+    <cell>
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell>
+     <p>Revistas</p>
+    </cell>
+    <cell>
+     <p>Botellines de refrescos</p>
+    </cell>
+    <cell>
+     <p>Botellas de vidrio oscuro</p>
+    </cell>
+    <cell>
+     <p>Botellín de cerveza</p>
+    </cell>
+    <cell>
+     <p>Tarro de vidrio</p>
+    </cell>
+    <cell>
+     <p>Periódicos</p>
+    </cell>
+    <cell>
+     <p>Caja de cartón</p>
+    </cell>
+    <cell>
+     <p>Envase de yoghurt líquido</p>
+    </cell>
+    <cell>
+     <p>Envase de yoghurt</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Envase de patatas fritas</p>
+    </cell>
+    <cell>
+     <p>Brick de leche</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="vidrio peque.jpg">
+     <p>Botellas de vidrio de distintos colores</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Botella de cristal transparente</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Botellín de limonada</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell image="azul.jpg">
+     <p>Revistas</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Botellines de refrescos</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Botellas de vidrio oscuro</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Botellín de cerveza</p>
+    </cell>
+    <cell image="vidrio peque.jpg">
+     <p>Tarro de vidrio</p>
+    </cell>
+    <cell image="azul.jpg">
+     <p>Periódicos</p>
+    </cell>
+    <cell image="azul.jpg">
+     <p>Caja de cartón</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envase de yoghurt líquido</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envase de yoghurt</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envase de patatas fritas</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Brick de leche</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="75o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relaciona.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Estupendo!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="196.0" cellHeight="134.0" border="true" id="primary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="1">
+     <p>Botellas de vidrio de distintos colores</p>
+    </cell>
+    <cell id="1">
+     <p>Botella de cristal transparente</p>
+    </cell>
+    <cell id="1">
+     <p>Botellín de limonada</p>
+    </cell>
+    <cell id="1">
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell id="0">
+     <p>Revistas</p>
+    </cell>
+    <cell id="1">
+     <p>Botellines de refrescos</p>
+    </cell>
+    <cell id="1">
+     <p>Botellas de vidrio oscuro</p>
+    </cell>
+    <cell id="1">
+     <p>Botellín de cerveza</p>
+    </cell>
+    <cell id="1">
+     <p>Tarro de vidrio</p>
+    </cell>
+    <cell id="0">
+     <p>Periódicos</p>
+    </cell>
+    <cell id="0">
+     <p>Caja de cartón</p>
+    </cell>
+    <cell id="0">
+     <p>Envase de yoghurt líquido</p>
+    </cell>
+    <cell id="0">
+     <p>Envase de yoghurt</p>
+    </cell>
+    <cell id="0">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell id="0">
+     <p>Envase de patatas fritas</p>
+    </cell>
+    <cell id="0">
+     <p>Brick de leche</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="158.0" cellHeight="141.0" border="true" id="secondary">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>OTROS CONTENEDORES</p>
+    </cell>
+    <cell image="graciosos contenedor vidrio.jpg" />
+   </cells>
+   <cells rows="2" cols="3" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="4 botellas de vidrio.gif" />
+    <cell image="BOTELLA CRISTAL.jpg" />
+    <cell image="botella shandy.jpg" />
+    <cell image="botella vidrio.jpg" />
+    <cell image="REVISTAS2.jpg" />
+    <cell image="botellas de refrescos.jpg" />
+    <cell image="botellas vidrios.jpg" />
+    <cell image="botellin5e.jpg" />
+    <cell image="tarro tomate.jpg" />
+    <cell image="PERIODICO2.jpg" />
+    <cell image="carton.jpg" />
+    <cell image="actimel.jpg" />
+    <cell image="activa.jpg" />
+    <cell image="basura organica.jpg" />
+    <cell image="bolsas patatas.jpg" />
+    <cell image="brick puleva peque.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="76" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué animal es?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Si reciclas, cuidas la Naturaleza.</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="23" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="5" border="false" image="PAJARO.jpg">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="5" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="77" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee y aprende.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="25" countDownActions="true" report="false">
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="1052.0" cellHeight="321.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="40" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x339900" dest="0xFFFFFF" angle="0" cycles="15" />
+     </style>
+     <p>"LA REGLA DE LAS TRES ERRES"</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" shadow="0xCCFF33" />
+     </style>
+     <p>Para fabricar envases de vidrio se deben de explotar muchos recursos naturales y estos son limitados. Además contaminamos muchísimo. Si no queremos acabar con nuestro maravilloso planeta es necesario que todo el mundo aplique las tres erres: REDUCIR el consumo, REUTILIZAR los envases de vidrio, encontrándole un nuevo uso, y RECICLARLO o usarlo de nuevo para fabricar otros productos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="78" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa el texto.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+     <p>¡Te has superado!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡ Inténtalo otra vez !</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  la  actividad  anterior  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.  Acuérdate  de  los  acentos  a  la  hora  de  escribir.</p>
+    </helpWindow>
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+     <size width="780" height="535" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" family="Mi Cole" size="28" tabWidth="12" bold="true" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Mi Cole" size="28" bold="true">	</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Mi Cole" size="28" bold="true">Para fabricar envases de vidrio se deben de explotar muchos recursos </text>
+      <target>
+       <answer>naturales</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>naturales</text>
+      </target>
+      <text family="Mi Cole" size="28" bold="true"> y estos son </text>
+      <target>
+       <answer>limitados</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>limitados</text>
+      </target>
+      <text family="Mi Cole" size="28" bold="true">. Además </text>
+      <target>
+       <answer>contaminamos</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>contaminamos</text>
+      </target>
+      <text family="Mi Cole" size="28" bold="true"> muchísimo.</text>
+     </p>
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial" />
+     <p background="0xFFFFFF" family="Arial">
+      <text family="Mi Cole" size="28" bold="true">Es necesario que todo el mundo aplique las tres erres: </text>
+      <target>
+       <answer>reducir</answer>
+       <answer>Reducir</answer>
+       <answer>REDUCIR</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>REDUCIR</text>
+      </target>
+      <text family="Mi Cole" size="28" bold="true"> el consumo, </text>
+      <target>
+       <answer>reutilizar</answer>
+       <answer>REUTILIZAR</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>REUTILIZAR</text>
+      </target>
+      <text family="Mi Cole" size="28" bold="true"> los envases de vidrio, encontrándole un nuevo uso, y </text>
+      <target>
+       <answer>reciclarlo</answer>
+       <answer>RECICLARLO</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>RECICLARLO</text>
+      </target>
+      <text family="Mi Cole" size="28" bold="true"> o usarlo de nuevo para fabricar otros productos.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="79" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Què lío!   ¡Pon orden!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+     <p>¡No se te escapa ni una!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="5" border="false" image="CIERVO.jpg">
+    <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="24" bold="true" />
+     <color background="0xFFFFFF" shadow="0xFFFF00" inactive="0xFFFFFF" alternative="0x000000" />
+    </style>
+    <shaper class="@Holes" cols="5" rows="4">
+     <shape comment="0">rectangle:0.672222,0.025926,0.252778,0.346296</shape>
+     <shape comment="1">ellipse:0.169444,0.694444,0.144444,0.224074</shape>
+     <shape comment="2">rectangle:0.595833,0.733333,0.216667,0.25</shape>
+     <shape comment="3">rectangle:0.113889,0.2,0.1625,0.246296</shape>
+     <shape comment="4">ellipse:0.486111,0.431481,0.201389,0.233333</shape>
+     <shape comment="5">rectangle:0.430556,0.027778,0.222222,0.338889</shape>
+     <shape comment="6">rectangle:0,0.457407,0.183333,0.274074</shape>
+     <shape comment="7">ellipse:0.325,0.401852,0.154167,0.177778</shape>
+     <shape comment="8">ellipse:0.838889,0.687037,0.129167,0.196296</shape>
+     <shape comment="9">rectangle:0.319444,0.703704,0.223611,0.255556</shape>
+     <shape comment="10">rectangle:0.7375,0.422222,0.209722,0.240741</shape>
+     <shape comment="11">M:0.279167,0.472222|L:0.293056,0.524074|L:0.3,0.587037|L:0.284722,0.633333|L:0.269444,0.655556|L:0.315278,0.694444|L:0.379167,0.685185|L:0.430556,0.625926|L:0.359722,0.57963|L:0.309722,0.488889|L:0.351389,0.4|L:0.361111,0.312963|L:0.302778,0.364815|L:0.288889,0.422222|L:0.279167,0.472222</shape>
+     <shape comment="12">ellipse:0,0.775926,0.116667,0.183333</shape>
+     <shape comment="13">M:0.066667,0.344444|L:0.090278,0.190741|L:0.118056,0.027778|L:0.119444,0.003704|L:0.033333,0.009259|L:0.038889,0.085185|L:0.036111,0.42037|L:0.054167,0.433333|L:0.066667,0.344444</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="79o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Busca palabras relacionadas con el vidrio.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="graciosos contenedor vidrio.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="12" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <textGrid rows="12" columns="10" cellWidth="50.0" cellHeight="50.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>B****BOTELLA</row>
+     <row>*O*****A****</row>
+     <row>**TR***R****</row>
+     <row>***E***R****</row>
+     <row>***CL*NO***O</row>
+     <row>V**I*L*I***I</row>
+     <row>E**C**I*D**R</row>
+     <row>R**L***N*R*D</row>
+     <row>D**A******EI</row>
+     <row>E**RFRASCO*V</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">BOTELLIN</clue>
+    <clue id="1">RECICLAR</clue>
+    <clue id="2">VIDRIO</clue>
+    <clue id="3">BOTELLA</clue>
+    <clue id="4">VERDE</clue>
+    <clue id="5">FRASCO</clue>
+    <clue id="6">TARRO</clue>
+    <clue id="7">VERDIN</clue>
+   </clues>
+   <cells rows="4" cols="2" cellWidth="182.0" cellHeight="127.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="20" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell image="botella shandy.jpg" />
+    <cell image="reciclaje.jpg" />
+    <cell image="C VIDRIO DIBUJO.jpg" />
+    <cell image="BOTELLA CRISTAL.jpg" />
+    <cell>
+     <style>
+      <font family="Arial Black" size="24" bold="true" />
+      <color background="0x666600" />
+     </style>
+    </cell>
+    <cell image="tarro tomate.jpg" />
+    <cell>
+     <style>
+      <font family="Arial Black" size="26" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>TARRO</p>
+    </cell>
+    <cell image="graciosos contenedor vidrio.jpg" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="79o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="graciosos contenedor vidrio.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Coloca las piezas de este paisaje.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Tenemos que cuidar de la Naturaleza para disfrutar de ella!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Has agotado los intentos!! Empieza otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="18" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x006600">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x336600" border="true">
+     <gradient source="0x336600" dest="0xFFFFFF" angle="0" cycles="15" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="5" border="true" image="bosque y lago redimensionada.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xCCCC00" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="4 botellas de vidrio.gif" file="4_botellas_de_vidrio.gif" animated="false" />
+  <media name="actimel.jpg" file="actimel.jpg" />
+  <media name="activa.jpg" file="activa.jpg" />
+  <media name="amarillo.jpg" file="amarillo.jpg" />
+  <media name="azul.jpg" file="azul.jpg" />
+  <media name="basura organica.jpg" file="basura_organica.jpg" />
+  <media name="bolsas patatas.jpg" file="bolsas_patatas.jpg" />
+  <media name="bosque y lago redimensionada.jpg" file="bosque_y_lago_redimensionada.jpg" />
+  <media name="BOTELLA CRISTAL.jpg" file="botella_cristal.jpg" />
+  <media name="botella shandy.jpg" file="botella_shandy.jpg" />
+  <media name="botella vidrio.jpg" file="botella_vidrio.jpg" />
+  <media name="botellas cristal.jpg" file="botellas_cristal.jpg" />
+  <media name="botellas de refrescos.jpg" file="botellas_de_refrescos.jpg" />
+  <media name="botellas vidrios.jpg" file="botellas_vidrios.jpg" />
+  <media name="botellin5e.jpg" file="botellin5e.jpg" />
+  <media name="brick puleva peque.jpg" file="brick_puleva_peque.jpg" />
+  <media name="C VIDRIO 2.jpg" file="c_vidrio_2.jpg" />
+  <media name="C VIDRIO APAÑO.jpg" file="c_vidrio_apano.jpg" />
+  <media name="c vidrio color REDI 2.jpg" file="c_vidrio_color_redi_2.jpg" />
+  <media name="C VIDRIO DIBUJO.jpg" file="c_vidrio_dibujo.jpg" />
+  <media name="C VIDRIO GEMELOS.jpg" file="c_vidrio_gemelos.jpg" />
+  <media name="c vidrio INTERMEDIO.jpg" file="c_vidrio_intermedio.jpg" />
+  <media name="C VIDRIO PEQUE PEQUE.jpg" file="c_vidrio_peque_peque.jpg" />
+  <media name="C VIDRIO SIMPLE.jpg" file="c_vidrio_simple.jpg" />
+  <media name="cartel de reciclar vidrio.jpg" file="cartel_de_reciclar_vidrio.jpg" />
+  <media name="carton.jpg" file="carton.jpg" />
+  <media name="CIERVO.jpg" file="ciervo.jpg" />
+  <media name="contenedor gracioso vidrio redimensionado.jpg" file="contenedor_gracioso_vidrio_redimensionado.jpg" />
+  <media name="graciosos contenedor vidrio.jpg" file="graciosos_contenedor_vidrio.jpg" />
+  <media name="ka120.jpg" file="ka120.jpg" />
+  <media name="mano reciclando redi.jpg" file="mano_reciclando_redi.jpg" />
+  <media name="muñeco reciclando.jpg" file="muneco_reciclando.jpg" />
+  <media name="PAJARO.jpg" file="pajaro.jpg" />
+  <media name="PERIODICO2.jpg" file="periodico2.jpg" />
+  <media name="reciclaje.jpg" file="reciclaje.jpg" />
+  <media name="reciclaje1.jpg" file="reciclaje1.jpg" />
+  <media name="REVISTAS2.jpg" file="revistas2.jpg" />
+  <media name="tarro tomate.jpg" file="tarro_tomate.jpg" />
+  <media name="verde.jpg" file="verde.jpg" />
+  <media name="vidrio peque.jpg" file="vidrio_peque.jpg" />
+  <media name="vidrio_0.jpg" file="vidrio_0.jpg" />
+  <media name="N.mp3" file="n.mp3" />
+  <media name="MiCole_n.TTF" file="micole_n.ttf" />
+  <media name="aplauso2.wav" file="aplauso2.wav" />
+  <media name="estupendo.wav" file="estupendo.wav" />
+ </mediaBag>
+</JClicProject>
+

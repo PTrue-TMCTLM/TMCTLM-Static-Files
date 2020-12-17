@@ -1,0 +1,132 @@
+{
+ "title": "Un niño diferente en nuestra escuela",
+ "author": "Marta Pérez Calvo Dibuixos: Sara Ferrer Pérez Veu: Pablo Ferrer Pérez",
+ "school": "CEIP Cesáreo Alierta Zaragoza (Aragón)",
+ "date": "14/12/15",
+ "languages": {
+  "en": "Spanish",
+  "ca": "espanyol",
+  "es": "español"
+ },
+ "langCodes": [
+  "es"
+ ],
+ "areas": {
+  "en": "Languages",
+  "ca": "Llengües",
+  "es": "Lenguas"
+ },
+ "areaCodes": [
+  "lleng"
+ ],
+ "levels": {
+  "en": "Kindergarten (3-6), Primary school (6-12)",
+  "ca": "Infantil (3-6), Primària (6-12)",
+  "es": "Infantil (3-6), Primaria (6-12)"
+ },
+ "levelCodes": [
+  "INF",
+  "PRI"
+ ],
+ "descriptors": {
+  "ca": "aprenentatge de la llengua, comprensió escrita, lectura, vocabulari, comprensió lectora",
+  "es": "aprendizaje de la lengua, comprensión escrita, lectura, vocabulario, comprensión lectora",
+  "en": "learning of the language, written understanding, reading, vocabulary, reading comprehension"
+ },
+ "descCodes": [
+  110,
+  111,
+  125,
+  150,
+  1329
+ ],
+ "description": {
+  "en": "Reading comprehension exercises from illustrations. A story with two levels: infantile and primary education. at every level can find the story adapted by stage and activities for each level. These are accessed through menus route choice.\n<p> </p>",
+  "ca": "Exercicis de comprensió lectora a partir d'il·lustracions. Hi ha dos nivells: Infantil i primària. A cada nivell podem trobar un conte adaptat segons l'etapa, i activitats per a cada nivell. S'accedeix a través de menús d'elecció.\n<p> El conte i les activitats d'infantil estan en majúscula i tenen àudio. Les de primària estan en cursiva i sense so. </p>",
+  "es": "Ejercicios de comprensión lectora a partir de un cuento con ilustraciones. Existen dos niveles: infantil y primaria. en cada nivel se puede encontrar el cuento adaptado según la etapa y actividades para cada nivel. A estos se accede a través de menús de elección de itinerario.\n<p> El cuento y las actividades de infantil están en mayúsculas y tienen audio, mientras que las de primer ciclo de primaria están en cursiva y sin audio. </p>"
+ },
+ "license": {
+  "en": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>",
+  "ca": "Aquesta obra està sota una llicència de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>",
+  "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>"
+ },
+ "mainFile": "nin_dif.jclic",
+ "cover": "cover.png",
+ "thumbnail": "thumb.png",
+ "zipFile": "jclic/nin_dif.jclic.zip",
+ "instFile": "jclic/nin_dif.jclic.inst",
+ "clicZoneId": 3927,
+ "clicZoneURL": "http://clic.xtec.cat/db/act_es.jsp?id=3927",
+ "clicZoneAppletURL": "http://clic.xtec.cat/db/jclicApplet.jsp?project=http://clic.xtec.cat/projects/nin_dif/jclic/nin_dif.jclic.zip",
+ "meta_langs": [
+  "ca",
+  "es",
+  "en"
+ ],
+ "activities": 37,
+ "mediaFiles": 60,
+ "totalSize": 3578409,
+ "files": [
+  "cover.png",
+  "actividades.png",
+  "ai.jclic",
+  "ana.jpg",
+  "ap.jclic",
+  "asisehace.mp3",
+  "bien.mp3",
+  "bien.png",
+  "buscapalabras.mp3",
+  "ci.jclic",
+  "cp.jclic",
+  "cuento.png",
+  "dinosaurios.mp3",
+  "fantastico.mp3",
+  "frasesbienmal.mp3",
+  "ganadores.mp3",
+  "genial.mp3",
+  "icon-192.png",
+  "icon-72.png",
+  "juegosmesa.mp3",
+  "julio.jpg",
+  "mal.mp3",
+  "mal.png",
+  "muybien.mp3",
+  "ni_dif.jclic",
+  "nin_dif.jclic",
+  "ninaana.mp3",
+  "pablo.jpg",
+  "parejas.mp3",
+  "parrafo1.mp3",
+  "parrafo1_resized.jpg",
+  "parrafo2.mp3",
+  "parrafo2_resized.jpg",
+  "parrafo3.mp3",
+  "parrafo3_resized.jpg",
+  "parrafo4.mp3",
+  "parrafo4_resized.jpg",
+  "parrafo5.mp3",
+  "parrafo5_resized.jpg",
+  "parrafo6.mp3",
+  "parrafo6_resized.jpg",
+  "parrafo7.mp3",
+  "parrafo7_resized.jpg",
+  "parrafo8.mp3",
+  "parrafo8_resized.jpg",
+  "profesor.mp3",
+  "puzzle.mp3",
+  "robot.mp3",
+  "sara.jpg",
+  "tj.jpg",
+  "project.json",
+  "thumb.png",
+  "index.html",
+  "nin_dif.jclic.js",
+  "favicon.ico",
+  "imsmanifest.xml",
+  "ai.jclic.js",
+  "ap.jclic.js",
+  "ci.jclic.js",
+  "cp.jclic.js",
+  "ni_dif.jclic.js"
+ ]
+}

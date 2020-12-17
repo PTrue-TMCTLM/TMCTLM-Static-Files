@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="ai" version="0.1.3">
+ <settings>
+  <title>Un niño diferente en nuestra escuela</title>
+  <revision description="created" date="5/8/13" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="9/20/13">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Marta Pérez Calvo" mail="martaperezcalvo@hotmail.com" />
+  <author name="Sara Ferrer Pérez" rol="Dibujos" />
+  <author name="Pablo Ferrer Pérez" rol="Voz" />
+  <organization name="CEIP Cesáreo Alierta" mail="cpcalzaragoza@educa.aragon.es" url="http://www.cesareoalierta.com/" city="Zaragoza" state="Aragón" />
+  <language>español</language>
+  <description>
+   <p>Ejercicios de comprensión lectora a partir de un cuento con ilustraciones. Existen dos niveles: infantil y primaria. en cada nivel se puede encontrar el cuento adaptado según la etapa y actividades para cada nivel. A estos se accede a través de menús de elección de itinerario.&lt;p&gt;</p>
+   <p>El cuento y las actividades de infantil están en mayúsculas y tienen audio, mientras que las de primer ciclo de primaria están en cursiva y sin audio.</p>
+  </description>
+  <descriptors area="Lenguas" level="Infantil (3-6), Primaria (6-12)">aprendizaje de la lengua, comprensión escrita, lectura, vocabulario, comprensión lectora</descriptors>
+  <skin file="@orange.xml" />
+ </settings>
+ <sequence>
+  <item id="inicio" name="1 Puzzle">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="2 Memoria" />
+  <item name="3 Puzzle" />
+  <item name="4 Asociacion" />
+  <item name="5 Puzzle" />
+  <item name="6 Sopa">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@puzzles.ExchangePuzzle" name="1 Puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.mp3" />
+     <p>RESUELVE EL PUZZLE.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="muybien.mp3" />
+     <p>¡MUY BIEN!</p>
+    </cell>
+   </messages>
+   <settings margin="10" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="2" cols="2" border="true" image="parrafo1-resized.jpg">
+    <style borderStroke="1.2" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="2" rows="2" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="2 Memoria" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="parejas.mp3" />
+     <p>BUSCA DOS DIBUJOS IGUALES.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="asisehace.mp3" />
+     <p>¡ASI SE HACE!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="130.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="5.0" markerStroke="2.7">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="sara.jpg">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell image="pablo.jpg">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell image="ana.jpg">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell image="tj.jpg">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+    <cell image="julio.jpg">
+     <style borderStroke="5.0" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="3 Puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.mp3" />
+     <p>RESUELVE EL PUZZLE.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="muybien.mp3" />
+     <p>¡MUY BIEN!</p>
+    </cell>
+   </messages>
+   <settings margin="10" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="parrafo3-resized.jpg">
+    <style borderStroke="1.2" markerStroke="2.7">
+     <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+    </style>
+    <shaper class="@JigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="4 Asociacion" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="frasesbienmal.mp3" />
+     <p>DI SI LAS FRASES ESTÁN BIEN O MAL.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="fantastico.mp3" />
+     <p>¡FANTÁSTICO!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="350.0" cellHeight="60.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell id="1">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ninaana.mp3" />
+     <p>LA NIÑA QUE CUENTA LA HISTORIA SE LLAMA ANA.</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="dinosaurios.mp3" />
+     <p>A T.J. LE GUSTAN MUCHO LOS DINOSAURIOS.</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="profesor.mp3" />
+     <p>EL PROFESOR DE LENGUA ES EL QUE LES PREPARA EL JUEGO.</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="robot.mp3" />
+     <p>EN REALIDAD T.J. ES UN ROBOT.</p>
+    </cell>
+    <cell id="0">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="juegosmesa.mp3" />
+     <p>A SARA LE ENCANTAN LOS JUEGOS DE MESA.</p>
+    </cell>
+    <cell id="1">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ganadores.mp3" />
+     <p>PABLO Y ANA SON LOS GANADORES DEL JUEGO.</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="125.0" cellHeight="50.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="bien.png">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="bien.mp3" />
+     <p>BIEN</p>
+    </cell>
+    <cell txtAlign="right,middle" imgAlign="left,middle" avoidOverlapping="true" image="mal.png">
+     <style borderStroke="5.1" markerStroke="2.7">
+      <font family="Edelfontmed" size="24" bold="true" />
+      <color background="0xFFFFFF" border="0x330066" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="mal.mp3" />
+     <p>MAL</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="5 Puzzle" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.mp3" />
+     <p>RESUELVE EL PUZZLE.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="muybien.mp3" />
+     <p>¡MUY BIEN!</p>
+    </cell>
+   </messages>
+   <settings margin="10" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="parrafo8-resized.jpg">
+    <style borderStroke="1.0" markerStroke="2.7">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" border="0x330066" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" baseWidthFactor="0.64" toothHeightFactor="0.306" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="6 Sopa" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="2.7">
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="buscapalabras.mp3" />
+     <p>BUSCA LAS PALABRAS: SARA, SEMANA, JUEGO Y AMIGOS.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Edelfontmed" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="genial.mp3" />
+     <p>¡GENIAL!</p>
+    </cell>
+   </messages>
+   <settings margin="10" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFFFFFF" dest="0x6666FF" angle="0" cycles="5" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x330066" border="true" />
+   </settings>
+   <textGrid rows="8" columns="8" cellWidth="40.0" cellHeight="40.0" border="true">
+    <style>
+     <font family="Edelfontmed" size="24" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>********</row>
+     <row>AMIGOS**</row>
+     <row>********</row>
+     <row>***SARA*</row>
+     <row>********</row>
+     <row>**SEMANA</row>
+     <row>********</row>
+     <row>JUEGO***</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">AMIGOS</clue>
+    <clue id="1">SARA</clue>
+    <clue id="2">SEMANA</clue>
+    <clue id="3">JUEGO</clue>
+   </clues>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="ana.jpg" file="ana.jpg" />
+  <media name="julio.jpg" file="julio.jpg" />
+  <media name="pablo.jpg" file="pablo.jpg" />
+  <media name="parrafo1-resized.jpg" file="parrafo1_resized.jpg" />
+  <media name="parrafo3-resized.jpg" file="parrafo3_resized.jpg" />
+  <media name="parrafo8-resized.jpg" file="parrafo8_resized.jpg" />
+  <media name="sara.jpg" file="sara.jpg" />
+  <media name="tj.jpg" file="tj.jpg" />
+  <media name="asisehace.mp3" file="asisehace.mp3" />
+  <media name="bien.mp3" file="bien.mp3" />
+  <media name="buscapalabras.mp3" file="buscapalabras.mp3" />
+  <media name="dinosaurios.mp3" file="dinosaurios.mp3" />
+  <media name="fantastico.mp3" file="fantastico.mp3" />
+  <media name="frasesbienmal.mp3" file="frasesbienmal.mp3" />
+  <media name="ganadores.mp3" file="ganadores.mp3" />
+  <media name="genial.mp3" file="genial.mp3" />
+  <media name="juegosmesa.mp3" file="juegosmesa.mp3" />
+  <media name="mal.mp3" file="mal.mp3" />
+  <media name="muybien.mp3" file="muybien.mp3" />
+  <media name="ninaana.mp3" file="ninaana.mp3" />
+  <media name="parejas.mp3" file="parejas.mp3" />
+  <media name="profesor.mp3" file="profesor.mp3" />
+  <media name="puzzle.mp3" file="puzzle.mp3" />
+  <media name="robot.mp3" file="robot.mp3" />
+  <media name="bien.png" file="bien.png" />
+  <media name="mal.png" file="mal.png" />
+ </mediaBag>
+</JClicProject>
+

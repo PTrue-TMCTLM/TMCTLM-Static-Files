@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="resi_esp" version="0.1.3">
+ <settings>
+  <title>Reciclar desde el colegio</title>
+  <revision description="created" date="4/26/09" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="3/12/13">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Luis Manuel Blanco de Castro" mail="indioviejo@hotmail.com" />
+  <organization name="CP Cervantes" mail="13002472.cp@edu.jccm.es" url="http://edu.jccm.es/cp/cervantespuertollano/" city="Puertollano - Ciudad Real" state="Castilla - La Mancha" />
+  <organization name="CP José Maria del Moral" mail="13003041.cp@edu.jccm.es" url="http://colemoral.blogspot.com.es/" city="Tomelloso" state="Castilla - La Mancha" />
+  <language>español</language>
+  <description>
+   <p>&lt;i&gt;Reciclar desde el colegio&lt;/i&gt; es un proyecto para aprender a reciclar cualquier tipo de material. El proyecto está dividido en dos partes:</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;¿Qué es reciclar?</p>
+   <p>&lt;li&gt;Actividades</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;Papel y cartón</p>
+   <p>&lt;li&gt;Envases y plásticos</p>
+   <p>&lt;li&gt;Vidrio y cristal</p>
+   <p>&lt;li&gt;Basuras orgánicas</p>
+   <p>&lt;l&gt;Actividades resumen</p>
+   <p>&lt;/ul&gt;</p>
+   <p>&lt;/ul&gt;</p>
+  </description>
+  <descriptors area="Ciencias experimentales" level="Primaria (6-12)">reciclar</descriptors>
+ </settings>
+ <sequence>
+  <item id="residuos especiales" name="85o">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="85" delay="20" navButtons="back" />
+  <item name="85o1" />
+  <item name="85o2" delay="15" navButtons="back" />
+  <item name="85o3" />
+  <item name="85o4" />
+  <item name="85o5" />
+  <item name="85o5o1" />
+  <item name="85o1o2" />
+  <item name="85o1o3" />
+  <item name="85o6" />
+  <item name="85o7" />
+  <item name="85o8" />
+  <item name="85o9" />
+  <item name="85o10" />
+  <item name="85o11" />
+  <item name="85o12" />
+  <item name="86o" delay="6" navButtons="back" />
+  <item name="86">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="85" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_MIDI" level="1" file="nowhere.mid" />
+     <p>!! Lee con atención !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="1076.0" cellHeight="290.0" border="false">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="48" />
+      <color background="0xFFFFFF" shadow="0xFF0000" />
+      <gradient source="0x00CCFF" dest="0x99FF66" angle="0" />
+     </style>
+     <p>RESIDUOS URBANOS ESPECIALES</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFF0000" />
+      <gradient source="0x00CCFF" dest="0x99FF66" angle="0" />
+     </style>
+     <p>Los residuos urbanos especiales son aquellos que NO depositamos en el contenedor azul o del papel y cartón, en el amarillo o de los plásticos o envases, en el verde o del vidrio y en el rojo o de restos orgánicos.  Se depositan en lo que se denominan PUNTOS LIMPIOS.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="85o" code="">
+   <description />
+   <messages>
+    <cell image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="835.0" cellHeight="471.0" border="false">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator.jpg">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Hola !!  Soy  Pilator, os voy a hablar de los Residuos Urbanos Especiales.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="85o1" code="">
+   <description />
+   <messages>
+    <cell border="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="bravo.wav" />
+     <p>¡¡ Bravo !!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡ Inténtalo de nuevo !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="60" countDownTime="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="punto limpio.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="85o10" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿ Qué puede ser ?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+     <p>¡¡ Qué paisaje más bonito !!</p>
+    </cell>
+    <cell image="Pilator2.jpg" type="finalError">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="25" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="5" border="false" image="LAGO MONTAÑA.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="5" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="85o11" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Más materiales para depositar en el punto limpio.</p>
+    </cell>
+    <cell image="Pilator2.jpg" type="final">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <textGrid rows="17" columns="12" cellWidth="40.0" cellHeight="47.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="20" />
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>COCITÁMUEN*******</row>
+     <row>SOCITSÉMODORTCELE</row>
+     <row>FLUORESCENTES****</row>
+     <row>*****************</row>
+     <row>*********MUEBLES*</row>
+     <row>***************A*</row>
+     <row>FRIGORÍFICOS***R*</row>
+     <row>***********P***U*</row>
+     <row>***********I***T*</row>
+     <row>***********L***N*</row>
+     <row>***********A***I*</row>
+     <row>RADIOGRAFÍAS***P*</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">RADIOGRAFÍAS</clue>
+    <clue id="1">PINTURAS</clue>
+    <clue id="2">PILAS</clue>
+    <clue id="3">NEUMÁTICOS</clue>
+    <clue id="4">MUEBLES</clue>
+    <clue id="5">FRIGORÍFICOS</clue>
+    <clue id="6">FLUORESCENTES</clue>
+    <clue id="7">ELECTRODOMÉSTICOS</clue>
+   </clues>
+   <cells rows="4" cols="2" cellWidth="88.0" cellHeight="106.0" border="false" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell image="radiografias.jpg" />
+    <cell image="pinturas y disolventes.jpg" />
+    <cell image="pilas.jpg" />
+    <cell image="neumaticos.jpg" />
+    <cell image="muebles y enseres.jpg" />
+    <cell image="frigoríficos.jpg" />
+    <cell image="fluorescentes.jpg" />
+    <cell image="equipos electricos.jpg" />
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="85o12" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Las pilas contaminan muchísimo !!</p>
+    </cell>
+    <cell image="Pilator2.jpg" type="final">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Inténtalo de nuevo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="25" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="5" border="false" image="portada redimensionada.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="85o1o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.wav" />
+     <p>Los neumáticos también se reciclan.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+     <p>¡¡ Fantástico !!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="48" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Repítelo!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="24" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="N.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="reciclaje_de_neumaticos.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="85o1o3" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="72" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Haz parejas! !</p>
+    </cell>
+    <cell image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡ Inténtalo de nuevo !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="30" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="2" cellWidth="328.0" cellHeight="123.0" border="true" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color foreground="0xFFFFFF" inactive="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="5" />
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="escombros.jpg">
+     <p>Escombros</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="fluorescentes.jpg">
+     <p>Fluorescentes</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="frigoríficos.jpg">
+     <p>Frigoríficos</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="jardineria.jpg">
+     <p>Jardinería</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="metal.jpg">
+     <p>Metal</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="muebles y enseres.jpg">
+     <p>Muebles y enseres</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="neumaticos.jpg">
+     <p>Neumáticos</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="pilas.jpg">
+     <p>Pilas</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="pinturas y disolventes.jpg">
+     <p>Pinturas y disolventes</p>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="radiografias.jpg">
+     <p>Radiografías</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="85o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>!! Lee con atención !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="718.0" cellHeight="256.0" border="false">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="48" />
+      <color background="0xFFFFFF" shadow="0xFF0000" />
+      <gradient source="0x00CCFF" dest="0x99FF66" angle="0" />
+     </style>
+     <p>RESIDUOS URBANOS ESPECIALES</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFF0000" />
+      <gradient source="0x00CCFF" dest="0x99FF66" angle="0" />
+     </style>
+     <p>Los residuos urbanos especiales son:</p>
+     <p>muebles, electrodomésticos, neumáticos, chatarra, aceites, escombros, pilas, etc... tienen un sistema específico de recogida y tratamiento.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="85o3" code="">
+   <description />
+   <messages>
+    <cell border="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.wav" />
+    </cell>
+    <cell image="Pilator2.jpg" type="final">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡ Inténtalo de nuevo !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="3" border="false" image="cartel puto limpio redimensionada.jpg">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="85o4" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style shadow="true">
+      <font family="Mi Cole" size="48" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+     </style>
+     <p>Pincha sobre las imágenes y lee</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="144.0" cellHeight="135.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0" image="aceite mineral.jpg" />
+    <cell id="1" image="aceite vegetal.jpg" />
+    <cell id="2" image="aerosoles.jpg" />
+    <cell id="3" image="baterias.jpg" />
+    <cell id="4" image="equipos electricos.jpg" />
+    <cell id="5" image="escombros.jpg" />
+    <cell id="6" image="fluorescentes.jpg" />
+    <cell id="7" image="frigoríficos.jpg" />
+    <cell id="8" image="jardineria.jpg" />
+    <cell id="9" image="metal.jpg" />
+    <cell id="10" image="muebles y enseres.jpg" />
+    <cell id="11" image="neumaticos.jpg" />
+    <cell id="12" image="pilas.jpg" />
+    <cell id="13" image="pinturas y disolventes.jpg" />
+    <cell id="14" image="radiografias.jpg" />
+   </cells>
+   <cells rows="5" cols="3" cellWidth="104.0" cellHeight="39.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell>
+     <p>Aceite mineral</p>
+    </cell>
+    <cell>
+     <p>Aceite vegetal</p>
+    </cell>
+    <cell>
+     <p>Aerosoles</p>
+    </cell>
+    <cell>
+     <p>Baterias</p>
+    </cell>
+    <cell>
+     <p>Electrodomésticos</p>
+    </cell>
+    <cell>
+     <p>Escombros</p>
+    </cell>
+    <cell>
+     <p>Fluorescentes</p>
+    </cell>
+    <cell>
+     <p>Frigoríficos</p>
+    </cell>
+    <cell>
+     <p>Jardinería</p>
+    </cell>
+    <cell>
+     <p>Metal</p>
+    </cell>
+    <cell>
+     <p>Muebles y enseres</p>
+    </cell>
+    <cell>
+     <p>Neumáticos</p>
+    </cell>
+    <cell>
+     <p>Pilas</p>
+    </cell>
+    <cell>
+     <p>Pinturas y disolventes</p>
+    </cell>
+    <cell>
+     <p>Radiografías</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="85o5" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arrastra cada imagen a su nombre</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡ Inténtalo otra vez !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="23" countDownActions="true" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="90.0" cellHeight="168.0" border="false" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="48" bold="true" />
+     <color alternative="0xFFFF00" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0" image="aceite mineral.jpg" />
+    <cell id="1" image="aceite vegetal.jpg" />
+    <cell id="2" image="aerosoles.jpg" />
+    <cell id="3" image="baterias.jpg" />
+    <cell id="4" image="equipos electricos.jpg" />
+    <cell id="5" image="escombros.jpg" />
+    <cell id="6" image="fluorescentes.jpg" />
+    <cell id="7" image="frigoríficos.jpg" />
+    <cell id="8" image="jardineria.jpg" />
+    <cell id="9" image="metal.jpg" />
+    <cell id="10" image="muebles y enseres.jpg" />
+    <cell id="11" image="neumaticos.jpg" />
+    <cell id="12" image="pilas.jpg" />
+    <cell id="13" image="pinturas y disolventes.jpg" />
+    <cell id="14" image="radiografias.jpg" />
+   </cells>
+   <cells rows="5" cols="3" cellWidth="206.0" cellHeight="99.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Aceite mineral</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Aceite vegetal</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Aerosoles</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Baterias</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Equipos eléctricos</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escombros</p>
+    </cell>
+    <cell>
+     <p>Fluorescentes</p>
+    </cell>
+    <cell>
+     <p>Frigoríficos</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Jardinería</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Metal</p>
+    </cell>
+    <cell>
+     <p>Muebles y enseres</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Neumáticos</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pilas</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pinturas y disolventes</p>
+    </cell>
+    <cell>
+     <p>Radiografías</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell image="aceite mineral.jpg">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xCCCCCC" alternative="0xFFFF00" />
+     </style>
+     <p>Aceite mineral</p>
+    </cell>
+    <cell image="aceite vegetal.jpg">
+     <p>Aceite vegetal</p>
+    </cell>
+    <cell image="aerosoles.jpg">
+     <p>Aerosoles</p>
+    </cell>
+    <cell image="baterias.jpg">
+     <p>Baterías</p>
+    </cell>
+    <cell image="equipos electricos.jpg">
+     <p>Equipos eléctricos</p>
+    </cell>
+    <cell image="escombros.jpg">
+     <p>Escombros</p>
+    </cell>
+    <cell image="fluorescentes.jpg">
+     <p>Fluorescentes</p>
+    </cell>
+    <cell image="frigoríficos.jpg">
+     <p>Frigoríficos</p>
+    </cell>
+    <cell image="jardineria.jpg">
+     <p>Jardinería</p>
+    </cell>
+    <cell image="metal.jpg">
+     <p>Metal</p>
+    </cell>
+    <cell image="muebles y enseres.jpg">
+     <p>Muebles y enseres</p>
+    </cell>
+    <cell image="neumaticos.jpg">
+     <p>Neumáticos</p>
+    </cell>
+    <cell image="pilas.jpg">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pilas</p>
+    </cell>
+    <cell image="pinturas y disolventes.jpg">
+     <p>Pinturas y disolventes</p>
+    </cell>
+    <cell image="radiografias.jpg">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xCCCCCC" alternative="0xFFFF00" />
+     </style>
+     <p>Radiogrfías</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="85o5o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" border="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Haz parejas</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aleluya.wav" />
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡ Inténtalo de nuevo !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="16" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="279.0" cellHeight="120.0" border="true" id="primary">
+    <style shadow="true">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xCCCCCC" shadow="0xCCFF00" inactive="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell txtAlign="left,middle" imgAlign="right,middle" avoidOverlapping="true" image="aceite mineral.jpg">
+     <p>Aceite mineral</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" image="aceite vegetal.jpg">
+     <p>Aceite </p>
+     <p>vegetal</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" image="aerosoles.jpg">
+     <p>Aerosoles</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" image="baterias.jpg">
+     <p>Baterías</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="right,middle" image="equipos electricos.jpg">
+     <p>Equipos </p>
+     <p>eléctricos</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="85o6" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Identifica cada símbolo</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡  Muy bien !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  hasta  la  actividad  85o4 y  anota  en  tu  cuaderno  la  información  que  necesites. Ten  en  cuenta  las  tildes.</p>
+    </helpWindow>
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="N.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="5" cellWidth="144.0" cellHeight="135.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell id="0" image="aceite mineral.jpg" />
+    <cell id="1" image="aceite vegetal.jpg" />
+    <cell id="2" image="aerosoles.jpg" />
+    <cell id="3" image="baterias.jpg" />
+    <cell id="4" image="equipos electricos.jpg" />
+    <cell id="5" image="escombros.jpg" />
+    <cell id="6" image="fluorescentes.jpg" />
+    <cell id="7" image="frigoríficos.jpg" />
+    <cell id="8" image="jardineria.jpg" />
+    <cell id="9" image="metal.jpg" />
+    <cell id="10" image="muebles y enseres.jpg" />
+    <cell id="11" image="neumaticos.jpg" />
+    <cell id="12" image="pilas.jpg" />
+    <cell id="13" image="pinturas y disolventes.jpg" />
+    <cell id="14" image="radiografias.jpg" />
+   </cells>
+   <cells rows="3" cols="5" cellWidth="50.0" cellHeight="30.0" border="true" id="answers">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+    <cell>
+     <p>Aceite mineral</p>
+    </cell>
+    <cell>
+     <p>Aceite vegetal</p>
+    </cell>
+    <cell>
+     <p>Aerosoles</p>
+    </cell>
+    <cell>
+     <p>Baterias</p>
+    </cell>
+    <cell>
+     <p>Electrodomésticos</p>
+    </cell>
+    <cell>
+     <p>Escombros</p>
+    </cell>
+    <cell>
+     <p>Fluorescentes</p>
+    </cell>
+    <cell>
+     <p>Frigoríficos</p>
+    </cell>
+    <cell>
+     <p>Jardinería</p>
+    </cell>
+    <cell>
+     <p>Metal</p>
+    </cell>
+    <cell>
+     <p>Muebles y enseres</p>
+    </cell>
+    <cell>
+     <p>Neumáticos</p>
+    </cell>
+    <cell>
+     <p>Pilas</p>
+    </cell>
+    <cell>
+     <p>Pinturas y disolventes</p>
+    </cell>
+    <cell>
+     <p>Radiografías</p>
+    </cell>
+   </cells>
+   <cells rows="3" cols="5" border="true" image="recicladibujo.jpg" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="3" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="85o7" code="">
+   <description />
+   <messages>
+    <cell image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.wav" />
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="25" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="punto limpio movil redimensionada.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="85o8" code="">
+   <description />
+   <messages>
+    <cell image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="puzzle.wav" />
+    </cell>
+    <cell type="final">
+     <style />
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <eventSounds>
+     <sound id="actionError" file="N.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="CISNES.jpg">
+    <style />
+    <shaper class="@TriangularJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="85o9" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>8 materiales para llevar al punto limpio.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Estás hecho un experto!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="10" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <textGrid rows="16" columns="10" cellWidth="32.0" cellHeight="42.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>ETIECA**********</row>
+     <row>N******SORBMOCSE</row>
+     <row>S******S***E**E*</row>
+     <row>E*****A****T**L*</row>
+     <row>R****Í*****A**O*</row>
+     <row>E***R******L**S*</row>
+     <row>S**E**********O*</row>
+     <row>**T***********R*</row>
+     <row>JARDINERÍA****E*</row>
+     <row>B*DISOLVENTES*A*</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">ACEITE</clue>
+    <clue id="1">AEROSOLES</clue>
+    <clue id="2">BATERÍAS</clue>
+    <clue id="3">ESCOMBROS</clue>
+    <clue id="4">JARDINERÍA</clue>
+    <clue id="5">METAL</clue>
+    <clue id="6">ENSERES</clue>
+    <clue id="7">DISOLVENTES</clue>
+   </clues>
+   <cells rows="4" cols="2" cellWidth="148.0" cellHeight="105.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="4" />
+    <cell image="aceite mineral.jpg" />
+    <cell image="aerosoles.jpg" />
+    <cell image="baterias.jpg" />
+    <cell image="escombros.jpg" />
+    <cell image="jardineria.jpg" />
+    <cell image="metal.jpg" />
+    <cell image="muebles y enseres.jpg" />
+    <cell image="pinturas y disolventes.jpg" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="86" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Las bombillas se llevan al punto limpio.</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="final">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Eres  una  persona  con  "luces".</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Se te ha apagado la luz. ¡¡ Inténtalo de nuevo!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="bombillas.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="86o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Pilator2.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Hay que usar  bombillas de bajo consumo!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x6666FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCCCFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="false" image="bombillas.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="aceite mineral.jpg" file="aceite_mineral.jpg" />
+  <media name="aceite vegetal.jpg" file="aceite_vegetal.jpg" />
+  <media name="aerosoles.jpg" file="aerosoles.jpg" />
+  <media name="baterias.jpg" file="baterias.jpg" />
+  <media name="bombillas.jpg" file="bombillas.jpg" />
+  <media name="cartel puto limpio redimensionada.jpg" file="cartel_puto_limpio_redimensionada.jpg" />
+  <media name="CISNES.jpg" file="cisnes.jpg" />
+  <media name="equipos electricos.jpg" file="equipos_electricos.jpg" />
+  <media name="escombros.jpg" file="escombros.jpg" />
+  <media name="fluorescentes.jpg" file="fluorescentes.jpg" />
+  <media name="frigoríficos.jpg" file="frigorificos.jpg" />
+  <media name="jardineria.jpg" file="jardineria.jpg" />
+  <media name="LAGO MONTAÑA.jpg" file="lago_montana.jpg" />
+  <media name="metal.jpg" file="metal.jpg" />
+  <media name="muebles y enseres.jpg" file="muebles_y_enseres.jpg" />
+  <media name="neumaticos.jpg" file="neumaticos.jpg" />
+  <media name="pilas.jpg" file="pilas.jpg" />
+  <media name="Pilator.jpg" file="pilator.jpg" />
+  <media name="Pilator2.jpg" file="pilator2.jpg" />
+  <media name="pinturas y disolventes.jpg" file="pinturas_y_disolventes.jpg" />
+  <media name="portada redimensionada.jpg" file="portada_redimensionada.jpg" />
+  <media name="punto limpio movil redimensionada.jpg" file="punto_limpio_movil_redimensionada.jpg" />
+  <media name="punto limpio.jpg" file="punto_limpio.jpg" />
+  <media name="radiografias.jpg" file="radiografias.jpg" />
+  <media name="recicladibujo.jpg" file="recicladibujo.jpg" />
+  <media name="reciclaje_de_neumaticos.jpg" file="reciclaje_de_neumaticos.jpg" />
+  <media name="nowhere.mid" file="nowhere.mid" />
+  <media name="N.mp3" file="n.mp3" />
+  <media name="MiCole_n.TTF" file="micole_n.ttf" />
+  <media name="aleluya.wav" file="aleluya.wav" />
+  <media name="aplauso2.wav" file="aplauso2.wav" />
+  <media name="bravo.wav" file="bravo.wav" />
+  <media name="estupendo.wav" file="estupendo.wav" />
+  <media name="puzzle.wav" file="puzzle.wav" />
+  <media name="viva.wav" file="viva.wav" />
+ </mediaBag>
+</JClicProject>
+

@@ -1,0 +1,2893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="abcsons" version="0.1.3">
+ <settings>
+  <title>JP-ABC Juego Interactivo</title>
+  <revision description="created" date="10/23/17" />
+  <author name="Ana Rosiris Mosquera Guerrero" mail="ana_mosquera@cun.edu.co" />
+  <language>es</language>
+  <description>
+   <p>Juegos simples y encantadores que buscan familiarizar a los niños con los animales, las letras, los números, los objetos y demás. Mediante la emisión de sonidos y su relación con las letras y los dibujos se busca estimular el temprano aprendizaje de los niños.</p>
+  </description>
+  <descriptors area-codes="lleng" level-codes="INF, PRI">animales, letras, números, sonido</descriptors>
+  <skin file="@blue.xml" />
+  <cover file="abcsons.png" />
+  <thumb file="abcsons100.png" />
+  <meta_langs>es,ca,en</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>Juegos simples y encantadores que buscan familiarizar a los niños con los animales, las letras, los números, los objetos y demás. Mediante la emisión de sonidos y su relación con las letras y los dibujos se busca estimular el temprano aprendizaje de los niños.</p>
+   </description>
+   <description language="ca">
+    <p>Jocs simples i encantadors que busquen familiaritzar els infants amb els animals, les lletres, els números, els objectes i altres. Mitjançant l'emissió de sons i la seva relació amb les lletres i els dibuixos es busca estimular l'aprenentatge dels infants.</p>
+   </description>
+   <description language="en">
+    <p>Simple and charming play games that wants to familiarize children with animals, letters, numbers, objects and more. With sounds and its relation with letters and drawings it wants to stimulate the early learning of children.</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="INICIO" name="PRINCIPAL" />
+  <item id="PRESENTACIÓN" name="PRESENTACIÓN">
+   <jump action="STOP" id="forward" />
+  </item>
+  <item id="JUEGO DE EXPLORACIÓN" name="EXPLOR 1 LETRAS Y OBJETOS">
+   <jump tag="PRESENTACIÓN" id="back" />
+  </item>
+  <item name="EXPLOR 2 APRENDE LOS NÚMEROS" />
+  <item name="EXPLOR 1 EXPLORACION DE LETRAS" />
+  <item name="EXPLOR 4 APRENDIENDO LAS LETRAS Y ANIMALES">
+   <jump tag="PRESENTACIÓN" id="forward" />
+  </item>
+  <item id="JUEGOS DE TEXTO" name="TEXT 4 ESCRIBE EL NOMBRE DEL OBJETO">
+   <jump tag="PRESENTACIÓN" id="back" />
+  </item>
+  <item name="TEXT 3 ESCRIBE NOMBRE DEL ANIMAL" />
+  <item name="TEXT 4 ESCRIBE EL NOMBRE DE LA FRUTAS" />
+  <item name="TEXT 1 ESCRIBE LA LETRA">
+   <jump tag="PRESENTACIÓN" id="forward" />
+  </item>
+  <item id="JUEGOS DE ASOCIACIÓN SIMPLE" name="AS SIM 2 ASOCIA LOS NUMEROS">
+   <jump tag="PRESENTACIÓN" id="back" />
+  </item>
+  <item name="AS SIM 3 ANIMALETRAS" />
+  <item name="AS SIM 3 ASOCIA EL ANIMAL" />
+  <item name="AS SIM ASOCIA LA FRUTA" />
+  <item name="AS SIM 4 ASOCIA EL OBJETO">
+   <jump tag="PRESENTACIÓN" id="forward" />
+  </item>
+  <item id="JUEGOS DE MEMORIA" name="MEMORY 3 JUEGO DE MEMORIA ANIMALES">
+   <jump tag="PRESENTACIÓN" id="back" />
+  </item>
+  <item name="MEMORY 2 JUEGO DE MEMORIA NUMEROS" />
+  <item name="MEMORY 1 JUEGO DE MEMORIA LETRAS" />
+  <item name="MEMORY 4 JUEGO DE MEMORIA FRUTAS">
+   <jump tag="PRESENTACIÓN" id="forward" />
+  </item>
+  <item id="JUEGOS DE PUZZLE" name="PUZZ D 1 ORDENA LAS  LETRAS">
+   <jump tag="PRESENTACIÓN" id="back" />
+  </item>
+  <item name="PUZZ D 1 PONER LAS LETRAS EN ORDEN" />
+  <item name="PUZZ E 2 ORDENAR LOS NUMEROS" />
+  <item name="PUZZ D 2 PONER LOS NUMEROS EN SU ORDEN" />
+  <item name="PUZZ D 2 ORDENA LOS NUMEROS">
+   <jump tag="PRESENTACIÓN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="AS SIM 2 ASOCIA LOS NUMEROS" code="">
+   <description>
+    <p>Relaciónar el número con el nombre que le corresponde</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+      <color background="0x99CCFF" />
+     </style>
+     <p>Pulsa el número, juega y aprende.</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+      <color background="0x99CCFF" />
+     </style>
+     <p>¡Muy Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+      <color background="0x99CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="accion finalizada con errores.mp3" />
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x99FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3399FF" border="true" />
+    <eventSounds>
+     <sound id="start" file="pulsa numero juega y aprende.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="274.0" cellHeight="362.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0x3399FF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="1-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 1_medium_quality.mp3" />
+    </cell>
+    <cell image="2-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 2_medium_quality.mp3" />
+    </cell>
+    <cell image="3-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 3_medium_quality.mp3" />
+    </cell>
+    <cell image="4-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 4_medium_quality.mp3" />
+    </cell>
+    <cell image="5-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 5_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="274.0" cellHeight="166.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell border="false">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0x0033FF" shadow="0x000000" inactive="0x3399FF" />
+     </style>
+     <p>UNO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0x33CC00" shadow="0x000000" inactive="0x3399FF" />
+     </style>
+     <p>DOS</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFF9F3D" shadow="0x000000" inactive="0x3399FF" />
+     </style>
+     <p>TRES</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0x990099" shadow="0x000000" inactive="0x3399FF" alternative="0x000000" />
+     </style>
+     <p>CUATRO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0x66FF66" shadow="0x000000" inactive="0x3399FF" />
+     </style>
+     <p>CINCO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AS SIM 3 ANIMALETRAS" code="">
+   <description>
+    <p>Relaciónarla letras con el animal que le corresponde</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Relaciona cada letras con el animal correspondiente</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="27" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xFF6600" dest="0xFFFFFF" angle="0" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="start" file="relaciona letra con animal corresp.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="400.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell border="false" image="A LETRA.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="a de abeja_medium_quality.mp3" />
+    </cell>
+    <cell border="false" image="B LETRA.png">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0xFFFFFF" border="0x666666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="burro_medium_quality.mp3" />
+    </cell>
+    <cell border="false" image="E LETRA.png">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="E elefante_medium_quality.mp3" />
+    </cell>
+    <cell border="false" image="G LETRA.png">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="G gato_medium_quality.mp3" />
+    </cell>
+    <cell border="false" image="J LETRA.png">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="J jirafa_medium_quality.mp3" />
+    </cell>
+    <cell border="false" image="O LETRA.png">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="O oveja_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="6" cellWidth="300.0" cellHeight="400.0" border="false" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="6" rows="1" />
+    <cell border="false" image="LETRA A..jpg">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0x009999" border="0x009999" />
+     </style>
+    </cell>
+    <cell border="false" image="LETRA B.png">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0xCC66FF" border="0x009999" />
+     </style>
+    </cell>
+    <cell border="false" image="LETRA E.png">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0x66CCFF" border="0x009999" />
+     </style>
+    </cell>
+    <cell border="false" image="LETRA G.png">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0x00CCCC" border="0x009999" />
+     </style>
+    </cell>
+    <cell border="false" image="LETRA J.png">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0x00CC99" border="0x009999" />
+     </style>
+    </cell>
+    <cell border="false" image="LETRA O.png">
+     <style transparent="true" borderStroke="0.0" markerStroke="5.0">
+      <color background="0xFFCCFF" border="0x009999" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AS SIM 3 ASOCIA EL ANIMAL" code="">
+   <description>
+    <p>Relaciónar el animal con el nombre que le corresponde</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Relaciona el animal con su nombre</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="20" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x006666" border="true" />
+    <eventSounds>
+     <sound id="start" file="relaciona el animal con su nombre.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="205.0" cellHeight="260.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell imgAlign="middle,bottom" image="ABEJA SOLA.jpg">
+     <style>
+      <font family="Dialog" size="26" />
+      <color background="0xCCFFFF" inactive="0x006666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="abeja_medium_quality.mp3" />
+    </cell>
+    <cell image="BURRO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCC99FF" inactive="0x006666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="burro_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="ELEFANTE SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0x006666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="elefante_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="JIRAFA SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0x006666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="jirafa_high_quality.mp3" />
+    </cell>
+    <cell image="OVEJA SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCC99FF" inactive="0x006666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="oveja_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="GATO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0x006666" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="gato_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="244.0" cellHeight="208.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="17" bold="true" />
+     <color inactive="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <style shadow="true">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF99" shadow="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>ABEJA</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xCC99FF" shadow="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>BURRO</p>
+    </cell>
+    <cell>
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0x99CCFF" shadow="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>ELEFANTE</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF99" shadow="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>JIRAFA</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>OVEJA</p>
+    </cell>
+    <cell>
+     <style shadow="true">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0x99CCFF" shadow="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>GATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AS SIM 4 ASOCIA EL OBJETO" code="">
+   <description>
+    <p>Relaciónar el objeto con el nombre que le corresponde</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Relaciona el objeto con su nombre</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x99FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x66CCFF" border="true" />
+    <eventSounds>
+     <sound id="start" file="relaciona el objeto con su nombre.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="900.0" cellHeight="900.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell imgAlign="middle,bottom" image="CASA SOLA.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xCCFFFF" inactive="0x66CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="casa_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="DADOS SOLA.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xCCFFFF" inactive="0x66CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="dado_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="FLOR SOLA.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xCCFFFF" inactive="0x66CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="flor_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="HELADO SOLA.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFCCFF" inactive="0x66CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="helado_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="LUNA SOLA.png">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xCCFFFF" inactive="0x66CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="luna_medium_quality.mp3" />
+    </cell>
+    <cell imgAlign="middle,bottom" image="TREN SOLA.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xCCFFFF" inactive="0x66CCFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="tren_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="999.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="CASA NOMBRE.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0x9CB779" inactive="0x66CCFF" />
+     </style>
+    </cell>
+    <cell image="DADO NOMBRE.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0x66CCFF" inactive="0x66CCFF" />
+     </style>
+    </cell>
+    <cell image="FLOR NOMBRE.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0x66CCFF" inactive="0x66CCFF" />
+     </style>
+    </cell>
+    <cell image="HELADO NOMBRE.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xCC99FF" inactive="0x66CCFF" />
+     </style>
+    </cell>
+    <cell image="LUNA NOMBRE.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0x66CCFF" inactive="0x66CCFF" />
+     </style>
+    </cell>
+    <cell image="TREN NOMBRE.png">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0x99FF99" inactive="0x66CCFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="AS SIM ASOCIA LA FRUTA" code="">
+   <description>
+    <p>Relaciónar la fruta con el nombre que le corresponde</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Relaciona la fruta con su nombre</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xCCFFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x006666" border="true" />
+    <eventSounds>
+     <sound id="start" file="relaciona fruta con nombre.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" bold="true" />
+     <color inactive="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="BANANO-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="UVAS-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="MANGO-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="MANZANA.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="NARANJAS.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="PAPAYA.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell avoidOverlapping="true" image="PERAS.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="SANDIA-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+    <cell image="PIÑA-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x006666" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0x006666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xCC9900" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>BANANO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x990099" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>UVAS</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xFF9900" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>MANGO</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xFF0033" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>MANZANA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xFF6600" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>NARANJA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xFF9900" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>PAPAYA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x00CC33" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>PERA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xFF0000" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>SANDÍA</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0xFF9933" background="0xFFFFFF" inactive="0x006666" />
+     </style>
+     <p>PIÑA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="EXPLOR 1 EXPLORACION DE LETRAS" code="">
+   <description>
+    <p>seleccional la letras y escuchar </p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Seleciona la letra, escucha y aprende</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x33CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x3399FF" border="true" />
+    <eventSounds>
+     <sound id="start" file="selecciona letra escuha y aprende.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="3" cellWidth="300.0" cellHeight="400.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="Y LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Y yoyo_medium_quality.mp3" />
+    </cell>
+    <cell id="1" image="D LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="D dado_medium_quality.mp3" />
+    </cell>
+    <cell id="2" image="F LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="F Flor_medium_quality.mp3" />
+    </cell>
+    <cell id="3" image="X LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="X xilófono_medium_quality.mp3" />
+    </cell>
+    <cell id="4" image="K LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="K kiosko_medium_quality.mp3" />
+    </cell>
+    <cell id="5" image="P LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="p piano_medium_quality.mp3" />
+    </cell>
+    <cell id="6" image="R LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="reloj_medium_quality.mp3" />
+    </cell>
+    <cell id="7" image="T LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="T tren_medium_quality.mp3" />
+    </cell>
+    <cell id="8" image="W LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="W winsurtf_medium_quality.mp3" />
+    </cell>
+    <cell id="9" image="L LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="L luna_medium_quality.mp3" />
+    </cell>
+    <cell id="10" image="M LETRA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="m manzana_medium_quality.mp3" />
+    </cell>
+    <cell id="11" image="Q LETRTA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="queso_high_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="4" cols="3" cellWidth="800.0" cellHeight="900.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell image="YOYO.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="DADOS.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="FLOR.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="XILOFONO.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="KIOSKO.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="PIANO.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="RELOJ.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="TREN.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="WINSDSURF.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="LUNA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="MANZANA.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="QUESO.png">
+     <style shadow="true">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" shadow="0xFFFFFF" alternative="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="EXPLOR 1 LETRAS Y OBJETOS" code="">
+   <description>
+    <p>Actividad de exploración&#xD;</p>
+    <p>Este juego se trata de explorar. al tocar una letra en la casilla vacia sale un animal, objeto, fruta correspondiente a la letra que seleccionaste.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Selecciona la letra, escucha y aprende</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFFCC">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x006666" border="true" />
+    <eventSounds>
+     <sound id="start" file="selecciona letra escuha y aprende.mp3" />
+     <sound id="click" file="mensaje de acierto.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="100.0" cellHeight="100.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0" imgAlign="middle,top" image="Aa.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99CC00" />
+     </style>
+    </cell>
+    <cell id="1" imgAlign="middle,bottom" image="Ee.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99CCFF" />
+     </style>
+    </cell>
+    <cell id="2" imgAlign="middle,top" image="Ii.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99CC00" />
+     </style>
+    </cell>
+    <cell id="3" image="Oo.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99CCFF" />
+     </style>
+    </cell>
+    <cell id="4" imgAlign="middle,top" image="Uu.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x99CC00" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="297.0" cellHeight="400.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color background="0xFFFFCC" inactive="0xFFFFCC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell image="LETRA A..jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xD5FFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="a de abeja_medium_quality.mp3" />
+    </cell>
+    <cell image="LETRA E.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="E elefante_medium_quality.mp3" />
+    </cell>
+    <cell image="LETRA I.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="I iglu_medium_quality.mp3" />
+    </cell>
+    <cell image="LETRA O.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="O oveja_medium_quality.mp3" />
+    </cell>
+    <cell image="LETRA U.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="U uvas_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@panels.Explore" name="EXPLOR 2 APRENDE LOS NÚMEROS" code="">
+   <description>
+    <p>Actividad de exploración&#xD;</p>
+    <p>Este juego se trata de explorar. al tocar un  numero en la casilla vacia sale el mismo numero con la cantidad y de esta forma te  informa de que número se trata</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Pulsa el número, juega y aprende</p>
+    </cell>
+   </messages>
+   <settings margin="20" report="false">
+    <container bgColor="0x99FFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x99FFFF" border="false" />
+    <eventSounds>
+     <sound id="start" file="pulsa numero juega y aprende.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xCC00FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0" image="1..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 1_medium_quality.mp3" />
+    </cell>
+    <cell id="1" image="2..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 2_medium_quality.mp3" />
+    </cell>
+    <cell id="2" image="3..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 3_medium_quality.mp3" />
+    </cell>
+    <cell id="3" image="4..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 4_medium_quality.mp3" />
+    </cell>
+    <cell id="4" image="5..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 5_medium_quality.mp3" />
+    </cell>
+    <cell id="5" image="6..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 6_medium_quality.mp3" />
+    </cell>
+    <cell id="6" image="7..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 7_medium_quality.mp3" />
+    </cell>
+    <cell id="7" image="8..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 8_medium_quality.mp3" />
+    </cell>
+    <cell id="8" image="9..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 9_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="9" cols="1" cellWidth="300.0" cellHeight="400.0" border="true" id="secondary">
+    <style>
+     <color background="0xFF99FF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="9" />
+    <cell border="true" image="1-resized.jpg" />
+    <cell image="2-resized.jpg" />
+    <cell image="3-resized.jpg" />
+    <cell image="4-resized.jpg" />
+    <cell image="5-resized.jpg" />
+    <cell image="6-resized.jpg" />
+    <cell image="7-resized.jpg" />
+    <cell image="8-resized.jpg" />
+    <cell image="9-resized.jpg" />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="EXPLOR 4 APRENDIENDO LAS LETRAS Y ANIMALES" code="">
+   <description>
+    <p>Actividad de exploración&#xD;</p>
+    <p>Este juego se trata de explorar al tocar una letra en la casilla vacia sale la misma con animal y objeto  &#xD;</p>
+    <p>correspondiente.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Selecciona la letra, escucha y aprende</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x33FFFF">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+    <eventSounds>
+     <sound id="start" file="selecciona letra escuha y aprende.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="7" cellWidth="400.0" cellHeight="400.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="7" rows="4" />
+    <cell id="0" border="false" image="A LETRA.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="a de abeja_medium_quality.mp3" />
+    </cell>
+    <cell id="1" image="B LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="burro_medium_quality.mp3" />
+    </cell>
+    <cell id="2" image="C LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="c casa_medium_quality.mp3" />
+    </cell>
+    <cell id="3" image="D LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="D dado_medium_quality.mp3" />
+    </cell>
+    <cell id="4" image="E LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="E elefante_medium_quality.mp3" />
+    </cell>
+    <cell id="5" image="F LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="F Flor_medium_quality.mp3" />
+    </cell>
+    <cell id="6" image="G LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="G gato_medium_quality.mp3" />
+    </cell>
+    <cell id="7" image="H LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="H helado_medium_quality.mp3" />
+    </cell>
+    <cell id="8" image="I LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="I iglu_medium_quality.mp3" />
+    </cell>
+    <cell id="9" image="J LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="J jirafa_medium_quality.mp3" />
+    </cell>
+    <cell id="10" image="K LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="K kiosko_medium_quality.mp3" />
+    </cell>
+    <cell id="11" image="L LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="L luna_medium_quality.mp3" />
+    </cell>
+    <cell id="12" image="M LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="m manzana_medium_quality.mp3" />
+    </cell>
+    <cell id="13" image="N LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="n naranja_medium_quality.mp3" />
+    </cell>
+    <cell id="14" image="LETRA Ñ.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="ñ_medium_quality.mp3" />
+    </cell>
+    <cell id="15" image="O LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="O oveja_medium_quality.mp3" />
+    </cell>
+    <cell id="16" image="P LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="p piano_medium_quality.mp3" />
+    </cell>
+    <cell id="17" image="Q LETRTA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="queso_high_quality.mp3" />
+    </cell>
+    <cell id="18" image="R LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="reloj_medium_quality.mp3" />
+    </cell>
+    <cell id="19" image="S LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="S Sol_medium_quality.mp3" />
+    </cell>
+    <cell id="20" image="T LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="T tren_medium_quality.mp3" />
+    </cell>
+    <cell id="21" image="U LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="U uvas_medium_quality.mp3" />
+    </cell>
+    <cell id="22" image="V LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="V ventana_medium_quality.mp3" />
+    </cell>
+    <cell id="23" image="W LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="W winsurtf_medium_quality.mp3" />
+    </cell>
+    <cell id="24" image="X LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="X xilófono_medium_quality.mp3" />
+    </cell>
+    <cell id="25" image="Y LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Y yoyo_medium_quality.mp3" />
+    </cell>
+    <cell id="26" image="Z LETRA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="Z zanahoria_medium_quality.mp3" />
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xCCFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="9" cols="3" cellWidth="999.0" cellHeight="999.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="17" />
+     <color background="0x00CCCC" inactive="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="9" />
+    <cell image="ABEJA.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="BURRO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="CASA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="DADOS.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="ELEFANTE.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="FLOR.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="GATO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="HELADO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="IGLU.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="JIRAFA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="KIOSKO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="LUNA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="MANZANA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="NARANJA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="LETRA Ñ.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="OVEJA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="PIANO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="QUESO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="RELOJ.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="SOL.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="TREN.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="UVA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="VENTANA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="WINSDSURF.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="XILOFONO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="YOYO.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+    <cell image="ZANAHORIA.png">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCCC" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="MEMORY 1 JUEGO DE MEMORIA LETRAS" code="">
+   <description>
+    <p>puzzle de agujeros&#xD;</p>
+    <p>Este juego se trata de emparejar la letra, para esto debes tener buena memoria para asi mismo recordar donde esta la pareja de la letra que seleccionaste.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Busca la pareja de letras</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF3300" border="true" />
+    <eventSounds>
+     <sound id="start" file="busca la pareja de letras.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="400.0" cellHeight="400.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="Backyardigans_-_A-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="Backyardigans_-_E-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="Backyardigans_-_I-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="Backyardigans_-_O-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="Backyardigans_-_U-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="IMAGEN.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="17" />
+      <color background="0x336600" inactive="0x99FFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="MEMORY 2 JUEGO DE MEMORIA NUMEROS" code="">
+   <description>
+    <p>puzzle de agujeros&#xD;</p>
+    <p>Este juego se trata de emparejar los números, para esto debes tener buena memoria para asi mismo recordar donde esta la pareja del numero que seleccionaste.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Busca la pareja de números</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0000" border="true" />
+    <eventSounds>
+     <sound id="start" file="busca pareja de numeros.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="183.0" cellHeight="241.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell border="true" image="2-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFF3300" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell border="true" image="3-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFF3300" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell border="true" image="1-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFF3300" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell border="true" image="4-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFF3300" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell border="true" image="5-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFF3300" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell border="true" image="6-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFF3300" inactive="0x99FFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="MEMORY 3 JUEGO DE MEMORIA ANIMALES" code="">
+   <description>
+    <p>puzzle de agujeros&#xD;</p>
+    <p>Este juego se trata de emparejarlos animales, para esto debes tener buena memoria para asi mismo recordar donde esta la pareja del animal que seleccionaste.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Busca la pareja de animales</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x339900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CC66" border="true" />
+    <eventSounds>
+     <sound id="start" file="busca la pareja de animales.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="299.0" cellHeight="331.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell imgAlign="middle,bottom" image="ABEJA.jpg">
+     <style>
+      <font family="Dialog" size="26" />
+      <color background="0xCCFFFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="BURRO.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCABFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="OVEJA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCABFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="GATO.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="MEMORY 4 JUEGO DE MEMORIA FRUTAS" code="">
+   <description>
+    <p>puzzle de agujeros&#xD;</p>
+    <p>Este juego se trata de emparejar las frutas, para esto debes tener buena memoria para asi mismo recordar donde esta la pareja del numero que seleccionaste.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Busca la pareja de frutas</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFFCCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC0000" border="true" />
+    <eventSounds>
+     <sound id="start" file="busca la pareja de frutas.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="2" cellWidth="200.0" cellHeight="300.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="2" rows="2" />
+    <cell image="MANZANA.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="BANANO-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="MELOCOTON.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+    <cell image="PERAS.jpg">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" inactive="0x99FFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="PRESENTACIÓN" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Wide Latin" size="36" bold="true" />
+      <color foreground="0x0066FF" background="0x99CCFF" />
+     </style>
+     <p>ESCOGE LA ACTIVIDAD</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x0099FF">
+     <gradient source="0x000000" dest="0x0099FF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x0099FF" border="true">
+     <gradient source="0x000000" dest="0x0099FF" angle="0" />
+    </window>
+    <eventSounds>
+     <sound id="start" file="inicio de juegos.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="1312.0" cellHeight="652.0" border="true">
+    <style borderStroke="0.7" markerStroke="0.1">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0x0099CC" />
+     <gradient source="0x000000" dest="0x0099FF" angle="0" />
+    </style>
+    <shaper class="@Holes" cols="1" rows="1">
+     <shape comment="0">rectangle:0.024194,0.111268,0.268145,0.364789</shape>
+     <shape comment="1">rectangle:0.024194,0.507042,0.265121,0.332394</shape>
+     <shape comment="2">rectangle:0.342742,0.111268,0.259073,0.364789</shape>
+     <shape comment="3">rectangle:0.34375,0.512676,0.262097,0.323944</shape>
+     <shape comment="4">M:0.679942,0.640259|B:0.679942,0.620709,0.729566,0.604861,0.79078,0.604861|B:0.851993,0.604861,0.901617,0.620709,0.901617,0.640259|B:0.901617,0.659809,0.851993,0.675657,0.794355,0.674648|B:0.726815,0.673239,0.679942,0.659809,0.679942,0.640259</shape>
+     <shape comment="5">rectangle:0.65121,0.115493,0,0</shape>
+     <shape comment="6">rectangle:0.653226,0.116901,0.262097,0.360563</shape>
+    </shaper>
+    <cell txtAlign="middle,bottom" border="true" image="ABC 2.png">
+     <style shadow="true" borderStroke="10.0" markerStroke="2.7">
+      <font family="Arial Black" size="22" bold="true" />
+      <color background="0x0099FF" border="0x0099FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="EXPLOR 1 LETRAS Y OBJETOS" />
+     <p>JUEGOS DE EXPLORACIÓN</p>
+    </cell>
+    <cell txtAlign="middle,bottom" border="true" image="PAISAJE ANIMAL-resized.jpg">
+     <style shadow="true" borderStroke="10.0" markerStroke="0.1">
+      <font family="Arial Black" size="22" bold="true" />
+      <color background="0x0099FF" border="0x0099FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="PUZZ D 1 ORDENA LAS  LETRAS" />
+     <p>JUEGOS DE PUZZLE </p>
+    </cell>
+    <cell txtAlign="middle,bottom" border="true" image="NUMEROS.jpg">
+     <style shadow="true" borderStroke="10.0" markerStroke="5.0">
+      <font family="Arial Black" size="22" bold="true" />
+      <color background="0x00FFFF" border="0x00FFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="AS SIM 2 ASOCIA LOS NUMEROS" />
+     <p>JUEGOS DE ASOCIACIÓN</p>
+    </cell>
+    <cell txtAlign="middle,bottom" border="true" image="OTROS JUEGOS DIVERTIDOS.jpg">
+     <style shadow="true" borderStroke="0.7" markerStroke="0.1">
+      <font family="Arial Black" size="22" bold="true" />
+      <color background="0xFFFFFF" border="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="TEXT 4 ESCRIBE EL NOMBRE DEL OBJETO" />
+     <p>JUEGOS DE TEXTO</p>
+    </cell>
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="26" bold="true" />
+      <color background="0xCC0000" />
+     </style>
+     <media type="EXIT" level="1" />
+     <p>SALIR</p>
+    </cell>
+    <cell />
+    <cell txtAlign="middle,bottom" border="true" image="JUEGO MEMORIA-resized.jpg">
+     <style shadow="true" borderStroke="10.0" markerStroke="2.7">
+      <font family="Arial Black" size="22" bold="true" />
+      <color background="0x00CCFF" border="0x0099FF" />
+     </style>
+     <media type="RUN_CLIC_ACTIVITY" level="1" file="MEMORY 3 JUEGO DE MEMORIA ANIMALES" />
+     <p>JUEGOS DE MEMORIA</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="PRINCIPAL" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style shadow="true" transparent="true">
+      <font family="Wide Latin" size="26" bold="true" />
+      <color foreground="0x3300CC" />
+     </style>
+     <p>BIENVENIDOS JP-ABC JUEGO INTERACTIVO</p>
+    </cell>
+   </messages>
+   <settings margin="0" report="false">
+    <container bgColor="0x0099FF">
+     <gradient source="0x000000" dest="0x0099FF" angle="0" />
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x0099FF" transparent="true" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="999.0" cellHeight="708.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell border="false" image="PORTADA JUEGO JP-ABC..-resized1.jpg">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="17" bold="true" />
+      <color background="0x0099FF" />
+     </style>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="PUZZ D 1 ORDENA LAS  LETRAS" code="">
+   <description>
+    <p>puzzle doble&#xD;Este juego de trata de ordenar las letras segun su orden ascendente.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Ordena las letras</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC04709" border="true" />
+    <eventSounds>
+     <sound id="start" file="ORDENA LAS LETRAS.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="300.0" cellHeight="300.0" border="true">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0xFF9999" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0" image="Backyardigans_-_A-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido A_medium_quality.mp3" />
+    </cell>
+    <cell id="0" image="Backyardigans_-_E-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido e_medium_quality.mp3" />
+    </cell>
+    <cell id="0" image="Backyardigans_-_I-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido i_medium_quality.mp3" />
+    </cell>
+    <cell id="0" image="Backyardigans_-_O-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido o_medium_quality.mp3" />
+    </cell>
+    <cell id="0" image="Backyardigans_-_U-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido u_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="PUZZ D 1 PONER LAS LETRAS EN ORDEN" code="">
+   <description>
+    <p>puzzle doble&#xD;</p>
+    <p>Este juego de trata de ordenar las letras segun su orden ascendente.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+      <gradient source="0x428544" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>Ordena las vocales</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x99FF99">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <eventSounds>
+     <sound id="start" file="ordena las vocales.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="279.0" cellHeight="151.0" border="true">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell image="Aa.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido A_medium_quality.mp3" />
+    </cell>
+    <cell image="Ee.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido e_medium_quality.mp3" />
+    </cell>
+    <cell image="Ii.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido i_medium_quality.mp3" />
+    </cell>
+    <cell image="Oo.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido o_medium_quality.mp3" />
+    </cell>
+    <cell image="Uu.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido u_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="PUZZ D 2 ORDENA LOS NUMEROS" code="">
+   <description>
+    <p>puzzle doble&#xD;Este juego de trata de ordenar los numeros segun su orden ascendente.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Ordena los números </p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x00FF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00FF00" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="start" file="ORDENA LOS NUMEROS.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="400.0" cellHeight="400.0" border="true">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell border="false" image="1.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 1_medium_quality.mp3" />
+    </cell>
+    <cell image="2.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 2_medium_quality.mp3" />
+    </cell>
+    <cell image="3.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 3_medium_quality.mp3" />
+    </cell>
+    <cell image="4.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 4_medium_quality.mp3" />
+    </cell>
+    <cell image="5.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 5_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="BUA" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="PUZZ D 2 PONER LOS NUMEROS EN SU ORDEN" code="">
+   <description>
+    <p>puzzle doble&#xD;</p>
+    <p>Este juego de trata de colocar el las casillas vacias los números en su orden ascendente.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Pon los números en el orden correspondiente</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="20" dragCells="true" maxTime="120" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xCC66FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" transparent="true" border="true" />
+    <eventSounds>
+     <sound id="start" file="pon numeros orden corresp.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="155.0" cellHeight="198.0" border="true">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="1-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 1_medium_quality.mp3" />
+    </cell>
+    <cell image="2-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 2_medium_quality.mp3" />
+    </cell>
+    <cell image="3-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 3_medium_quality.mp3" />
+    </cell>
+    <cell image="4-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 4_medium_quality.mp3" />
+    </cell>
+    <cell image="5-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 5_medium_quality.mp3" />
+    </cell>
+    <cell image="6-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 6_medium_quality.mp3" />
+    </cell>
+    <cell image="7-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 7_medium_quality.mp3" />
+    </cell>
+    <cell image="8-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 8_medium_quality.mp3" />
+    </cell>
+    <cell image="9-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 9_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="PUZZ E 2 ORDENAR LOS NUMEROS" code="">
+   <description>
+    <p>puzzle de intercambio&#xD;</p>
+    <p>Este juego se trata de ordenar los números en su orden Ascendente.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Ordena los números</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxTime="100" countDownTime="false" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x333333" border="true" />
+    <eventSounds>
+     <sound id="start" file="ORDENA LOS NUMEROS.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 1.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="208.0" cellHeight="166.0" border="true">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="1..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 1_medium_quality.mp3" />
+    </cell>
+    <cell image="2..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 2_medium_quality.mp3" />
+    </cell>
+    <cell image="3..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 3_medium_quality.mp3" />
+    </cell>
+    <cell image="4..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 4_medium_quality.mp3" />
+    </cell>
+    <cell image="5..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 5_medium_quality.mp3" />
+    </cell>
+    <cell image="6..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 6_medium_quality.mp3" />
+    </cell>
+    <cell image="7..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 7_medium_quality.mp3" />
+    </cell>
+    <cell image="8..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 8_medium_quality.mp3" />
+    </cell>
+    <cell image="9..jpg">
+     <media type="PLAY_AUDIO" level="1" file="número 9_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="TEXT 1 ESCRIBE LA LETRA" code="">
+   <description>
+    <p>Escuchar la letras y escribirla con el teclado</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Escucha la letra, búscala en el teclado y escríbela</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x0099CC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x0066CC" border="true" />
+    <eventSounds>
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion correctamente finalizada.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="5" cellWidth="800.0" cellHeight="830.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color inactive="0x0066CC" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell id="0" image="Backyardigans_-_A-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido A_medium_quality.mp3" />
+    </cell>
+    <cell id="1" image="Backyardigans_-_E-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido e_medium_quality.mp3" />
+    </cell>
+    <cell id="2" image="Backyardigans_-_I-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido i_medium_quality.mp3" />
+    </cell>
+    <cell id="3" image="Backyardigans_-_O-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido o_medium_quality.mp3" />
+    </cell>
+    <cell id="4" image="Backyardigans_-_U-resized.jpg">
+     <media type="PLAY_AUDIO" level="1" file="sonido u_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="5" cellWidth="900.0" cellHeight="400.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="36" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="1" />
+    <cell>
+     <p>A</p>
+    </cell>
+    <cell>
+     <p>E</p>
+    </cell>
+    <cell>
+     <p>I</p>
+    </cell>
+    <cell>
+     <p>O</p>
+    </cell>
+    <cell>
+     <p>U</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="TEXT 3 ESCRIBE NOMBRE DEL ANIMAL" code="">
+   <description>
+    <p> Escichar y escribir el nombre del animal con el teclado</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Escribe el nombre del animal</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0x99FFFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x27E627" border="true" />
+    <eventSounds>
+     <sound id="start" file="escribe el nombre del animal.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="170.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color background="0x27E627" inactive="0x27E627" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" imgAlign="middle,bottom" image="ABEJA SOLA.jpg">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCDFFFF" inactive="0x27E627" />
+     </style>
+     <media type="PLAY_AUDIO" level="0" file="abeja_medium_quality.mp3" from="-2" to="3" />
+    </cell>
+    <cell id="1" imgAlign="middle,bottom" image="BURRO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xF2C1FC" inactive="0x27E627" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="burro_medium_quality.mp3" />
+    </cell>
+    <cell id="2" imgAlign="middle,bottom" image="ELEFANTE SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xC6E1FC" inactive="0x27E627" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="elefante_medium_quality.mp3" />
+    </cell>
+    <cell id="3" imgAlign="middle,bottom" image="GATO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xC6E1FC" inactive="0x27E627" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="gato_medium_quality.mp3" />
+    </cell>
+    <cell id="4" imgAlign="middle,bottom" image="JIRAFA SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xC6E1FC" inactive="0x27E627" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="jirafa_high_quality.mp3" />
+    </cell>
+    <cell id="5" imgAlign="middle,bottom" image="OVEJA SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xF2C1FC" inactive="0x27E627" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="oveja_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="3" cellWidth="400.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="26" bold="true" />
+     <color background="0x99FFFF" inactive="0x99FFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell>
+     <p>ABEJA</p>
+    </cell>
+    <cell>
+     <p>BURRO</p>
+    </cell>
+    <cell>
+     <p>ELEFANTE</p>
+    </cell>
+    <cell>
+     <p>GATO</p>
+    </cell>
+    <cell>
+     <p>JIRAFA</p>
+    </cell>
+    <cell>
+     <p>OVEJA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="TEXT 4 ESCRIBE EL NOMBRE DE LA FRUTAS" code="">
+   <description>
+    <p>Escribir nombre del la fruta con el teclado</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Selecciona una fruta y escribe su nombre con el teclado</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy Bien!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFFCC99">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF9966" border="true" />
+    <eventSounds>
+     <sound id="start" file="selecciona fruta y escribe su nombre.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="170.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" image="PIÑA-resized.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="25" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="1" image="PAPAYA.jpg">
+     <style>
+      <font family="Dialog" size="25" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="2" image="MANGO-resized.jpg">
+     <style>
+      <font family="Dialog" size="25" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="3" image="MANZANA.jpg">
+     <style>
+      <font family="Dialog" size="25" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="4" image="NARANJAS.jpg">
+     <style>
+      <font family="Dialog" size="25" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="5" image="PERAS.jpg">
+     <style>
+      <font family="Dialog" size="25" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="6" image="UVAS-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+    <cell id="7" image="SANDIA-resized.jpg">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF9966" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="400.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="26" bold="true" />
+     <color background="0xFF9966" inactive="0xFF9966" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <p>PIÑA</p>
+    </cell>
+    <cell>
+     <p>PAPAYA</p>
+    </cell>
+    <cell>
+     <p>MANGO</p>
+    </cell>
+    <cell>
+     <p>MANZANA</p>
+    </cell>
+    <cell>
+     <p>NARANJA</p>
+    </cell>
+    <cell>
+     <p>PERA</p>
+    </cell>
+    <cell>
+     <p>UVA</p>
+    </cell>
+    <cell>
+     <p>SANDÍA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="TEXT 4 ESCRIBE EL NOMBRE DEL OBJETO" code="">
+   <description>
+    <p>Escuchar y escribir el nombre del la objeto  con el teclado</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Selecciona el objeto y escribe su nombre</p>
+    </cell>
+    <cell type="final">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>¡Muy bien, lo lograste!</p>
+    </cell>
+    <cell type="finalError">
+     <style transparent="true">
+      <font family="Dialog" size="22" bold="true" />
+     </style>
+     <p>Inténtalo de nuevo</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxTime="100" countDownTime="true" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCC99" border="true" />
+    <eventSounds>
+     <sound id="start" file="selecciona el objeto y escribe su nombre.mp3" />
+     <sound id="click" file="al tocar un objeto.mp3" />
+     <sound id="actionError" file="mensaje error 2.mp3" />
+     <sound id="actionOk" file="mensaje de acierto.mp3" />
+     <sound id="finishedError" file="accion finalizada con errores.mp3" />
+     <sound id="finishedOk" file="accion correctamente finalizada.mp3" />
+    </eventSounds>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="4" cellWidth="231.0" cellHeight="196.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell id="0" txtAlign="middle,bottom" imgAlign="middle,bottom" image="CASA SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="casa_medium_quality.mp3" from="-3" to="2" />
+    </cell>
+    <cell id="1" imgAlign="middle,bottom" image="DADOS SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="dado_medium_quality.mp3" />
+    </cell>
+    <cell id="2" imgAlign="middle,bottom" image="HELADO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="helado_medium_quality.mp3" />
+    </cell>
+    <cell id="3" imgAlign="middle,bottom" image="LUNA SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="luna_medium_quality.mp3" />
+    </cell>
+    <cell id="4" imgAlign="middle,bottom" image="PIANO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="piano_medium_quality.mp3" />
+    </cell>
+    <cell id="5" imgAlign="middle,bottom" image="QUESO SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFCCFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="queso_high_quality.mp3" />
+    </cell>
+    <cell id="6" imgAlign="middle,bottom" image="RELOJ SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="reloj_medium_quality.mp3" />
+    </cell>
+    <cell id="7" imgAlign="middle,bottom" image="SOL SOLA.png">
+     <style>
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xCCFFFF" inactive="0xFFCC99" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="sol_medium_quality.mp3" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="4" cellWidth="256.0" cellHeight="87.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="26" bold="true" />
+     <color background="0xFFCC99" inactive="0xFFCC99" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="2" />
+    <cell>
+     <p>CASA</p>
+    </cell>
+    <cell>
+     <p>DADO</p>
+    </cell>
+    <cell>
+     <p>HELADO</p>
+    </cell>
+    <cell>
+     <p>LUNA</p>
+    </cell>
+    <cell>
+     <p>PIANO</p>
+    </cell>
+    <cell>
+     <p>QUESO</p>
+    </cell>
+    <cell>
+     <p>RELOJ</p>
+    </cell>
+    <cell>
+     <p>SOL</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="1-resized.jpg" file="1-resized.jpg" />
+  <media name="1..jpg" file="1..jpg" />
+  <media name="1.jpg" file="1.jpg" />
+  <media name="2-resized.jpg" file="2-resized.jpg" />
+  <media name="2..jpg" file="2..jpg" />
+  <media name="2.jpg" file="2.jpg" />
+  <media name="3-resized.jpg" file="3-resized.jpg" />
+  <media name="3..jpg" file="3..jpg" />
+  <media name="3.jpg" file="3.jpg" />
+  <media name="4-resized.jpg" file="4-resized.jpg" />
+  <media name="4..jpg" file="4..jpg" />
+  <media name="4.jpg" file="4.jpg" />
+  <media name="5-resized.jpg" file="5-resized.jpg" />
+  <media name="5..jpg" file="5..jpg" />
+  <media name="5.jpg" file="5.jpg" />
+  <media name="6-resized.jpg" file="6-resized.jpg" />
+  <media name="6..jpg" file="6..jpg" />
+  <media name="7-resized.jpg" file="7-resized.jpg" />
+  <media name="7..jpg" file="7..jpg" />
+  <media name="8-resized.jpg" file="8-resized.jpg" />
+  <media name="8..jpg" file="8..jpg" />
+  <media name="9-resized.jpg" file="9-resized.jpg" />
+  <media name="9..jpg" file="9..jpg" />
+  <media name="A LETRA.jpg" file="a_letra.jpg" />
+  <media name="Aa.jpg" file="aa.jpg" />
+  <media name="ABEJA SOLA.jpg" file="abeja_sola.jpg" />
+  <media name="ABEJA.jpg" file="abeja.jpg" />
+  <media name="Backyardigans_-_A-resized.jpg" file="backyardigans_-_a-resized.jpg" />
+  <media name="Backyardigans_-_E-resized.jpg" file="backyardigans_-_e-resized.jpg" />
+  <media name="Backyardigans_-_I-resized.jpg" file="backyardigans_-_i-resized.jpg" />
+  <media name="Backyardigans_-_O-resized.jpg" file="backyardigans_-_o-resized.jpg" />
+  <media name="Backyardigans_-_U-resized.jpg" file="backyardigans_-_u-resized.jpg" />
+  <media name="BANANO-resized.jpg" file="banano-resized.jpg" />
+  <media name="Ee.jpg" file="ee.jpg" />
+  <media name="Ii.jpg" file="ii.jpg" />
+  <media name="IMAGEN.jpg" file="imagen.jpg" />
+  <media name="JUEGO MEMORIA-resized.jpg" file="juego_memoria-resized.jpg" />
+  <media name="LETRA A..jpg" file="letra_a..jpg" />
+  <media name="MANGO-resized.jpg" file="mango-resized.jpg" />
+  <media name="MANZANA.jpg" file="manzana.jpg" />
+  <media name="MELOCOTON.jpg" file="melocoton.jpg" />
+  <media name="NARANJAS.jpg" file="naranjas.jpg" />
+  <media name="NUMEROS.jpg" file="numeros.jpg" />
+  <media name="Oo.jpg" file="oo.jpg" />
+  <media name="OTROS JUEGOS DIVERTIDOS.jpg" file="otros_juegos_divertidos.jpg" />
+  <media name="PAISAJE ANIMAL-resized.jpg" file="paisaje_animal-resized.jpg" />
+  <media name="PAPAYA.jpg" file="papaya.jpg" />
+  <media name="PERAS.jpg" file="peras.jpg" />
+  <media name="PIÑA-resized.jpg" file="pina-resized.jpg" />
+  <media name="PORTADA JUEGO JP-ABC..-resized1.jpg" file="portada_juego_jp-abc..-resized1.jpg" />
+  <media name="SANDIA-resized.jpg" file="sandia-resized.jpg" />
+  <media name="Uu.jpg" file="uu.jpg" />
+  <media name="UVAS-resized.jpg" file="uvas-resized.jpg" />
+  <media name="a de abeja_medium_quality.mp3" file="a_de_abeja_medium_quality.mp3" />
+  <media name="abeja_medium_quality.mp3" file="abeja_medium_quality.mp3" />
+  <media name="accion correctamente finalizada.mp3" file="accion_correctamente_finalizada.mp3" />
+  <media name="accion finalizada con errores.mp3" file="accion_finalizada_con_errores.mp3" />
+  <media name="al tocar un objeto.mp3" file="al_tocar_un_objeto.mp3" />
+  <media name="burro_medium_quality.mp3" file="burro_medium_quality.mp3" />
+  <media name="busca la pareja de animales.mp3" file="busca_la_pareja_de_animales.mp3" />
+  <media name="busca la pareja de frutas.mp3" file="busca_la_pareja_de_frutas.mp3" />
+  <media name="busca la pareja de letras.mp3" file="busca_la_pareja_de_letras.mp3" />
+  <media name="busca pareja de numeros.mp3" file="busca_pareja_de_numeros.mp3" />
+  <media name="c casa_medium_quality.mp3" file="c_casa_medium_quality.mp3" />
+  <media name="casa_medium_quality.mp3" file="casa_medium_quality.mp3" />
+  <media name="D dado_medium_quality.mp3" file="d_dado_medium_quality.mp3" />
+  <media name="dado_medium_quality.mp3" file="dado_medium_quality.mp3" />
+  <media name="E elefante_medium_quality.mp3" file="e_elefante_medium_quality.mp3" />
+  <media name="elefante_medium_quality.mp3" file="elefante_medium_quality.mp3" />
+  <media name="escribe el nombre del animal.mp3" file="escribe_el_nombre_del_animal.mp3" />
+  <media name="F Flor_medium_quality.mp3" file="f_flor_medium_quality.mp3" />
+  <media name="flor_medium_quality.mp3" file="flor_medium_quality.mp3" />
+  <media name="G gato_medium_quality.mp3" file="g_gato_medium_quality.mp3" />
+  <media name="gato_medium_quality.mp3" file="gato_medium_quality.mp3" />
+  <media name="H helado_medium_quality.mp3" file="h_helado_medium_quality.mp3" />
+  <media name="helado_medium_quality.mp3" file="helado_medium_quality.mp3" />
+  <media name="I iglu_medium_quality.mp3" file="i_iglu_medium_quality.mp3" />
+  <media name="inicio de juegos.mp3" file="inicio_de_juegos.mp3" />
+  <media name="J jirafa_medium_quality.mp3" file="j_jirafa_medium_quality.mp3" />
+  <media name="jirafa_high_quality.mp3" file="jirafa_high_quality.mp3" />
+  <media name="K kiosko_medium_quality.mp3" file="k_kiosko_medium_quality.mp3" />
+  <media name="L luna_medium_quality.mp3" file="l_luna_medium_quality.mp3" />
+  <media name="luna_medium_quality.mp3" file="luna_medium_quality.mp3" />
+  <media name="m manzana_medium_quality.mp3" file="m_manzana_medium_quality.mp3" />
+  <media name="mensaje de acierto.mp3" file="mensaje_de_acierto.mp3" />
+  <media name="mensaje error 1.mp3" file="mensaje_error_1.mp3" />
+  <media name="mensaje error 2.mp3" file="mensaje_error_2.mp3" />
+  <media name="n naranja_medium_quality.mp3" file="n_naranja_medium_quality.mp3" />
+  <media name="número 1_medium_quality.mp3" file="numero_1_medium_quality.mp3" />
+  <media name="número 2_medium_quality.mp3" file="numero_2_medium_quality.mp3" />
+  <media name="número 3_medium_quality.mp3" file="numero_3_medium_quality.mp3" />
+  <media name="número 4_medium_quality.mp3" file="numero_4_medium_quality.mp3" />
+  <media name="número 5_medium_quality.mp3" file="numero_5_medium_quality.mp3" />
+  <media name="número 6_medium_quality.mp3" file="numero_6_medium_quality.mp3" />
+  <media name="número 7_medium_quality.mp3" file="numero_7_medium_quality.mp3" />
+  <media name="número 8_medium_quality.mp3" file="numero_8_medium_quality.mp3" />
+  <media name="número 9_medium_quality.mp3" file="numero_9_medium_quality.mp3" />
+  <media name="O oveja_medium_quality.mp3" file="o_oveja_medium_quality.mp3" />
+  <media name="ORDENA LAS LETRAS.mp3" file="ordena_las_letras.mp3" />
+  <media name="ordena las vocales.mp3" file="ordena_las_vocales.mp3" />
+  <media name="ORDENA LOS NUMEROS.mp3" file="ordena_los_numeros.mp3" />
+  <media name="oveja_medium_quality.mp3" file="oveja_medium_quality.mp3" />
+  <media name="p piano_medium_quality.mp3" file="p_piano_medium_quality.mp3" />
+  <media name="piano_medium_quality.mp3" file="piano_medium_quality.mp3" />
+  <media name="pon numeros orden corresp.mp3" file="pon_numeros_orden_corresp.mp3" />
+  <media name="pulsa numero juega y aprende.mp3" file="pulsa_numero_juega_y_aprende.mp3" />
+  <media name="queso_high_quality.mp3" file="queso_high_quality.mp3" />
+  <media name="relaciona el animal con su nombre.mp3" file="relaciona_el_animal_con_su_nombre.mp3" />
+  <media name="relaciona el objeto con su nombre.mp3" file="relaciona_el_objeto_con_su_nombre.mp3" />
+  <media name="relaciona fruta con nombre.mp3" file="relaciona_fruta_con_nombre.mp3" />
+  <media name="relaciona letra con animal corresp.mp3" file="relaciona_letra_con_animal_corresp.mp3" />
+  <media name="reloj_medium_quality.mp3" file="reloj_medium_quality.mp3" />
+  <media name="S Sol_medium_quality.mp3" file="s_sol_medium_quality.mp3" />
+  <media name="selecciona el objeto y escribe su nombre.mp3" file="selecciona_el_objeto_y_escribe_su_nombre.mp3" />
+  <media name="selecciona fruta y escribe su nombre.mp3" file="selecciona_fruta_y_escribe_su_nombre.mp3" />
+  <media name="selecciona letra escuha y aprende.mp3" file="selecciona_letra_escuha_y_aprende.mp3" />
+  <media name="sol_medium_quality.mp3" file="sol_medium_quality.mp3" />
+  <media name="sonido A_medium_quality.mp3" file="sonido_a_medium_quality.mp3" />
+  <media name="sonido e_medium_quality.mp3" file="sonido_e_medium_quality.mp3" />
+  <media name="sonido i_medium_quality.mp3" file="sonido_i_medium_quality.mp3" />
+  <media name="sonido o_medium_quality.mp3" file="sonido_o_medium_quality.mp3" />
+  <media name="sonido u_medium_quality.mp3" file="sonido_u_medium_quality.mp3" />
+  <media name="T tren_medium_quality.mp3" file="t_tren_medium_quality.mp3" />
+  <media name="tren_medium_quality.mp3" file="tren_medium_quality.mp3" />
+  <media name="U uvas_medium_quality.mp3" file="u_uvas_medium_quality.mp3" />
+  <media name="V ventana_medium_quality.mp3" file="v_ventana_medium_quality.mp3" />
+  <media name="W winsurtf_medium_quality.mp3" file="w_winsurtf_medium_quality.mp3" />
+  <media name="X xilófono_medium_quality.mp3" file="x_xilofono_medium_quality.mp3" />
+  <media name="Y yoyo_medium_quality.mp3" file="y_yoyo_medium_quality.mp3" />
+  <media name="Z zanahoria_medium_quality.mp3" file="z_zanahoria_medium_quality.mp3" />
+  <media name="ñ_medium_quality.mp3" file="n_medium_quality.mp3" />
+  <media name="ABC 2.png" file="abc_2.png" />
+  <media name="abcsons.png" file="abcsons.png" />
+  <media name="abcsons100.png" file="abcsons100.png" />
+  <media name="B LETRA.png" file="b_letra.png" />
+  <media name="BURRO SOLA.png" file="burro_sola.png" />
+  <media name="BURRO.png" file="burro.png" />
+  <media name="C LETRA.png" file="c_letra.png" />
+  <media name="CASA NOMBRE.png" file="casa_nombre.png" />
+  <media name="CASA SOLA.png" file="casa_sola.png" />
+  <media name="CASA.png" file="casa.png" />
+  <media name="D LETRA.png" file="d_letra.png" />
+  <media name="DADO NOMBRE.png" file="dado_nombre.png" />
+  <media name="DADOS SOLA.png" file="dados_sola.png" />
+  <media name="DADOS.png" file="dados.png" />
+  <media name="E LETRA.png" file="e_letra.png" />
+  <media name="ELEFANTE SOLA.png" file="elefante_sola.png" />
+  <media name="ELEFANTE.png" file="elefante.png" />
+  <media name="F LETRA.png" file="f_letra.png" />
+  <media name="FLOR NOMBRE.png" file="flor_nombre.png" />
+  <media name="FLOR SOLA.png" file="flor_sola.png" />
+  <media name="FLOR.png" file="flor.png" />
+  <media name="G LETRA.png" file="g_letra.png" />
+  <media name="GATO SOLA.png" file="gato_sola.png" />
+  <media name="GATO.png" file="gato.png" />
+  <media name="H LETRA.png" file="h_letra.png" />
+  <media name="HELADO NOMBRE.png" file="helado_nombre.png" />
+  <media name="HELADO SOLA.png" file="helado_sola.png" />
+  <media name="HELADO.png" file="helado.png" />
+  <media name="I LETRA.png" file="i_letra.png" />
+  <media name="IGLU.png" file="iglu.png" />
+  <media name="J LETRA.png" file="j_letra.png" />
+  <media name="JIRAFA SOLA.png" file="jirafa_sola.png" />
+  <media name="JIRAFA.png" file="jirafa.png" />
+  <media name="K LETRA.png" file="k_letra.png" />
+  <media name="KIOSKO.png" file="kiosko.png" />
+  <media name="L LETRA.png" file="l_letra.png" />
+  <media name="LETRA B.png" file="letra_b.png" />
+  <media name="LETRA E.png" file="letra_e.png" />
+  <media name="LETRA G.png" file="letra_g.png" />
+  <media name="LETRA I.png" file="letra_i.png" />
+  <media name="LETRA J.png" file="letra_j.png" />
+  <media name="LETRA O.png" file="letra_o.png" />
+  <media name="LETRA U.png" file="letra_u.png" />
+  <media name="LETRA Ñ.png" file="letra_n.png" />
+  <media name="LUNA NOMBRE.png" file="luna_nombre.png" />
+  <media name="LUNA SOLA.png" file="luna_sola.png" />
+  <media name="LUNA.png" file="luna.png" />
+  <media name="M LETRA.png" file="m_letra.png" />
+  <media name="MANZANA.png" file="manzana.png" />
+  <media name="N LETRA.png" file="n_letra.png" />
+  <media name="NARANJA.png" file="naranja.png" />
+  <media name="O LETRA.png" file="o_letra.png" />
+  <media name="OVEJA SOLA.png" file="oveja_sola.png" />
+  <media name="OVEJA.png" file="oveja.png" />
+  <media name="P LETRA.png" file="p_letra.png" />
+  <media name="PIANO SOLA.png" file="piano_sola.png" />
+  <media name="PIANO.png" file="piano.png" />
+  <media name="Q LETRTA.png" file="q_letrta.png" />
+  <media name="QUESO SOLA.png" file="queso_sola.png" />
+  <media name="QUESO.png" file="queso.png" />
+  <media name="R LETRA.png" file="r_letra.png" />
+  <media name="RELOJ SOLA.png" file="reloj_sola.png" />
+  <media name="RELOJ.png" file="reloj.png" />
+  <media name="S LETRA.png" file="s_letra.png" />
+  <media name="SOL SOLA.png" file="sol_sola.png" />
+  <media name="SOL.png" file="sol.png" />
+  <media name="T LETRA.png" file="t_letra.png" />
+  <media name="TREN NOMBRE.png" file="tren_nombre.png" />
+  <media name="TREN SOLA.png" file="tren_sola.png" />
+  <media name="TREN.png" file="tren.png" />
+  <media name="U LETRA.png" file="u_letra.png" />
+  <media name="UVA.png" file="uva.png" />
+  <media name="V LETRA.png" file="v_letra.png" />
+  <media name="VENTANA.png" file="ventana.png" />
+  <media name="W LETRA.png" file="w_letra.png" />
+  <media name="WINSDSURF.png" file="winsdsurf.png" />
+  <media name="X LETRA.png" file="x_letra.png" />
+  <media name="XILOFONO.png" file="xilofono.png" />
+  <media name="Y LETRA.png" file="y_letra.png" />
+  <media name="YOYO.png" file="yoyo.png" />
+  <media name="Z LETRA.png" file="z_letra.png" />
+  <media name="ZANAHORIA.png" file="zanahoria.png" />
+ </mediaBag>
+</JClicProject>
+

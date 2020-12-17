@@ -1,0 +1,3189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="tablas4" version="0.1.3">
+ <settings>
+  <title>Tablas de multiplicar</title>
+  <revision description="created" date="1/29/19" />
+  <author name="Ing. Jesús Franco Sánchez" mail="jefrancos@gmail.com" organization="CREI José María Lafragua 2181 en el Muncipio de San Francisco de Borja, Chihuahua, México">
+   <comments>
+    <p>Ingeniero y Maestro en Educación por la Universidad Pedagógica Nacionaldel Estado de Chihuahua</p>
+   </comments>
+  </author>
+  <organization name="CREI José María Lafragua 2181" mail="jefrancos@gmail.com" city="San Francisco de Borja" country="México" state="Chihuahua" />
+  <language>es</language>
+  <description>
+   <p>Conjunto de actividades que pretende reforzar los aprendizajes acerca de las tablas de multiplicar en los alumnos de primaria. El objetivo es memorizarlas ya que se utilizan diariamente en diferentes problemas y se pueden distraer tratando de recordarlas.</p>
+  </description>
+  <descriptors area-codes="mat" level-codes="PRI">tablas de multiplicar</descriptors>
+  <cover file="caratula.png" />
+  <thumb file="desc_miniatura.png" />
+  <meta_langs>es,ca,en</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>Conjunto de actividades que pretende reforzar los aprendizajes acerca de las tablas de multiplicar en los alumnos de primaria. El objetivo es memorizarlas ya que se utilizan diariamente en diferentes problemas y se pueden distraer tratando de recordarlas.</p>
+   </description>
+   <description language="ca">
+    <p>Conjunt d'activitats que pretén reforçar els aprenentatges sobre les taules de multiplicar en els alumnes de primària. L'objectiu és memoritzar-les ja que s'utilitzen diàriament en diferents problemes i es poden distreure tractant de recordar-les.</p>
+   </description>
+   <description language="en">
+    <p>Set of activities that wants to reinforce learning about multiplication tables in primary school students. The objective is to memorize them since they are used daily in different problems and can be distracted trying to remember them.</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="Portada" />
+  <item name="Importancia1" />
+  <item name="importancia2" delay="3" />
+  <item id="menu de tablas" name="menu de tablas" />
+  <item id="tabla1" name="tabla1" delay="3" navButtons="back" />
+  <item name="tabla1a" delay="3" navButtons="back" />
+  <item name="tabla1c" delay="3" navButtons="back" />
+  <item id="tabla2" name="tabla2a" delay="3" navButtons="back" />
+  <item name="tabla2b" delay="3" navButtons="none" />
+  <item name="tabla2c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla3" name="tabla3a" delay="3" navButtons="back" />
+  <item name="tabla3b" delay="3" navButtons="fwd" />
+  <item name="tabla3c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla4" name="tabla4a" delay="3" navButtons="back" />
+  <item name="tabla4b" delay="3" navButtons="back" />
+  <item name="tabla4c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla5" name="tabla5a" delay="3" navButtons="back" />
+  <item name="tabla5b" delay="3" navButtons="back" />
+  <item name="tabla5c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla6" name="tabla6a" delay="3" navButtons="back" />
+  <item name="tabla6b" delay="3" navButtons="back" />
+  <item name="tabla6c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla7" name="tabla7a" delay="3" navButtons="back" />
+  <item name="tabla7b" delay="3" navButtons="back" />
+  <item name="tabla7c" delay="5" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla8" name="tabla8a" delay="3" navButtons="back" />
+  <item name="tabla8b" delay="3" navButtons="back" />
+  <item name="tabla8c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla9" name="tabla9a" delay="3" navButtons="back" />
+  <item name="tabla9b" delay="3" navButtons="back" />
+  <item name="tabla9c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="tabla10" name="tabla10a" delay="3" navButtons="back" />
+  <item name="tabla10b" delay="3" navButtons="back" />
+  <item name="tabla10c" delay="3" navButtons="back">
+   <jump tag="menu de tablas" id="forward" />
+  </item>
+  <item id="problemas" name="problem1" delay="3" navButtons="back" />
+  <item name="problem2" delay="3" navButtons="back" />
+  <item name="problem3" delay="3" navButtons="back" />
+  <item name="problem4" delay="3" navButtons="back" />
+  <item name="problem5" delay="3" navButtons="back" />
+  <item name="problem6" delay="3" navButtons="back" />
+  <item name="problem7" delay="3" navButtons="back" />
+  <item name="problem8" delay="3" navButtons="back" />
+  <item name="problem9" delay="3" navButtons="back" />
+  <item name="problem10" delay="3" navButtons="back" />
+  <item id="fin" name="end" navButtons="back">
+   <jump action="STOP" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="Importancia1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color foreground="0x0066CC" background="0xFFFFFF" />
+     </style>
+     <p>Lee con atención porque te voy a preguntar...</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="767.0" cellHeight="484.0" border="true">
+    <style>
+     <font family="Dialog" size="26" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>IMPORTANCIA DE LAS TABLAS DE MULTIPLICAR:</p>
+     <p>Conocer las tablas de multiplicar es de suma importancia ya que nos permite utilizarlas en la resolución de diferentes problemas como pueden ser a la hora de dividir, en la resolución de operaciones con fracciones, a la hora de calcular áreas y volúmenes, cuando requerimos encontrar múltiplos y factores de un número, en la resolución de ecuaciones, ect.</p>
+     <p>Si las conocemos de memoria, las podemos utilizar rápidamente a la hora de resolver problemas y no desconcentrarnos en tratar de recordarlas.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="Portada" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0x009999" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="616.0" cellHeight="187.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" bold="true" />
+     <color foreground="0x0066CC" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Tablas de multiplicar</p>
+    </cell>
+    <cell>
+     <p>Es un proyecto desarrollado originalmente para los alumnos del CREI José María Lafragua 2181 del municipio de San Francisco de Borja, Chihuahua, México.</p>
+    </cell>
+    <cell>
+     <p>M.E. Jesús Franco Sánchez</p>
+     <p>jefrancos@gmail.com</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="end" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>too easy...demasiado fácil</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="the end-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="importancia2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="18" bold="true" />
+      <color foreground="0x009999" background="0xFFFFFF" />
+     </style>
+     <p>Completa el texto</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="22" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text size="22" foreground="0x0033FF">Importancia de las Multiplicaciones</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="22" foreground="0x000000">Conocer las tablas de multiplicar es de suma importancia ya que nos permiten utilizarlas en la resolución de diferentes </text>
+      <target>
+       <answer>problemas</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>problemas</text>
+      </target>
+      <text size="22" foreground="0x000000"> como puede ser a la hora de llevar a cabo </text>
+      <target>
+       <answer>divisiones</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>divisiones</text>
+      </target>
+      <text size="22" foreground="0x000000">, en la resolución de operaciones con </text>
+      <target>
+       <answer>fracciones</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>fracciones</text>
+      </target>
+      <text size="22" foreground="0x000000">, a la hora de calcular </text>
+      <target>
+       <answer>areas</answer>
+       <answer>áreas</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>áreas</text>
+      </target>
+      <text size="22" foreground="0x000000"> y </text>
+      <target>
+       <answer>volúmenes</answer>
+       <answer>volumenes</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>volúmenes</text>
+      </target>
+      <text size="22" foreground="0x000000">, cuando requerimos encontrar </text>
+      <target>
+       <answer>multiplos</answer>
+       <answer>múltiplos</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>múltiplos</text>
+      </target>
+      <text size="22" foreground="0x000000"> y </text>
+      <target>
+       <answer>factores</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>factores</text>
+      </target>
+      <text size="22" foreground="0x000000"> de un número, en la resolución de ecuaciones, etc.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text size="22" foreground="0x000000">Si las conocemos de memoria las podemos utilizar rápidamente a la hora de resolver problemas y no desconcentrarnos tratando de recordarlas.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="menu de tablas" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Escoge una tabla de multiplicar</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="2" cols="6" cellWidth="150.0" cellHeight="200.0" border="true">
+    <style>
+     <font family="Dialog" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="2" />
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0xFF0000" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla1" />
+     <p>1x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0x99FF66" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla2" />
+     <p>2 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla3" />
+     <p>3 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0x009999" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla4" />
+     <p>4 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0x009933" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla5" />
+     <p>5 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0xFFCCCC" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla6" />
+     <p>6 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0xFFFF00" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla7" />
+     <p>7 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0x6666FF" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla8" />
+     <p>8 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="100" />
+      <color foreground="0xFF9900" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla9" />
+     <p>9 x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="80" />
+      <color foreground="0x003333" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="tabla10" />
+     <p>10x</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="14" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="problemas" />
+     <p>Problemas que se resuelven con multiplicaciones</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Dialog" size="72" />
+      <color foreground="0xFF0033" background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="fin" />
+     <p>Fin</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Contesta la pregunta</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <p>Un ranchero tiene 10 vacas, cada una de las cuales da 15 litros de leche. ¿Cuántos litros obtiene diariamente?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="26" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>150</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <p>En sexto grado hay 25 alumnos y todos tienen cajas de 24 colores. ¿Cuántos colores hay en total en el grupo de sexto grado?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="24" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>600</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="18" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Ayuda a Don Cleofas a saber cuántos litros obtiene por semana</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <p> Don Cleofas, de 10 vacas que ordeña diariamente obtiene en total 150 litros. ¿Cuántos litros obtiene al final de los 7 días de la semana?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="20" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>1050</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="18" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cálcula el área de la parcela</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell id="0">
+     <p>Cálcula el área de una parcela de forma rectangular con las siguientes dimensiones</p>
+    </cell>
+    <cell id="0" image="parcela.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>10000</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+     <p>Resuelve la multiplicación</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="346.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="mult1.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>1292</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+     <p>Resuelve la multiplicación</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="17" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0" image="mult2.png" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2765</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+     <p>Resuelve la multiplicación</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="mult4.png" id="primary">
+    <style>
+     <font family="Dialog" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <ids>0</ids>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>2912</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <p>En el abarrotes "Sierra Madre" Leonel compró 6 paquetes de 8 sodas cada uno. ¿Cuántas sodas compró Leonel?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="22" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>48</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <p>Don Chencho Ramos lleva en su camión 125 cajas con 6 melones cada una. ¿Cuántos melones lleva en total?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="22" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>750</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="problem9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x00CCCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="350.0" cellHeight="150.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="18" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell id="0">
+     <p>En una granja se recogen diariamente 387 huevos. ¿Cuántos se recogeran en 7 días?</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="1" cellWidth="150.0" cellHeight="100.0" border="true" id="answers">
+    <style>
+     <font family="Dialog" size="22" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+     <p>2709</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="tabla-del-1.png">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla10a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 10</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="tabla del 10.png">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla10b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 10</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x006666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>10 X 1=</p>
+    </cell>
+    <cell>
+     <p>10 X 2=</p>
+    </cell>
+    <cell>
+     <p>10 X 3=</p>
+    </cell>
+    <cell>
+     <p>10 X 4=</p>
+    </cell>
+    <cell>
+     <p>10 X 5=</p>
+    </cell>
+    <cell>
+     <p>10 X 6=</p>
+    </cell>
+    <cell>
+     <p>10 X 7=</p>
+    </cell>
+    <cell>
+     <p>10 X 8=</p>
+    </cell>
+    <cell>
+     <p>10 X 9=</p>
+    </cell>
+    <cell>
+     <p>10 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>20</p>
+    </cell>
+    <cell>
+     <p>30</p>
+    </cell>
+    <cell>
+     <p>40</p>
+    </cell>
+    <cell>
+     <p>50</p>
+    </cell>
+    <cell>
+     <p>60</p>
+    </cell>
+    <cell>
+     <p>70</p>
+    </cell>
+    <cell>
+     <p>80</p>
+    </cell>
+    <cell>
+     <p>90</p>
+    </cell>
+    <cell>
+     <p>100</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla10c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>10 x 1=10</p>
+    </cell>
+    <cell>
+     <p>10 x  2=20</p>
+    </cell>
+    <cell>
+     <p>10 x 3=30</p>
+    </cell>
+    <cell>
+     <p>10 x 4=40</p>
+    </cell>
+    <cell>
+     <p>10 x 5=50</p>
+    </cell>
+    <cell>
+     <p>10 x 6=60</p>
+    </cell>
+    <cell>
+     <p>10 x 7=70</p>
+    </cell>
+    <cell>
+     <p>10 x 8=80</p>
+    </cell>
+    <cell>
+     <p>10 x 9 =90</p>
+    </cell>
+    <cell>
+     <p>10 x 10=100</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10+10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10+10+10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10+10+10+10+10+10</p>
+    </cell>
+    <cell>
+     <p>10+10+10+10+10+10+10+10+10+10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla1a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="20" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 1</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>1 X 1=</p>
+    </cell>
+    <cell>
+     <p>1 X 2=</p>
+    </cell>
+    <cell>
+     <p>1 X 3=</p>
+    </cell>
+    <cell>
+     <p>1 x 4=</p>
+    </cell>
+    <cell>
+     <p>1 X 5=</p>
+    </cell>
+    <cell>
+     <p>1 X 6=</p>
+    </cell>
+    <cell>
+     <p>1 X 7=</p>
+    </cell>
+    <cell>
+     <p>1 X 8=</p>
+    </cell>
+    <cell>
+     <p>1 X 9=</p>
+    </cell>
+    <cell>
+     <p>1 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x0033CC" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla1c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>1 x 1=1</p>
+    </cell>
+    <cell>
+     <p>1 x  2=2</p>
+    </cell>
+    <cell>
+     <p>1 x 3=3</p>
+    </cell>
+    <cell>
+     <p>1 x 4=4</p>
+    </cell>
+    <cell>
+     <p>1 x 5=5</p>
+    </cell>
+    <cell>
+     <p>1 x 6=6</p>
+    </cell>
+    <cell>
+     <p>1 x 7=7</p>
+    </cell>
+    <cell>
+     <p>1 x 8=8</p>
+    </cell>
+    <cell>
+     <p>1 x 9 =9</p>
+    </cell>
+    <cell>
+     <p>1 x 10=10</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>1</p>
+    </cell>
+    <cell>
+     <p>1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1+1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1+1+1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1+1+1+1+1+1</p>
+    </cell>
+    <cell>
+     <p>1+1+1+1+1+1+1+1+1+1</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla2a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 2</p>
+    </cell>
+    <cell imgAlign="right,middle" image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Muy Fácil!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="false" score="false" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="tabla del 2.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla2b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 2</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>2 X1=</p>
+    </cell>
+    <cell>
+     <p>2 X 2=</p>
+    </cell>
+    <cell>
+     <p>2 X 3=</p>
+    </cell>
+    <cell>
+     <p>2 X 4=</p>
+    </cell>
+    <cell>
+     <p>2 X 5=</p>
+    </cell>
+    <cell>
+     <p>2 X 6=</p>
+    </cell>
+    <cell>
+     <p>2 X 7=</p>
+    </cell>
+    <cell>
+     <p>2 X 8=</p>
+    </cell>
+    <cell>
+     <p>2 X 9=</p>
+    </cell>
+    <cell>
+     <p>2 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x0000FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>14</p>
+    </cell>
+    <cell>
+     <p>16</p>
+    </cell>
+    <cell>
+     <p>18</p>
+    </cell>
+    <cell>
+     <p>20</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla2c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>2 x 1=2</p>
+    </cell>
+    <cell>
+     <p>2 x  2=4</p>
+    </cell>
+    <cell>
+     <p>2 x 3=6</p>
+    </cell>
+    <cell>
+     <p>2 x 4=8</p>
+    </cell>
+    <cell>
+     <p>2 x 5=10</p>
+    </cell>
+    <cell>
+     <p>2 x 6=12</p>
+    </cell>
+    <cell>
+     <p>2 x 7=14</p>
+    </cell>
+    <cell>
+     <p>2 x 8=16</p>
+    </cell>
+    <cell>
+     <p>2 x 9 =18</p>
+    </cell>
+    <cell>
+     <p>2 x 10=20</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>2</p>
+    </cell>
+    <cell>
+     <p>2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2+2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2+2+2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2+2+2+2+2+2</p>
+    </cell>
+    <cell>
+     <p>2+2+2+2+2+2+2+2+2+2</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla3a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 3</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="tabla del 3-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla3b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0000FF" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 3</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>3 X 1=</p>
+    </cell>
+    <cell>
+     <p>3 X 2=</p>
+    </cell>
+    <cell>
+     <p>3 X 3=</p>
+    </cell>
+    <cell>
+     <p>3 X 4=</p>
+    </cell>
+    <cell>
+     <p>3 X 5=</p>
+    </cell>
+    <cell>
+     <p>3 X 6=</p>
+    </cell>
+    <cell>
+     <p>3 X 7=</p>
+    </cell>
+    <cell>
+     <p>3 X 8=</p>
+    </cell>
+    <cell>
+     <p>3 X 9=</p>
+    </cell>
+    <cell>
+     <p>3 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x0000FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>15</p>
+    </cell>
+    <cell>
+     <p>18</p>
+    </cell>
+    <cell>
+     <p>21</p>
+    </cell>
+    <cell>
+     <p>24</p>
+    </cell>
+    <cell>
+     <p>27</p>
+    </cell>
+    <cell>
+     <p>30</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla3c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>3 x 1=3</p>
+    </cell>
+    <cell>
+     <p>3 x  2=6</p>
+    </cell>
+    <cell>
+     <p>3 x 3=9</p>
+    </cell>
+    <cell>
+     <p>3 x 4=12</p>
+    </cell>
+    <cell>
+     <p>3 x 5=15</p>
+    </cell>
+    <cell>
+     <p>3 x 6=18</p>
+    </cell>
+    <cell>
+     <p>3 x 7=21</p>
+    </cell>
+    <cell>
+     <p>3 x 8=24</p>
+    </cell>
+    <cell>
+     <p>3 x 9 =27</p>
+    </cell>
+    <cell>
+     <p>3 x 10=30</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>3</p>
+    </cell>
+    <cell>
+     <p>3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3+3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3+3+3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3+3+3+3+3+3</p>
+    </cell>
+    <cell>
+     <p>3+3+3+3+3+3+3+3+3+3</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla4a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033FF" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla de multiplicar del 4</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="tabla del 4-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla4b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Resuelve la tabla del 4</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x00CCCC" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>4 X 1=</p>
+    </cell>
+    <cell>
+     <p>4 X 2=</p>
+    </cell>
+    <cell>
+     <p>4 X 3=</p>
+    </cell>
+    <cell>
+     <p>4 X 4=</p>
+    </cell>
+    <cell>
+     <p>4 X 5=</p>
+    </cell>
+    <cell>
+     <p>4 X 6=</p>
+    </cell>
+    <cell>
+     <p>4 X 7=</p>
+    </cell>
+    <cell>
+     <p>4 X 8=</p>
+    </cell>
+    <cell>
+     <p>4 X 9=</p>
+    </cell>
+    <cell>
+     <p>4 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>16</p>
+    </cell>
+    <cell>
+     <p>20</p>
+    </cell>
+    <cell>
+     <p>24</p>
+    </cell>
+    <cell>
+     <p>28</p>
+    </cell>
+    <cell>
+     <p>32</p>
+    </cell>
+    <cell>
+     <p>36</p>
+    </cell>
+    <cell>
+     <p>40</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla4c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>4 x 1=4</p>
+    </cell>
+    <cell>
+     <p>4 x  2=8</p>
+    </cell>
+    <cell>
+     <p>4 x 3=12</p>
+    </cell>
+    <cell>
+     <p>4 x 4=16</p>
+    </cell>
+    <cell>
+     <p>4 x 5=20</p>
+    </cell>
+    <cell>
+     <p>4 x 6=24</p>
+    </cell>
+    <cell>
+     <p>4 x 7=28</p>
+    </cell>
+    <cell>
+     <p>4 x 8=32</p>
+    </cell>
+    <cell>
+     <p>4 x 9 =36</p>
+    </cell>
+    <cell>
+     <p>4 x 10=40</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>4</p>
+    </cell>
+    <cell>
+     <p>4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4+4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4+4+4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4+4+4+4+4+4</p>
+    </cell>
+    <cell>
+     <p>4+4+4+4+4+4+4+4+4+4</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla5a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 5</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="Tabla-multiplicar-5-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla5b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 5</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>5 X 1=</p>
+    </cell>
+    <cell>
+     <p>5 X 2=</p>
+    </cell>
+    <cell>
+     <p>5 X 3=</p>
+    </cell>
+    <cell>
+     <p>5X4=</p>
+    </cell>
+    <cell>
+     <p>5X5=</p>
+    </cell>
+    <cell>
+     <p>5X6=</p>
+    </cell>
+    <cell>
+     <p>5X7=</p>
+    </cell>
+    <cell>
+     <p>5X8=</p>
+    </cell>
+    <cell>
+     <p>5X9=</p>
+    </cell>
+    <cell>
+     <p>5X10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>10</p>
+    </cell>
+    <cell>
+     <p>15</p>
+    </cell>
+    <cell>
+     <p>20</p>
+    </cell>
+    <cell>
+     <p>25</p>
+    </cell>
+    <cell>
+     <p>30</p>
+    </cell>
+    <cell>
+     <p>35</p>
+    </cell>
+    <cell>
+     <p>40</p>
+    </cell>
+    <cell>
+     <p>45</p>
+    </cell>
+    <cell>
+     <p>50</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla5c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>5 x 1=5</p>
+    </cell>
+    <cell>
+     <p>5 x  2=10</p>
+    </cell>
+    <cell>
+     <p>5 x 3=15</p>
+    </cell>
+    <cell>
+     <p>5 x 4=20</p>
+    </cell>
+    <cell>
+     <p>5 x 5=25</p>
+    </cell>
+    <cell>
+     <p>5 x 6=30</p>
+    </cell>
+    <cell>
+     <p>5 x 7=35</p>
+    </cell>
+    <cell>
+     <p>5 x 8=40</p>
+    </cell>
+    <cell>
+     <p>5 x 9 =45</p>
+    </cell>
+    <cell>
+     <p>5 x 10=50</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>5</p>
+    </cell>
+    <cell>
+     <p>5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5+5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5+5+5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5+5+5+5+5+5</p>
+    </cell>
+    <cell>
+     <p>5+5+5+5+5+5+5+5+5+5</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla6a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 6</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="tabla del 6-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla6b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 6</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x006666">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x006666" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>6 X 1=</p>
+    </cell>
+    <cell>
+     <p>6X2=</p>
+    </cell>
+    <cell>
+     <p>6X3=</p>
+    </cell>
+    <cell>
+     <p>6X4=</p>
+    </cell>
+    <cell>
+     <p>6X5=</p>
+    </cell>
+    <cell>
+     <p>6X6=</p>
+    </cell>
+    <cell>
+     <p>6X7=</p>
+    </cell>
+    <cell>
+     <p>6X8=</p>
+    </cell>
+    <cell>
+     <p>6X9=</p>
+    </cell>
+    <cell>
+     <p>6X10</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x0033FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>12</p>
+    </cell>
+    <cell>
+     <p>18</p>
+    </cell>
+    <cell>
+     <p>24</p>
+    </cell>
+    <cell>
+     <p>30</p>
+    </cell>
+    <cell>
+     <p>36</p>
+    </cell>
+    <cell>
+     <p>42</p>
+    </cell>
+    <cell>
+     <p>48</p>
+    </cell>
+    <cell>
+     <p>54</p>
+    </cell>
+    <cell>
+     <p>60</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla6c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>6 x 1=6</p>
+    </cell>
+    <cell>
+     <p>6 x  2=12</p>
+    </cell>
+    <cell>
+     <p>6 x 3=18</p>
+    </cell>
+    <cell>
+     <p>6 x 4=24</p>
+    </cell>
+    <cell>
+     <p>6 x 5=30</p>
+    </cell>
+    <cell>
+     <p>6 x 6=36</p>
+    </cell>
+    <cell>
+     <p>6 x 7=42</p>
+    </cell>
+    <cell>
+     <p>6 x 8=48</p>
+    </cell>
+    <cell>
+     <p>6 x 9 =54</p>
+    </cell>
+    <cell>
+     <p>6 x 10=60</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>6</p>
+    </cell>
+    <cell>
+     <p>6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6+6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6+6+6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6+6+6+6+6+6</p>
+    </cell>
+    <cell>
+     <p>6+6+6+6+6+6+6+6+6+6</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla7a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x3333FF" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 7</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="tabla del 7.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla7b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" inactive="0x00808080" />
+     </style>
+     <p>Haz la tabla del 7</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style />
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>7 X 1=</p>
+    </cell>
+    <cell>
+     <p>7 X 2=</p>
+    </cell>
+    <cell>
+     <p>7 X 3=</p>
+    </cell>
+    <cell>
+     <p>7 X 4=</p>
+    </cell>
+    <cell>
+     <p>7 X 5=</p>
+    </cell>
+    <cell>
+     <p>7 X 6=</p>
+    </cell>
+    <cell>
+     <p>7 X 7=</p>
+    </cell>
+    <cell>
+     <p>7 X 8=</p>
+    </cell>
+    <cell>
+     <p>7 X 9=</p>
+    </cell>
+    <cell>
+     <p>7 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>14</p>
+    </cell>
+    <cell>
+     <p>21</p>
+    </cell>
+    <cell>
+     <p>28</p>
+    </cell>
+    <cell>
+     <p>35</p>
+    </cell>
+    <cell>
+     <p>42</p>
+    </cell>
+    <cell>
+     <p>49</p>
+    </cell>
+    <cell>
+     <p>56</p>
+    </cell>
+    <cell>
+     <p>63</p>
+    </cell>
+    <cell>
+     <p>70</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla7c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00FFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>7 x 1=7</p>
+    </cell>
+    <cell>
+     <p>7 x  2=14</p>
+    </cell>
+    <cell>
+     <p>7 x 3=21</p>
+    </cell>
+    <cell>
+     <p>7 x 4=28</p>
+    </cell>
+    <cell>
+     <p>7 x 5=35</p>
+    </cell>
+    <cell>
+     <p>7 x 6=42</p>
+    </cell>
+    <cell>
+     <p>7 x 7=49</p>
+    </cell>
+    <cell>
+     <p>7 x 8=56</p>
+    </cell>
+    <cell>
+     <p>7 x 9 =63</p>
+    </cell>
+    <cell>
+     <p>7 x 10=70</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>7</p>
+    </cell>
+    <cell>
+     <p>7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7+7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7+7+7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7+7+7+7+7+7</p>
+    </cell>
+    <cell>
+     <p>7+7+7+7+7+7+7+7+7+7</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla8a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 8</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="tabla del 8.png">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla8b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 8</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>8 X 1=</p>
+    </cell>
+    <cell>
+     <p>8 X 2=</p>
+    </cell>
+    <cell>
+     <p>8 X 3=</p>
+    </cell>
+    <cell>
+     <p>8 X 4=</p>
+    </cell>
+    <cell>
+     <p>8 X 5=</p>
+    </cell>
+    <cell>
+     <p>8 X 6=</p>
+    </cell>
+    <cell>
+     <p>8 X 7=</p>
+    </cell>
+    <cell>
+     <p>8 X 8=</p>
+    </cell>
+    <cell>
+     <p>8 X 9=</p>
+    </cell>
+    <cell>
+     <p>8 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>16</p>
+    </cell>
+    <cell>
+     <p>24</p>
+    </cell>
+    <cell>
+     <p>32</p>
+    </cell>
+    <cell>
+     <p>40</p>
+    </cell>
+    <cell>
+     <p>48</p>
+    </cell>
+    <cell>
+     <p>56</p>
+    </cell>
+    <cell>
+     <p>64</p>
+    </cell>
+    <cell>
+     <p>72</p>
+    </cell>
+    <cell>
+     <p>80</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla8c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>8 x 1=8</p>
+    </cell>
+    <cell>
+     <p>8 x  2=16</p>
+    </cell>
+    <cell>
+     <p>8 x 3=24</p>
+    </cell>
+    <cell>
+     <p>8 x 4=32</p>
+    </cell>
+    <cell>
+     <p>8 x 5=40</p>
+    </cell>
+    <cell>
+     <p>8 x 6=48</p>
+    </cell>
+    <cell>
+     <p>8 x 7=56</p>
+    </cell>
+    <cell>
+     <p>8 x 8=64</p>
+    </cell>
+    <cell>
+     <p>8 x 9 =72</p>
+    </cell>
+    <cell>
+     <p>8 x 10=80</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>8</p>
+    </cell>
+    <cell>
+     <p>8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8+8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8+8+8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8+8+8+8+8+8</p>
+    </cell>
+    <cell>
+     <p>8+8+8+8+8+8+8+8+8+8</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="tabla9a" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Arma la tabla del 9</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="tabla del 9.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla9b" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Haz la tabla del 9</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="150.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>9 X 1=</p>
+    </cell>
+    <cell>
+     <p>9 X 2=</p>
+    </cell>
+    <cell>
+     <p>9 X 3=</p>
+    </cell>
+    <cell>
+     <p>9 X 4=</p>
+    </cell>
+    <cell>
+     <p>9 X 5=</p>
+    </cell>
+    <cell>
+     <p>9 X 6=</p>
+    </cell>
+    <cell>
+     <p>9 X 7=</p>
+    </cell>
+    <cell>
+     <p>9 X 8=</p>
+    </cell>
+    <cell>
+     <p>9 X 9=</p>
+    </cell>
+    <cell>
+     <p>9 X 10=</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="100.0" cellHeight="75.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>18</p>
+    </cell>
+    <cell>
+     <p>27</p>
+    </cell>
+    <cell>
+     <p>36</p>
+    </cell>
+    <cell>
+     <p>45</p>
+    </cell>
+    <cell>
+     <p>54</p>
+    </cell>
+    <cell>
+     <p>63</p>
+    </cell>
+    <cell>
+     <p>72</p>
+    </cell>
+    <cell>
+     <p>81</p>
+    </cell>
+    <cell>
+     <p>90</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="tabla9c" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="22" bold="true" />
+      <color foreground="0x0033CC" background="0xFFFFFF" />
+     </style>
+     <p>Relaciona la multiplicación con la suma que le es igual</p>
+    </cell>
+    <cell image="aprobacion.png" type="final">
+     <style>
+      <font family="Dialog" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x009999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="10" cols="1" cellWidth="200.0" cellHeight="75.0" border="true" id="primary">
+    <style>
+     <font family="Dialog" size="24" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>9 x 1=9</p>
+    </cell>
+    <cell>
+     <p>9 x  2=18</p>
+    </cell>
+    <cell>
+     <p>9 x 3=27</p>
+    </cell>
+    <cell>
+     <p>9 x 4=36</p>
+    </cell>
+    <cell>
+     <p>9 x 5=40</p>
+    </cell>
+    <cell>
+     <p>9 x 6=54</p>
+    </cell>
+    <cell>
+     <p>9 x 7=63</p>
+    </cell>
+    <cell>
+     <p>9 x 8=72</p>
+    </cell>
+    <cell>
+     <p>9 x 9 =81</p>
+    </cell>
+    <cell>
+     <p>9 x 10=90</p>
+    </cell>
+   </cells>
+   <cells rows="10" cols="1" cellWidth="400.0" cellHeight="75.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="24" bold="true" />
+     <color foreground="0x3333FF" background="0xFFFFFF" inactive="0x00808080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>9</p>
+    </cell>
+    <cell>
+     <p>9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9+9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9+9+9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9+9+9+9+9+9</p>
+    </cell>
+    <cell>
+     <p>9+9+9+9+9+9+9+9+9+9</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="tabla del 2.jpg" file="tabla_del_2.jpg" />
+  <media name="tabla del 3-resized.jpg" file="tabla_del_3-resized.jpg" />
+  <media name="tabla del 4-resized.jpg" file="tabla_del_4-resized.jpg" />
+  <media name="tabla del 6-resized.jpg" file="tabla_del_6-resized.jpg" />
+  <media name="tabla del 7.jpg" file="tabla_del_7.jpg" />
+  <media name="tabla del 9.jpg" file="tabla_del_9.jpg" />
+  <media name="Tabla-multiplicar-5-resized.jpg" file="tabla-multiplicar-5-resized.jpg" />
+  <media name="the end-resized.jpg" file="the_end-resized.jpg" />
+  <media name="aprobacion.png" file="aprobacion.png" />
+  <media name="caratula.png" file="caratula.png" />
+  <media name="desc_miniatura.png" file="desc_miniatura.png" />
+  <media name="mult1.png" file="mult1.png" />
+  <media name="mult2.png" file="mult2.png" />
+  <media name="mult4.png" file="mult4.png" />
+  <media name="parcela.png" file="parcela.png" />
+  <media name="tabla del 10.png" file="tabla_del_10.png" />
+  <media name="tabla del 8.png" file="tabla_del_8.png" />
+  <media name="tabla-del-1.png" file="tabla-del-1.png" />
+ </mediaBag>
+</JClicProject>
+

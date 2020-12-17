@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="organica" version="0.1.3">
+ <settings>
+  <title>Reciclar desde el colegio</title>
+  <revision description="created" date="4/24/09" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="3/12/13">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Luis Manuel Blanco de Castro" mail="indioviejo@hotmail.com" />
+  <organization name="CP Cervantes" mail="13002472.cp@edu.jccm.es" url="http://edu.jccm.es/cp/cervantespuertollano/" city="Puertollano - Ciudad Real" state="Castilla - La Mancha" />
+  <organization name="CP José Maria del Moral" mail="13003041.cp@edu.jccm.es" url="http://colemoral.blogspot.com.es/" city="Tomelloso" state="Castilla - La Mancha" />
+  <language>español</language>
+  <description>
+   <p>&lt;i&gt;Reciclar desde el colegio&lt;/i&gt; es un proyecto para aprender a reciclar cualquier tipo de material. El proyecto está dividido en dos partes:</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;¿Qué es reciclar?</p>
+   <p>&lt;li&gt;Actividades</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;Papel y cartón</p>
+   <p>&lt;li&gt;Envases y plásticos</p>
+   <p>&lt;li&gt;Vidrio y cristal</p>
+   <p>&lt;li&gt;Basuras orgánicas</p>
+   <p>&lt;l&gt;Actividades resumen</p>
+   <p>&lt;/ul&gt;</p>
+   <p>&lt;/ul&gt;</p>
+  </description>
+  <descriptors area="Ciencias experimentales" level="Primaria (6-12)">reciclar</descriptors>
+ </settings>
+ <sequence>
+  <item id="basura organica" name="80" delay="12" navButtons="back">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="80o1" delay="20" navButtons="back" />
+  <item name="80o2" delay="8" navButtons="back" />
+  <item name="80o21" />
+  <item name="80o3" />
+  <item name="80o4" delay="20" navButtons="back" />
+  <item name="80o5" />
+  <item name="80o6" />
+  <item name="80o7" />
+  <item name="81" />
+  <item name="82" />
+  <item name="82o" />
+  <item name="83" />
+  <item name="83o">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="80" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué te dice Platanino?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="780.0" cellHeight="504.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg">
+     <p>Soy Platanino, y os voy a enseñar donde tenemos que depositar las basuras órganicas. Pero, ¿cúales son las basuras orgánicas?</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="80o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Cúales son las basuras orgánicas?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="848.0" cellHeight="564.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,middle" avoidOverlapping="true" image="Organín.jpg">
+     <p>Las basuras orgánicas más habituales son: restos de verduras, fruta, pan, bollería, cereales, legumbres, frutos secos, pastas, carnes, embutidos, pescados, cáscaras de huevos, posos de café, etc.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Identify" name="80o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="26" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Estos son los contenedores de la materia orgánica.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="327.0" cellHeight="289.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell id="0" image="contenedor rojo 100.jpg" />
+    <cell id="0" image="contenedor rojo doble.jpg" />
+    <cell id="0" image="contenedor rojo interm.jpg" />
+    <cell id="0" image="contenedor_pilas.jpg" />
+    <cell id="0" image="cubo rojo.jpg" />
+    <cell id="0" image="contenedorrojo.jpg" />
+   </cells>
+   <scramble times="31" primary="true" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="80o21" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja los contenedores de matería orgánica.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡ Muy bien !</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Inténtalo otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="293.0" cellHeight="289.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" />
+     <color background="0xFFFFFF" inactive="0x66FF00" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="contenedor rojo 100.jpg" />
+    <cell image="contenedor rojo doble.jpg" />
+    <cell image="contenedor rojo interm.jpg" />
+    <cell image="contenedorrojo.jpg" />
+    <cell image="cubo rojo.jpg" />
+    <cell image="contenedor_pilas.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="80o3" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza este desastre.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Lo tienes claro!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="28" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Inténtalo de nuevo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="contenedorrojo.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xCCFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="80o4" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee y aprende.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="772.0" cellHeight="542.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="middle,top" imgAlign="left,bottom" image="Organín.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFFFF" />
+     </style>
+     <p>La materia orgánica es transformada en las plantas de compostaje mediante un proceso controlado y seguro, en COMPOST, excelente abono natural con el que se consigue enriquecer el suelo con vistas a la agricultura, la jardinería o las repoblaciones forestales.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="80o5" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué desorden! Organiza la imagen</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué buen ojo tienes!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Fijate mejor y repite el puzzle de recortes!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="13" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="false" image="BÚFALO.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Holes" cols="3" rows="3">
+     <shape comment="0">M:0.679167,0.411111|B:0.474259,0.633774,0.474523,0.726382,0.453406,0.733926|B:0.43229,0.74147,0.39779,0.661094,0.376349,0.554401|B:0.354908,0.447707,0.354644,0.3551,0.37576,0.347556|B:0.396877,0.340011,0.431377,0.420388,0.679167,0.411111</shape>
+     <shape comment="1">ellipse:0.025,0.407407,0.086111,0.153704</shape>
+     <shape comment="2">ellipse:0.906944,0.412963,0.083333,0.12037</shape>
+     <shape comment="3">rectangle:0.1125,0.037037,0.225,0.411111</shape>
+     <shape comment="4">rectangle:0.693056,0.035185,0.215278,0.394444</shape>
+     <shape comment="5">rectangle:0.365278,0.038889,0.304167,0.255556</shape>
+     <shape comment="6">ellipse:0.270833,0.748148,0.165278,0.190741</shape>
+     <shape comment="7">ellipse:0.522222,0.674074,0.305556,0.194444</shape>
+     <shape comment="8">rectangle:0.008333,0.655556,0.108333,0.307407</shape>
+     <shape comment="9">rectangle:0.901389,0.640741,0.093056,0.296296</shape>
+     <shape comment="10">M:0.186111,0.537037|L:0.161111,0.57963|L:0.140278,0.642593|L:0.120833,0.716667|L:0.120833,0.748148|L:0.120833,0.775926|L:0.145833,0.8|L:0.177778,0.798148|L:0.25,0.740741|L:0.302778,0.588889|L:0.273611,0.559259|L:0.231944,0.509259|L:0.222222,0.52037|L:0.215278,0.503704|L:0.186111,0.537037</shape>
+    </shaper>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="80o6" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa con las palabras adecuadas</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué buena memoria tienes!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Consulta la ayuda e inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  dos pantallas y  lee  con  atención,  anotando  en  tu  cuaderno  toda  la  información  que  consideres  oportuna.</p>
+    </helpWindow>
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+     <size width="778" height="425" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <checkButton>Cliquea AQUÍ  para  corregir el  ejercicio.  </checkButton>
+   <document>
+    <style name="default" background="0xFFFFFF" italic="false" family="Mi Cole" size="36" tabWidth="12" bold="true" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p background="0xFFFFFF" family="Arial">
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true">La materia </text>
+      <target>
+       <answer>orgánica</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>orgánica</text>
+      </target>
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true"> es transformada en las plantas de </text>
+      <target>
+       <answer>compostaje</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>compostaje</text>
+      </target>
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true"> mediante un proceso controlado y seguro en </text>
+      <target>
+       <answer>compost</answer>
+       <answer>COMPOST</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>COMPOST</text>
+      </target>
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true">, excelente abono </text>
+      <target>
+       <answer>natural</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>natural</text>
+      </target>
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true"> con el que se consigue enriquecer </text>
+      <target>
+       <answer>el suelo</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>el suelo</text>
+      </target>
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true"> con vistas a la </text>
+      <target>
+       <answer>agricultura</answer>
+       <optionList>
+        <option>industria</option>
+        <option>minería</option>
+        <option>agricultura</option>
+       </optionList>
+       <text>agricultura</text>
+      </target>
+      <text background="0xFFFFFF" size="36" family="Mi Cole" bold="true">, la jardinería o las repoblaciones forestales.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="80o7" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué será?</p>
+    </cell>
+    <cell image="Organín.jpg" type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="bravo.wav" />
+    </cell>
+    <cell imgAlign="left,middle" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva de la parte inferior izquierda.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="20" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="5" cols="3" border="true" image="cubo rojo.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="5" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.Explore" name="81" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Estos son ejemplos de ...</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="3" cols="3" cellWidth="268.0" cellHeight="137.0" border="false" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell id="0" image="basura organica 2.jpg" />
+    <cell id="0" image="basura organica 3.jpg" />
+    <cell id="0" image="basura organica 4.jpg" />
+    <cell id="0" image="basura organica.jpg" />
+    <cell id="0" image="basura.gif" />
+    <cell id="0" image="basura_organica_verde.jpg" />
+    <cell id="0" image="comida300.jpg" />
+    <cell id="0" image="restos.jpg" />
+    <cell id="0" image="sobras_comida.jpg" />
+   </cells>
+   <cells rows="1" cols="1" cellWidth="901.0" cellHeight="86.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell image="cubo rojo.jpg">
+     <p>BASURA          ORGÁNICA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="82" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relaciona con criterios del reciclaje.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Sorprendente!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Inténtalo de nuevo! ¡Verás como lo logras!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="177.0" cellHeight="125.0" border="false" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Dialog" size="28" />
+     <color background="0xFFFFFF" alternative="0x330000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="basura organica.jpg" />
+    <cell id="0" image="basura organica 3.jpg" />
+    <cell id="0" image="basura organica 4.jpg" />
+    <cell id="0" image="basura.gif" />
+    <cell id="0" image="basura_organica_verde.jpg" />
+    <cell id="0" image="comida300.jpg" />
+    <cell id="0" image="restos.jpg" />
+    <cell id="0" image="sobras_comida.jpg" />
+    <cell id="1" image="4 botellas de vidrio.gif" />
+    <cell id="1" image="bolsa de pipas.jpg" />
+    <cell id="1" image="botella plastico 2.jpg" />
+    <cell id="1" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="1" image="PERIODICO2.jpg" />
+    <cell id="1" image="VARIAS BOTELLS.jpg" />
+    <cell id="1" image="activa.jpg" />
+    <cell id="1" image="bote de kas.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="196.0" cellHeight="232.0" border="true" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="cubo rojo.jpg" />
+    <cell>
+     <style>
+      <font family="Arial" size="48" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>OTROS </p>
+     <p>CONTENEDORES</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <style />
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="verde.jpg">
+     <p>Vidrio</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envases y plásticos</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envases y plásticos</p>
+    </cell>
+    <cell image="azul.jpg">
+     <p>Papel y cartón</p>
+    </cell>
+    <cell image="azul.jpg">
+     <p>Papel y cartón</p>
+    </cell>
+    <cell image="verde.jpg">
+     <p>Vidrio</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envases y plásticos</p>
+    </cell>
+    <cell image="amarillo.jpg">
+     <p>Envases y plásticos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="82o" code="">
+   <description />
+   <messages>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza el puzzle, sabiendo que sólo puedes cometer tres fallos.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Fantástico!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Repítelo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="basura organica 4.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="83" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Busca diez palabras relacionadas con las basuras orgánicas</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué astuto eres!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Consulta la ayuda e inténtalo otra vez</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="12" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <textGrid rows="13" columns="9" cellWidth="53.0" cellHeight="64.0" border="true">
+    <style>
+     <font family="Arial" size="20" />
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>LP*SELAEREC*P</row>
+     <row>*EMBUTIDOS**L</row>
+     <row>*SG*******T*A</row>
+     <row>AC*U*CARNES*T</row>
+     <row>TA**M*****O*A</row>
+     <row>UD***B****P*N</row>
+     <row>RO****R**NM*I</row>
+     <row>FS*****EA*O*N</row>
+     <row>BASURA*PS*C*O</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PLATANINO</clue>
+    <clue id="1">BASURA</clue>
+    <clue id="2">COMPOST</clue>
+    <clue id="3">FRUTA</clue>
+    <clue id="4">PAN</clue>
+    <clue id="5">CEREALES</clue>
+    <clue id="6">LEGUMBRES</clue>
+    <clue id="7">EMBUTIDOS</clue>
+    <clue id="8">CARNES</clue>
+    <clue id="9">PESCADOS</clue>
+   </clues>
+   <cells rows="10" cols="1" cellWidth="215.0" cellHeight="47.0" border="true" id="secondary">
+    <style>
+     <font family="Dialog" size="28" bold="true" />
+     <color background="0xFFFF33" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="10" />
+    <cell>
+     <p>Platanino</p>
+    </cell>
+    <cell>
+     <p>Basura</p>
+    </cell>
+    <cell>
+     <p>Compost</p>
+    </cell>
+    <cell>
+     <p>Fruta</p>
+    </cell>
+    <cell>
+     <p>Pan</p>
+    </cell>
+    <cell>
+     <p>Cereales</p>
+    </cell>
+    <cell>
+     <p>Legumbres</p>
+    </cell>
+    <cell>
+     <p>Embutidos</p>
+    </cell>
+    <cell>
+     <p>Carnes</p>
+    </cell>
+    <cell>
+     <p>Pescados</p>
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="83o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Coloca las piezas del puzzle correctamente.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Organín.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Lo has hecho muy bien!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Organín.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Consulta la ayuda e inténtalo otra vez.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="23" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFF0000">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF0000" border="true">
+     <gradient source="0xFFFFFF" dest="0xFF0000" angle="0" cycles="14" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="5" cols="4" border="true" image="basuracubo.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFF33" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="5" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="4 botellas de vidrio.gif" file="4_botellas_de_vidrio.gif" animated="false" />
+  <media name="basura.gif" file="basura.gif" animated="false" />
+  <media name="activa.jpg" file="activa.jpg" />
+  <media name="amarillo.jpg" file="amarillo.jpg" />
+  <media name="azul.jpg" file="azul.jpg" />
+  <media name="basura organica 2.jpg" file="basura_organica_2.jpg" />
+  <media name="basura organica 3.jpg" file="basura_organica_3.jpg" />
+  <media name="basura organica 4.jpg" file="basura_organica_4.jpg" />
+  <media name="basura organica.jpg" file="basura_organica.jpg" />
+  <media name="basura_organica_verde.jpg" file="basura_organica_verde.jpg" />
+  <media name="basuracubo.jpg" file="basuracubo.jpg" />
+  <media name="bolsa de pipas.jpg" file="bolsa_de_pipas.jpg" />
+  <media name="bote de kas.jpg" file="bote_de_kas.jpg" />
+  <media name="botella plastico 2.jpg" file="botella_plastico_2.jpg" />
+  <media name="BÚFALO.jpg" file="bufalo.jpg" />
+  <media name="CARTON PARA RECICLAR.jpg" file="carton_para_reciclar.jpg" />
+  <media name="comida300.jpg" file="comida300.jpg" />
+  <media name="contenedor rojo 100.jpg" file="contenedor_rojo_100.jpg" />
+  <media name="contenedor rojo doble.jpg" file="contenedor_rojo_doble.jpg" />
+  <media name="contenedor rojo interm.jpg" file="contenedor_rojo_interm.jpg" />
+  <media name="contenedor_pilas.jpg" file="contenedor_pilas.jpg" />
+  <media name="contenedorrojo.jpg" file="contenedorrojo.jpg" />
+  <media name="cubo rojo.jpg" file="cubo_rojo.jpg" />
+  <media name="ka120.jpg" file="ka120.jpg" />
+  <media name="Organín.jpg" file="organin.jpg" />
+  <media name="PERIODICO2.jpg" file="periodico2.jpg" />
+  <media name="restos.jpg" file="restos.jpg" />
+  <media name="sobras_comida.jpg" file="sobras_comida.jpg" />
+  <media name="VARIAS BOTELLS.jpg" file="varias_botells.jpg" />
+  <media name="verde.jpg" file="verde.jpg" />
+  <media name="MiCole_n.TTF" file="micole_n.ttf" />
+  <media name="bravo.wav" file="bravo.wav" />
+ </mediaBag>
+</JClicProject>
+

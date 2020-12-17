@@ -1,0 +1,2417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="pedrolob" version="0.1.3">
+ <settings>
+  <title>Pedro y el lobo</title>
+  <revision description="Creación del paquete de actividades en Clic 3.0" date="5/5/97" />
+  <revision description="Conversión de Clic3 a JClic" date="3/8/02">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Subdirecció General de Tecnologies de la Informació (SGTI)" />
+  </revision>
+  <author name="Miren Garralda" mail="mgarrald@xtec.cat" />
+  <organization name="CEIP Mas Casanovas" mail="a8002800@xtec.cat" url="http://www.xtec.cat/centres/a8002800" city="Barcelona" state="Catalunya" />
+  <language>Español</language>
+  <description>
+   <p>Actividades basadas en el cuento musical escrito por Sergei Prokofiev "Pedro y el lobo" donde se utilizan distintos instrumentos musicales y melodías para identificar a los personajes.</p>
+  </description>
+  <descriptors area="Música" level="Infantil, Primaria">audición musical, cuento</descriptors>
+ </settings>
+ <sequence>
+  <item id="pedrolob.pac" name="lloper00.ass">
+   <jump action="STOP" id="back" />
+  </item>
+  <item name="llope000.ass">
+   <jump action="STOP" id="forward" />
+   <jump action="STOP" id="back" />
+  </item>
+  <item id="conte.pac" name="perllop3.ass">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="perllop2.ass" />
+  <item name="perllop1.ass" />
+  <item name="perllop4.ass" />
+  <item name="perllop5.ass" />
+  <item name="perllop6.ass" />
+  <item name="perllop7.ass">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item id="personat.pac" name="llopere0.ass">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="llopere1.ass" />
+  <item name="lloper02.ass" />
+  <item name="lloper04.ass" />
+  <item name="lloper03.ass" />
+  <item name="lloper20.ass" />
+  <item name="per0.ass" />
+  <item name="per1.ass" />
+  <item name="pedro.ass" />
+  <item name="pedro2.ass">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item id="puzle.pac" name="trenca1.puz">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="trenca2.puz" />
+  <item name="trenca3.puz" />
+  <item name="trenca4.puz" />
+  <item name="trenca5.puz" />
+  <item name="trenca6.puz" />
+  <item name="trenca7.puz">
+   <jump action="RETURN" id="forward" />
+  </item>
+  <item id="instrum.pac" name="llopere2.ass">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item name="llopere3.ass" />
+  <item name="llopere4.ass" />
+  <item name="pere1.ass" />
+  <item name="pere3.ass" />
+  <item name="pere2.ass" />
+  <item name="lloper2.ass" />
+  <item name="lloper3.ass" />
+  <item name="lloper4.ass" />
+  <item name="pedro1.ass" />
+  <item name="pedro3.ass" />
+  <item name="cuerda1.sop">
+   <jump action="RETURN" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@textGrid.WordSearch" name="cuerda1.sop">
+   <description>
+    <p>instrumentos de cuerda</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFF80" inactive="0xFFFF80" alternative="0xFFFF80" />
+     </style>
+     <p>Encuentra los instrumentos de cuerda</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFF80" inactive="0xFFFF80" alternative="0xFFFF80" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <textGrid rows="10" columns="10" cellWidth="30.0" cellHeight="30.0" border="true">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0xFFFFFF" background="0x008040" inactive="0xFFFF80" alternative="0xFFFF80" />
+    </style>
+    <text>
+     <row>VIOLIN***C</row>
+     <row>II*******O</row>
+     <row>O*O******N</row>
+     <row>L**L*****T</row>
+     <row>A***O****R</row>
+     <row>*****N***A</row>
+     <row>******C**B</row>
+     <row>*******E*A</row>
+     <row>********LJ</row>
+     <row>*********O</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">VIOLIN</clue>
+    <clue id="1">VIOLA</clue>
+    <clue id="2">VIOLONCELO</clue>
+    <clue id="3">CONTRABAJO</clue>
+   </clues>
+   <cells rows="1" cols="4" border="false" image="corda1.gif" id="secondary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color foreground="0xFFFFFF" background="0x008040" inactive="0xFFFF80" alternative="0xFFFF80" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="llope000.ass">
+   <description>
+    <p>Pedro y el lobo
+</p>
+    <p>cuento musical 
+</p>
+    <p>Sergei Prokofiev</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" bold="true" />
+      <color background="0x008040" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" bold="true" />
+      <color background="0x008040" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="446.0" cellHeight="93.0" border="false">
+    <style>
+     <font family="Times New Roman" size="23" bold="true" />
+     <color background="0x008040" inactive="0xFFFF80" alternative="0xFFFF80" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="conte.gif">
+     <media type="RUN_CLIC_PACKAGE" level="1" file="conte.pac" />
+    </cell>
+    <cell image="personat.gif">
+     <media type="RUN_CLIC_PACKAGE" level="1" file="personat.pac" />
+    </cell>
+    <cell image="puzles.gif">
+     <media type="RUN_CLIC_PACKAGE" level="1" file="puzle.pac" />
+    </cell>
+    <cell image="instrum.gif">
+     <media type="RUN_CLIC_PACKAGE" level="1" file="instrum.pac" />
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="lloper00.ass">
+   <description>
+    <p>Pedro y el lobo
+</p>
+    <p>Sergei Prokofiev</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="24" bold="true" />
+      <color background="0x008040" inactive="0xFFFF80" alternative="0xFFFF80" />
+     </style>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="24" bold="true" />
+      <color background="0x008040" inactive="0xFFFF80" alternative="0xFFFF80" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" border="false" image="perllop0.gif">
+    <style>
+     <font family="Times New Roman" size="24" bold="true" />
+     <color background="0x008040" inactive="0xFFFF80" alternative="0xFFFF80" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="lloper02.ass">
+   <description>
+    <p>fagot y clarinete:timbre y personaje</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="avi1.gif">
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+    </cell>
+    <cell image="gat1.gif">
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="500.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="fagotm.gif" />
+    <cell image="clarinhn.gif" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="fagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="clarinet.wav" />
+     <p>CLARINETE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="lloper03.ass">
+   <description>
+    <p>trompa, oboe y timbales: timbre y personaje</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="336.0" cellHeight="270.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="llop1.gif">
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+    </cell>
+    <cell image="cacador1.gif">
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+    </cell>
+    <cell image="anec1.gif">
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="336.0" cellHeight="265.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="trompam.gif" />
+    <cell image="timbalm.gif" />
+    <cell image="oboemini.gif" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="336.0" cellHeight="270.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="trompa.wav" />
+     <p>TROMPA</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="timbales.wav" />
+     <p>TIMBALES</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oboe.wav" />
+     <p>OBOE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="lloper04.ass">
+   <description>
+    <p>violín y flauta: timbre y personaje</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="pere1.gif">
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+    <cell image="ocell1.gif">
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="500.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="violim.gif" />
+    <cell image="flautam.gif" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="violi.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="flauta.wav" />
+     <p>FLAUTA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="lloper2.ass">
+   <description>
+    <p>fagot y clarinete: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="261.0" cellHeight="500.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="fagotv.gif" />
+    <cell image="clarinvm.gif" />
+   </cells>
+   <cells rows="1" cols="2" cellWidth="261.0" cellHeight="500.0" border="true" id="answers">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <p>CLARINETE</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="261.0" cellHeight="500.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>CLARINETE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="lloper20.ass">
+   <description>
+    <p>fagot ,clarinete, violín, oboe: timbre y personaje</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="350.0" cellHeight="300.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="avi1.gif">
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+    </cell>
+    <cell image="gat1.gif">
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+    </cell>
+    <cell image="anec1.gif">
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+    <cell image="pere1.gif">
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="350.0" cellHeight="500.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="fagotv.gif" />
+    <cell image="clarinvm.gif" />
+    <cell image="oboev.gif" />
+    <cell image="violiv.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="350.0" cellHeight="300.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="fagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="clarinet.wav" />
+     <p>CLARINETE</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oboe.wav" />
+     <p>OBOE</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="violi.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="lloper3.ass">
+   <description>
+    <p>Trompa y timbales: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="420.0" cellHeight="437.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="trompam.gif" />
+    <cell image="timbales.gif" />
+   </cells>
+   <cells rows="1" cols="2" cellWidth="420.0" cellHeight="437.0" border="true" id="answers">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <p>TROMPA</p>
+    </cell>
+    <cell>
+     <p>TIMBALES</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="420.0" cellHeight="437.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>TROMPA</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+     <p>TIMBALES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="lloper4.ass">
+   <description>
+    <p>violín y flauta: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="630.0" cellHeight="204.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="violim.gif" />
+    <cell image="flautam.gif" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="630.0" cellHeight="60.0" border="true" id="answers">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF0000" alternative="0xFF0000" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <p>FLAUTA</p>
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="630.0" cellHeight="204.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>FLAUTA</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="llopere0.ass">
+   <description>
+    <p>flauta, oboe, clarinete </p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="0" image="ocell1.gif" />
+    <cell id="1" image="anec1.gif" />
+    <cell id="2" image="gat1.gif" />
+   </cells>
+   <cells rows="3" cols="1" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell image="flautam.gif">
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+    </cell>
+    <cell image="oboem.gif">
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+    <cell image="clarinhn.gif">
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="llopere1.ass">
+   <description>
+    <p>fagot,violín,trompa i timbales</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="0" image="avi1.gif" />
+    <cell id="1" image="pere1.gif" />
+    <cell id="2" image="llop1.gif" />
+    <cell id="3" image="cacador1.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="false" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="fagotm.gif">
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+    </cell>
+    <cell image="violim.gif">
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+    <cell image="trompam.gif">
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+    </cell>
+    <cell image="timbalm.gif">
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="llopere2.ass">
+   <description>
+    <p>fagot y clarinete bajo: Timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="21" bold="true" />
+      <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="21" bold="true" />
+      <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="125.0" cellHeight="400.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="21" bold="true" />
+     <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell id="0" image="fagotv.gif" />
+    <cell id="1" image="clarinvm.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="125.0" cellHeight="400.0" border="false" id="secondary">
+    <style>
+     <font family="Times New Roman" size="21" bold="true" />
+     <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>CLARINETE</p>
+    </cell>
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="llopere3.ass">
+   <description>
+    <p>Trompa y timbales: timbre  y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" bold="true" />
+      <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" bold="true" />
+      <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="420.0" cellHeight="437.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="23" bold="true" />
+     <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell id="0" image="trompam.gif" />
+    <cell id="1" image="timbales.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="420.0" cellHeight="437.0" border="false" id="secondary">
+    <style>
+     <font family="Times New Roman" size="23" bold="true" />
+     <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>TROMPA</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+     <p>TIMBALES</p>
+    </cell>
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="llopere4.ass">
+   <description>
+    <p>violín y flauta: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="663.0" cellHeight="207.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell id="0" image="violim.gif" />
+    <cell id="1" image="flautam.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="678.0" cellHeight="74.0" border="false" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>FLAUTA</p>
+    </cell>
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="pedro.ass">
+   <description>
+    <p>el pájaro, el pato y el gato y la melodia que lo representa
+</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ  MELODÍA SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="ocellsol.mid" />
+    </cell>
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="anecsol.mid" />
+    </cell>
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="gatsol.mid" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="ocell1.gif" />
+    <cell image="anec1.gif" />
+    <cell image="gat1.gif" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="ocell.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anec.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gat.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="pedro1.ass">
+   <description>
+    <p>viento o cuerda:oboe, violín, clarinete, fagot</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>VIENTO - CUERDA</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="232.0" cellHeight="234.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="1" image="avi1.gif">
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+    </cell>
+    <cell id="1" image="gat1.gif">
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+    </cell>
+    <cell id="1" image="anec1.gif">
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+    <cell id="0" image="pere1.gif">
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="2" cellWidth="232.0" cellHeight="234.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell image="corda.gif" />
+    <cell image="vent.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="232.0" cellHeight="234.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="fagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="clarinet.wav" />
+     <p>CLARINETE</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oboe.wav" />
+     <p>OBOE</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="violi.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="pedro2.ass">
+   <description>
+    <p>melodia de:el pájaro, el abuelo, el pato y el gato</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUÉ MELODÍA SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="lavisol.mid" />
+    </cell>
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="gatsol.mid" />
+    </cell>
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="anecsol.mid" />
+    </cell>
+    <cell>
+     <media type="PLAY_MIDI" level="1" file="peresol.mid" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="avi1.gif" />
+    <cell image="gat1.gif" />
+    <cell image="anec1.gif" />
+    <cell image="pere.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avi.wav" />
+     <p>EL ABUELO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gat.wav" />
+     <p>EL GATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anec.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pere.wav" />
+     <p>PEDRO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="pedro3.ass">
+   <description>
+    <p>viento, cuerda, percusión:fagot, violín, trompa, timbales</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+     </style>
+     <p>VIENTO - CUERDA - PERCUSIÓN</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="232.0" cellHeight="234.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell id="1" image="avi1.gif">
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+    </cell>
+    <cell id="0" image="pere1.gif">
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+    <cell id="1" image="llop1.gif">
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+    </cell>
+    <cell id="2" image="cacador1.gif">
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="232.0" cellHeight="234.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x000000" alternative="0x000000" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="corda.gif" />
+    <cell image="vent.gif" />
+    <cell image="percusio.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="232.0" cellHeight="234.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="fagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="violi.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="trompa.wav" />
+     <p>TROMPA</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="timbales.wav" />
+     <p>TIMBALES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="per0.ass">
+   <description>
+    <p>pato, pájaro y gato
+</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUIÉN ES?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="ocell.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anec.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gat.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="ocell1.gif" />
+    <cell image="anec1.gif" />
+    <cell image="gat1.gif" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="per1.ass">
+   <description>
+    <p>el abuelo, Pedro, el lobo y los cazadores
+</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+     <p>¿QUIÉN ES?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" />
+      <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avi.wav" />
+     <p>EL ABUELO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pere.wav" />
+     <p>PEDRO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="llop.wav" />
+     <p>EL LOBO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacadors.wav" />
+     <p>LOS CAZADORES</p>
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" />
+     <color background="0xFFFFFF" inactive="0x008040" alternative="0x008040" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="avi1.gif" />
+    <cell image="pere1.gif" />
+    <cell image="llop1.gif" />
+    <cell image="cacador1.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="200.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+     <p>EL ABUELO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>EL LOBO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+     <p>LOS CAZADORES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="pere1.ass">
+   <description>
+    <p> oboe y violín: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="88.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+   </cells>
+   <cells rows="2" cols="1" cellWidth="527.0" cellHeight="200.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="violim.gif" />
+    <cell image="oboem.gif" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="88.0" cellHeight="200.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="violi.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oboe.wav" />
+     <p>OBOE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="pere2.ass">
+   <description>
+    <p> fagot, violín, oboe y clarinete: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="20" bold="true" />
+      <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="4" cellWidth="150.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="4" cellWidth="150.0" cellHeight="400.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="20" bold="true" />
+     <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell image="fagotv.gif" />
+    <cell image="clarinvm.gif" />
+    <cell image="violiv.gif" />
+    <cell image="oboev.gif" />
+   </cells>
+   <cells rows="1" cols="4" cellWidth="150.0" cellHeight="70.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="4" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="fagot.wav" />
+     <p>FAGOT</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="clarinet.wav" />
+     <p>CLARINETE</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="violi.wav" />
+     <p>VIOLÍN</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oboe.wav" />
+     <p>OBOE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="pere3.ass">
+   <description>
+    <p> trompa, oboe,  y timbales: timbre y nombre</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+     </style>
+     <p>¿QUÉ INSTRUMENTO SUENA?</p>
+    </cell>
+    <cell image="perebe.gif" type="final">
+     <style>
+      <font family="Times New Roman" size="22" bold="true" />
+      <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="1" cols="3" cellWidth="204.0" cellHeight="81.0" border="true" id="primary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+    </cell>
+   </cells>
+   <cells rows="1" cols="3" cellWidth="204.0" cellHeight="211.0" border="true" id="secondary">
+    <style>
+     <font family="Times New Roman" size="22" bold="true" />
+     <color background="0xFFFFFF" inactive="0x008080" alternative="0x008080" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell image="trompam.gif" />
+    <cell image="timbalm.gif" />
+    <cell image="oboev.gif" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="204.0" cellHeight="81.0" border="true" id="solvedPrimary">
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="trompa.wav" />
+     <p>TROMPA</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="timbales.wav" />
+     <p>TIMBALES</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oboe.wav" />
+     <p>OBOE</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop1.ass">
+   <description>
+    <p>El abuelo le dijo: !Cuidado¡, Mira que si viene el lobo...</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p3.wav" />
+     <p>EL ABUELO LE DIJO: ¡CUIDADO!, MIRA QUE SI VIENE EL LOBO...</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="3" border="false" image="perllop1.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <ids>2 0 0 2 1 3 2 2 3 2 2 3</ids>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+     <p>EL ABUELO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop2.ass">
+   <description>
+    <p>Estaban sus amigos: el pato, el pájaro y el gato</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p2.wav" />
+     <p>ESTABAN SUS AMIGOS: EL PATO, EL PÁJARO Y EL GATO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="3" border="false" image="perllop2.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <ids>0 0 0 1 2 2</ids>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop3.ass">
+   <description>
+    <p>Un dia de primavera,Pedro salió al jardín</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p1.wav" />
+     <p>UN DIA DE PRIMAVERA, PEDRO SALIÓ AL JARDÍN</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="5" border="false" image="perllop3.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Holes" cols="5" rows="4" showEnclosure="true" scaleX="5.0" scaleY="4.0">
+     <enclosing>
+      <shape>rectangle:0,0,5,4</shape>
+     </enclosing>
+     <shape>rectangle:0,0,1,1</shape>
+     <shape>M:1,0|L:1,1|L:2,1|L:2,2|L:2,3|L:3,3|L:3,2|L:4,2|L:4,3|L:5,3|L:5,2|L:5,1|L:3,1|L:3,0|X</shape>
+     <shape>rectangle:3,0,1,1</shape>
+     <shape>rectangle:4,0,1,1</shape>
+     <shape>rectangle:0,1,1,1</shape>
+     <shape>M:1,1|L:1,2|L:1,3|L:1,4|L:2,4|L:2,3|L:2,2|L:2,1|X</shape>
+     <shape>M:0,2|L:0,3|L:0,4|L:1,4|L:1,3|L:1,2|X</shape>
+     <shape>M:3,2|L:3,3|L:2,3|L:2,4|L:5,4|L:5,3|L:4,3|L:4,2|X</shape>
+    </shaper>
+    <ids>1 0 1 2 2 1 0 2</ids>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop4.ass">
+   <description>
+    <p>El lobo apareció y se zampó al infeliz pato</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p4.wav" />
+     <p>EL LOBO APARECIÓ Y SE ZAMPÓ AL INFELIZ PATO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="2" cols="6" border="false" image="perllop4.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="6" rows="2" />
+    <ids>0 2 0 0 4 3 2 2 0 1 1 0</ids>
+   </cells>
+   <cells rows="5" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>EL LOBO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop5.ass">
+   <description>
+    <p>Pedro, muy valiente, atrapó al lobo con una cuerda</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p5.wav" />
+     <p>PEDRO, MUY VALIENTE, ATRAPÓ AL LOBO CON UNA CUERDA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="perllop5.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Holes" cols="4" rows="4" showEnclosure="true" scaleX="4.0" scaleY="4.0">
+     <enclosing>
+      <shape>rectangle:0,0,4,4</shape>
+     </enclosing>
+     <shape>rectangle:0,0,1,1</shape>
+     <shape>M:1,0|L:1,1|L:2,1|L:2,2|L:2,3|L:2,4|L:3,4|L:3,3|L:3,2|L:3,1|L:3,0|X</shape>
+     <shape>M:3,0|L:3,1|L:3,2|L:3,3|L:3,4|L:4,4|L:4,3|L:4,2|L:4,1|L:4,0|X</shape>
+     <shape>M:0,1|L:0,2|L:1,2|L:1,3|L:0,3|L:0,4|L:2,4|L:2,3|L:2,2|L:2,1|X</shape>
+     <shape>rectangle:0,2,1,1</shape>
+    </shaper>
+    <ids>1 0 1 2 0</ids>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>EL LOBO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop6.ass">
+   <description>
+    <p>Al llegar los cazadores, Pedro ya tenía bien atado al lobo</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p6.wav" />
+     <p>AL LLEGAR LOS CAZADORES, PEDRO YA TENIA BIEN ATADO AL LOBO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="perllop6.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Holes" cols="4" rows="4" showEnclosure="true" scaleX="4.0" scaleY="4.0">
+     <enclosing>
+      <shape>rectangle:0,0,4,4</shape>
+     </enclosing>
+     <shape>M:0,0|L:0,1|L:0,2|L:0,3|L:0,4|L:2,4|L:2,3|L:2,2|L:2,1|L:2,0|X</shape>
+     <shape>M:2,0|L:2,1|L:2,2|L:2,3|L:2,4|L:4,4|L:4,3|L:4,2|L:4,1|L:3,1|L:3,0|X</shape>
+     <shape>rectangle:3,0,1,1</shape>
+    </shaper>
+    <ids>1 2 0</ids>
+   </cells>
+   <cells rows="3" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+     <p>LOS CAZADORES</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>EL LOBO</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="perllop7.ass">
+   <description>
+    <p>Todos, en procesión, se llevan al lobo hacia el zoo</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="p7.wav" />
+     <p>TODOS, EN PROCESIÓN, SE LLEVAN AL LOBO HACIA EL ZOO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="19" />
+      <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x008040">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0x008040" transparent="true" border="false" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="perllop8.gif" id="primary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Holes" cols="4" rows="4" showEnclosure="true" scaleX="4.0" scaleY="4.0">
+     <enclosing>
+      <shape>rectangle:0,0,4,4</shape>
+     </enclosing>
+     <shape>rectangle:0,0,1,1</shape>
+     <shape>M:1,0|L:1,1|L:1,2|L:2,2|L:2,1|L:2,0|X</shape>
+     <shape>M:2,0|L:2,1|L:2,2|L:3,2|L:3,1|L:3,0|X</shape>
+     <shape>M:3,0|L:3,1|L:3,2|L:4,2|L:4,1|L:4,0|X</shape>
+     <shape>M:0,1|L:0,2|L:0,3|L:0,4|L:1,4|L:1,3|L:1,2|L:1,1|X</shape>
+     <shape>M:1,2|L:1,3|L:1,4|L:2,4|L:2,3|L:3,3|L:3,2|X</shape>
+     <shape>M:3,2|L:3,3|L:3,4|L:4,4|L:4,3|L:4,2|X</shape>
+     <shape>rectangle:2,3,1,1</shape>
+    </shaper>
+    <ids>0 1 6 4 3 2 5 7</ids>
+   </cells>
+   <cells rows="8" cols="1" cellWidth="411.0" cellHeight="33.0" border="false" id="secondary">
+    <style>
+     <font family="Arial" size="19" />
+     <color background="0xFFFF80" inactive="0x800040" alternative="0x800040" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="cacatimb.wav" />
+     <p>LOS CAZADORES</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="lloptrom.wav" />
+     <p>EL LOBO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="avifagot.wav" />
+     <p>EL ABUELO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="anecobo.wav" />
+     <p>EL PATO</p>
+    </cell>
+    <cell>
+     <media type="PLAY_AUDIO" level="1" file="gatclari.wav" />
+     <p>EL GATO</p>
+    </cell>
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca1.puz">
+   <description>
+    <p>Pedro y el lobo(1)
+</p>
+    <p>Pedro</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>PEDRO SALE AL JARDÍN</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="pervioli.wav" />
+     <p>PEDRO</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop3.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca2.puz">
+   <description>
+    <p>Pedro y el lobo(2)
+</p>
+    <p>el pájaro</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>ENCUENTRA A SU AMIGO EL PÁJARO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="oceflaut.wav" />
+     <p>EL PÁJARO</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop2.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca3.puz">
+   <description>
+    <p>Pedro y el lobo(3)
+</p>
+    <p>el abuelo</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>EL ABUELO LE HACE ENTRAR EN CASA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="avifagot.wav" />
+     <p>EL ABUELO</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop1.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca4.puz">
+   <description>
+    <p>Pedro y el lobo(4)
+</p>
+    <p>el pato</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>LLEGA EL LOBO Y SE ZAMPA AL PATO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="anecobo.wav" />
+     <p>EL PATO</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop4.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca5.puz">
+   <description>
+    <p>Pedro y el lobo(5)
+</p>
+    <p>el lobo</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>PEDRO ATRAPA AL LOBO CON UNA CUERDA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="lloptrom.wav" />
+     <p>EL LOBO </p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop5.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca6.puz">
+   <description>
+    <p>Pedro y el lobo(6)
+</p>
+    <p>los cazadores</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>LOS CAZADORES LLEGAN DISPARANDO </p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="cacatimb.wav" />
+     <p>LOS CAZADORES</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop6.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="trenca7.puz">
+   <description>
+    <p>Pedro y el lobo(7)
+</p>
+    <p>el gato</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <p>TODOS LE LLEVAN AL ZOO, INCLUSO EL GATO</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Times New Roman" size="23" />
+      <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+     </style>
+     <media type="PLAY_AUDIO" level="2" file="gatclari.wav" />
+     <p>EL GATO</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF80">
+     <counters time="false" actions="false" score="false" />
+    </container>
+    <window bgColor="0xFFFF80" transparent="true" border="false" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="perllop8.gif">
+    <style>
+     <font family="Times New Roman" size="23" />
+     <color background="0xFFFF80" inactive="0x0000FF" alternative="0x0000FF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="anec1.gif" file="anec1.gif" animated="false" />
+  <media name="avi1.gif" file="avi1.gif" animated="false" />
+  <media name="cacador1.gif" file="cacador1.gif" animated="false" />
+  <media name="clarinhn.gif" file="clarinhn.gif" animated="false" />
+  <media name="clarinvm.gif" file="clarinvm.gif" animated="false" />
+  <media name="conte.gif" file="conte.gif" animated="false" />
+  <media name="corda.gif" file="corda.gif" animated="false" />
+  <media name="corda1.gif" file="corda1.gif" animated="false" />
+  <media name="fagotm.gif" file="fagotm.gif" animated="false" />
+  <media name="fagotv.gif" file="fagotv.gif" animated="false" />
+  <media name="flautam.gif" file="flautam.gif" animated="false" />
+  <media name="gat1.gif" file="gat1.gif" animated="false" />
+  <media name="instrum.gif" file="instrum.gif" animated="false" />
+  <media name="llop1.gif" file="llop1.gif" animated="false" />
+  <media name="oboem.gif" file="oboem.gif" animated="false" />
+  <media name="oboemini.gif" file="oboemini.gif" animated="false" />
+  <media name="oboev.gif" file="oboev.gif" animated="false" />
+  <media name="ocell1.gif" file="ocell1.gif" animated="false" />
+  <media name="percusio.gif" file="percusio.gif" animated="false" />
+  <media name="pere.gif" file="pere.gif" animated="false" />
+  <media name="pere1.gif" file="pere1.gif" animated="false" />
+  <media name="perebe.gif" file="perebe.gif" animated="false" />
+  <media name="perllop0.gif" file="perllop0.gif" animated="false" />
+  <media name="perllop1.gif" file="perllop1.gif" animated="false" />
+  <media name="perllop2.gif" file="perllop2.gif" animated="false" />
+  <media name="perllop3.gif" file="perllop3.gif" animated="false" />
+  <media name="perllop4.gif" file="perllop4.gif" animated="false" />
+  <media name="perllop5.gif" file="perllop5.gif" animated="false" />
+  <media name="perllop6.gif" file="perllop6.gif" animated="false" />
+  <media name="perllop8.gif" file="perllop8.gif" animated="false" />
+  <media name="personat.gif" file="personat.gif" animated="false" />
+  <media name="puzles.gif" file="puzles.gif" animated="false" />
+  <media name="timbales.gif" file="timbales.gif" animated="false" />
+  <media name="timbalm.gif" file="timbalm.gif" animated="false" />
+  <media name="trompam.gif" file="trompam.gif" animated="false" />
+  <media name="vent.gif" file="vent.gif" animated="false" />
+  <media name="violim.gif" file="violim.gif" animated="false" />
+  <media name="violiv.gif" file="violiv.gif" animated="false" />
+  <media name="anecsol.mid" file="anecsol.mid" />
+  <media name="gatsol.mid" file="gatsol.mid" />
+  <media name="lavisol.mid" file="lavisol.mid" />
+  <media name="ocellsol.mid" file="ocellsol.mid" />
+  <media name="peresol.mid" file="peresol.mid" />
+  <media name="anec.wav" file="anec.wav" />
+  <media name="anecobo.wav" file="anecobo.wav" />
+  <media name="avi.wav" file="avi.wav" />
+  <media name="avifagot.wav" file="avifagot.wav" />
+  <media name="cacadors.wav" file="cacadors.wav" />
+  <media name="cacatimb.wav" file="cacatimb.wav" />
+  <media name="clarinet.wav" file="clarinet.wav" />
+  <media name="fagot.wav" file="fagot.wav" />
+  <media name="flauta.wav" file="flauta.wav" />
+  <media name="gat.wav" file="gat.wav" />
+  <media name="gatclari.wav" file="gatclari.wav" />
+  <media name="llop.wav" file="llop.wav" />
+  <media name="lloptrom.wav" file="lloptrom.wav" />
+  <media name="oboe.wav" file="oboe.wav" />
+  <media name="oceflaut.wav" file="oceflaut.wav" />
+  <media name="ocell.wav" file="ocell.wav" />
+  <media name="p1.wav" file="p1.wav" />
+  <media name="p2.wav" file="p2.wav" />
+  <media name="p3.wav" file="p3.wav" />
+  <media name="p4.wav" file="p4.wav" />
+  <media name="p5.wav" file="p5.wav" />
+  <media name="p6.wav" file="p6.wav" />
+  <media name="p7.wav" file="p7.wav" />
+  <media name="pere.wav" file="pere.wav" />
+  <media name="pervioli.wav" file="pervioli.wav" />
+  <media name="timbales.wav" file="timbales.wav" />
+  <media name="trompa.wav" file="trompa.wav" />
+  <media name="violi.wav" file="violi.wav" />
+ </mediaBag>
+</JClicProject>
+

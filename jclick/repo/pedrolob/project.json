@@ -1,0 +1,157 @@
+{
+ "title": "Pedro y el lobo",
+ "author": "Miren Garralda",
+ "school": "Escola Mas Casanovas Barcelona",
+ "date": "29/07/02",
+ "languages": {
+  "en": "Spanish",
+  "ca": "espanyol",
+  "es": "español"
+ },
+ "langCodes": [
+  "es"
+ ],
+ "areas": {
+  "en": "Music",
+  "ca": "Música",
+  "es": "Música"
+ },
+ "areaCodes": [
+  "mus"
+ ],
+ "levels": {
+  "en": "Kindergarten (3-6), Primary school (6-12)",
+  "ca": "Infantil (3-6), Primària (6-12)",
+  "es": "Infantil (3-6), Primaria (6-12)"
+ },
+ "levelCodes": [
+  "INF",
+  "PRI"
+ ],
+ "descriptors": {
+  "ca": "conte, audició musical",
+  "es": "cuento, audición musical",
+  "en": "story, musical hearing"
+ },
+ "descCodes": [
+  614,
+  718
+ ],
+ "description": {
+  "en": "Music activities based on Prokofiev's \"Peter and the wolf\".",
+  "ca": "Activitats basades en el conte musical escrit per Sergei Prokofiev, on s'utilitzen diferents instruments musicals i melodies per a identificar els personatges.",
+  "es": "Actividades basadas en el cuento musical escrito por Sergei Prokofiev \"Pedro y el lobo\" donde se utilizan distintos instrumentos musicales y melodías para identificar a los personajes."
+ },
+ "license": {
+  "en": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>",
+  "ca": "Aquesta obra està sota una llicència de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>",
+  "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>"
+ },
+ "relatedTo": [
+  "perellop",
+  "peruotso"
+ ],
+ "mainFile": "pedrolob.jclic",
+ "cover": "cover.gif",
+ "thumbnail": "thumb.png",
+ "zipFile": "jclic/pedrolob.jclic.zip",
+ "instFile": "jclic/pedrolob.jclic.inst",
+ "clicZoneId": 1371,
+ "clicZoneURL": "http://clic.xtec.cat/db/act_es.jsp?id=1371",
+ "clicZoneAppletURL": "http://clic.xtec.cat/db/jclicApplet.jsp?project=http://clic.xtec.cat/projects/pedrolob/jclic/pedrolob.jclic.zip",
+ "meta_langs": [
+  "ca",
+  "es",
+  "en"
+ ],
+ "activities": 38,
+ "mediaFiles": 71,
+ "totalSize": 5960936,
+ "files": [
+  "cover.gif",
+  "anec.wav",
+  "anec1.gif",
+  "anecobo.wav",
+  "anecsol.mid",
+  "avi.wav",
+  "avi1.gif",
+  "avifagot.wav",
+  "cacador1.gif",
+  "cacadors.wav",
+  "cacatimb.wav",
+  "clarinet.wav",
+  "clarinhn.gif",
+  "clarinvm.gif",
+  "conte.gif",
+  "corda.gif",
+  "corda1.gif",
+  "fagot.wav",
+  "fagotm.gif",
+  "fagotv.gif",
+  "flauta.wav",
+  "flautam.gif",
+  "gat.wav",
+  "gat1.gif",
+  "gatclari.wav",
+  "gatsol.mid",
+  "instrum.gif",
+  "lavisol.mid",
+  "llop.wav",
+  "llop1.gif",
+  "lloptrom.wav",
+  "oboe.wav",
+  "oboem.gif",
+  "oboemini.gif",
+  "oboev.gif",
+  "oceflaut.wav",
+  "ocell.wav",
+  "ocell1.gif",
+  "ocellsol.mid",
+  "p1.wav",
+  "p2.wav",
+  "p3.wav",
+  "p4.wav",
+  "p5.wav",
+  "p6.wav",
+  "p7.wav",
+  "pedrolob.jclic",
+  "percusio.gif",
+  "pere.gif",
+  "pere.wav",
+  "pere1.gif",
+  "perebe.gif",
+  "peresol.mid",
+  "perllop0.gif",
+  "perllop1.gif",
+  "perllop2.gif",
+  "perllop3.gif",
+  "perllop4.gif",
+  "perllop5.gif",
+  "perllop6.gif",
+  "perllop8.gif",
+  "personat.gif",
+  "pervioli.wav",
+  "puzles.gif",
+  "timbales.gif",
+  "timbales.wav",
+  "timbalm.gif",
+  "trompa.wav",
+  "trompam.gif",
+  "vent.gif",
+  "violi.wav",
+  "violim.gif",
+  "violiv.gif",
+  "project.json",
+  "thumb.png",
+  "index.html",
+  "pedrolob.jclic.js",
+  "favicon.ico",
+  "icon-72.png",
+  "icon-192.png",
+  "imsmanifest.xml"
+ ],
+ "relatedTitles": [
+  "En Pere i el llop (ca)",
+  "En Pere i el llop (eu)"
+ ]
+}

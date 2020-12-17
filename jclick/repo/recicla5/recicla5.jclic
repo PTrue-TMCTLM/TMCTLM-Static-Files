@@ -1,0 +1,4587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="recicla5" version="0.1.3">
+ <settings>
+  <title>Reciclar desde el colegio</title>
+  <revision description="created" date="4/29/09" />
+  <revision description="Publicación en la zonaClic (http://clic.xtec.cat)" date="5/16/13">
+   <author name="Equip Clic" mail="clic@xtec.cat" organization="Àrea TIC - Departament d'Educació" />
+  </revision>
+  <author name="Luis Manuel Blanco de Castro" mail="indioviejo@hotmail.com" />
+  <organization name="CP Cervantes" mail="13002472.cp@edu.jccm.es" url="http://edu.jccm.es/cp/cervantespuertollano/" city="Puertollano - Ciudad Real" state="Castilla - La Mancha" />
+  <organization name="CP José Maria del Moral" mail="13003041.cp@edu.jccm.es" url="http://colemoral.blogspot.com.es/" city="Tomelloso" state="Castilla - La Mancha" />
+  <language>español</language>
+  <description>
+   <p>&lt;i&gt;Reciclar desde el colegio&lt;/i&gt; es un proyecto para aprender a reciclar cualquier tipo de material. El proyecto está dividido en dos partes:</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;¿Qué es reciclar?</p>
+   <p>&lt;li&gt;Actividades</p>
+   <p>&lt;ul&gt;</p>
+   <p>&lt;li&gt;Papel y cartón</p>
+   <p>&lt;li&gt;Envases y plásticos</p>
+   <p>&lt;li&gt;Vidrio y cristal</p>
+   <p>&lt;li&gt;Basuras orgánicas</p>
+   <p>&lt;l&gt;Actividades resumen</p>
+   <p>&lt;/ul&gt;</p>
+   <p>&lt;/ul&gt;</p>
+  </description>
+  <descriptors area="Ciencias experimentales" level="Primaria (6-12)">reciclar</descriptors>
+ </settings>
+ <sequence>
+  <item id="inicio" name="portada" />
+  <item name="1o" delay="25" navButtons="back" />
+  <item name="1o_2" />
+  <item id="Que es reciclar" name="1" delay="6" navButtons="back" />
+  <item name="2" delay="13" navButtons="back" />
+  <item name="3" />
+  <item name="4" delay="13" navButtons="back" />
+  <item name="5" />
+  <item name="6" delay="12" navButtons="back" />
+  <item name="7" />
+  <item name="8" />
+  <item name="8o" />
+  <item name="9" />
+  <item name="9o" />
+  <item name="10" />
+  <item name="10o" delay="10" navButtons="back" />
+  <item name="10o1" />
+  <item name="11" />
+  <item name="12" />
+  <item name="13" />
+  <item name="14" delay="20" navButtons="back" />
+  <item name="15" />
+  <item name="16" />
+  <item name="16o" />
+  <item name="16o1" />
+  <item name="17" />
+  <item name="17o" />
+  <item name="18" />
+  <item name="18o" />
+  <item name="18o1" />
+  <item name="19" />
+  <item name="19o" />
+  <item name="19o1" />
+  <item id="menu 6 opciones" name="MENU">
+   <jump action="RETURN" id="back" />
+  </item>
+  <item id="papel y carton" name="30" delay="14" navButtons="back" />
+  <item name="31" delay="15" navButtons="back" />
+  <item name="32" delay="12" navButtons="back" />
+  <item name="33" />
+  <item name="34" />
+  <item name="34o" />
+  <item name="34o1" delay="15" navButtons="back" />
+  <item name="34o1o1" delay="20" navButtons="back" />
+  <item name="34o2" />
+  <item name="34o3" />
+  <item name="35" />
+  <item name="36" />
+  <item name="36o" />
+  <item name="36o1" />
+  <item name="37" />
+  <item name="38" />
+  <item name="39" delay="25" navButtons="back" />
+  <item name="40" />
+  <item name="41" />
+  <item name="42">
+   <jump tag="menu 6 opciones" id="forward" />
+  </item>
+  <item id="envases y plasticos" name="50" delay="16" navButtons="back">
+   <jump tag="menu 6 opciones" id="back" />
+  </item>
+  <item name="51" delay="20" navButtons="back" />
+  <item name="52" delay="8" />
+  <item name="53" />
+  <item name="54" />
+  <item name="54o" />
+  <item name="54o1" delay="35" navButtons="back" />
+  <item name="54o1o1" delay="13" navButtons="back" />
+  <item name="54o2" />
+  <item name="54o3" />
+  <item name="55" />
+  <item name="56" />
+  <item name="56o" />
+  <item name="56o1" />
+  <item name="57" />
+  <item name="58" />
+  <item name="59" delay="26" navButtons="back" />
+  <item name="60" />
+  <item name="61" />
+  <item name="62">
+   <jump tag="menu 6 opciones" id="forward" />
+  </item>
+ </sequence>
+ <activities>
+  <activity class="@panels.InformationScreen" name="1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="q es reciclar con tilde.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="10" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Responde y pulsa la tecla "enter" o  "intro".</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Fantástico!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true">
+     <size width="493" height="361" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <document>
+    <style name="default" bold="true" family="Mi Cole" italic="false" tabWidth="12" size="28" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="true" family="Mi Cole" background="0xFFFFFF">La primera medida para poder reciclar es que cada uno de nosotros </text>
+      <target>
+       <answer>separemos</answer>
+       <optionList>
+        <option>juntemos</option>
+        <option>mezclemos</option>
+        <option>separemos</option>
+       </optionList>
+       <text>separemos</text>
+      </target>
+      <text bold="true" family="Mi Cole" background="0xFFFFFF"> nuestros residuos y los depositemos en los </text>
+      <target>
+       <answer>contenedores</answer>
+       <response fill="_" length="12" maxLength="12" />
+       <text>contenedores</text>
+      </target>
+      <text bold="true" family="Mi Cole" background="0xFFFFFF"> correspondientes.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="10o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Si no reciclamos esto es lo que sucede.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="494.0" cellHeight="443.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="middle,bottom" imgAlign="middle,top" image="basurero.jpg">
+     <style>
+      <font family="Mi Cole" size="28" />
+      <color background="0xFFFFFF" shadow="0xCCFF33" />
+     </style>
+     <p>Esto es lo que sucede si no separamos bien los residuos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="10o1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Realiza el puzzle con cuidado, solo puedes cometer un fallo</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Lo has hecho francamente bien!!</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Te he dicho que tuvieras cuidado, ¡inténtalo otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="18" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="recogida selectiva.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="11" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza con sentido estas palabras</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué claro lo tienes!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Fijate mejor y repite el ejercicio.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="7" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="286.0" cellHeight="61.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <p>Reciclar es</p>
+    </cell>
+    <cell>
+     <p>volver a hacer </p>
+    </cell>
+    <cell>
+     <p>utilizables</p>
+    </cell>
+    <cell>
+     <p>los materiales</p>
+    </cell>
+    <cell>
+     <p>que ya han sido</p>
+    </cell>
+    <cell>
+     <p>utilizados.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="12" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Más difícil todavía, ¡organiza las palabras!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Formidable!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Tomaté tu tiempo y hazlo con atención</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="10" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="8" cols="1" cellWidth="527.0" cellHeight="82.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell>
+     <p>Con el reciclaje reducimos</p>
+    </cell>
+    <cell>
+     <p> la contaminación,</p>
+    </cell>
+    <cell>
+     <p>ya que no se generan </p>
+    </cell>
+    <cell>
+     <p>tantos residuos,</p>
+    </cell>
+    <cell>
+     <p>se ahorra energía</p>
+    </cell>
+    <cell>
+     <p>y se reduce</p>
+    </cell>
+    <cell>
+     <p>el consumo de</p>
+    </cell>
+    <cell>
+     <p>recursos naturales.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="13" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Otra más de organizar palabras!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Ya veo que has prestado atención</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡ Buuuff !! ¡Inténtalo otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="6" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="460.0" cellHeight="112.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell>
+     <p>La primera medida para reciclar</p>
+    </cell>
+    <cell>
+     <p>es que cada uno de nosotros</p>
+    </cell>
+    <cell>
+     <p>separemos nuestros residuos</p>
+    </cell>
+    <cell>
+     <p>y los depositemos en</p>
+    </cell>
+    <cell>
+     <p>los contenedores correspondientes.</p>
+    </cell>
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="14" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con mucha atención.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="529.0" cellHeight="395.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell txtAlign="middle,top" imgAlign="middle,bottom" avoidOverlapping="true" image="reciclaje 3 contenedores redimensionada.jpg">
+     <p>	Es muy importante saber cómo separar la basura ya que, si no lo hacemos bien, los distintos materiales no se podrán reciclar.</p>
+     <p>	RECUERDA: los envases, las latas y los plásticos se tiran en el contendor amarillo, el vidrio y los cristales, en el verde, y el papel y cartón, en el azul.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="15" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza las piezas y lee el mensaje escrito.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Juega limpio, tu colaboración es muy importante</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡No, no!!  ¡¡Inténtalo otra vez!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="15" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="cartel juega limpio.JPG">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.Explore" name="16" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea en cada contenedor y aprende.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="315.0" cellHeight="119.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="amarillo.jpg" />
+    <cell id="1" image="azul.jpg" />
+    <cell id="3" image="verde.jpg" />
+    <cell id="2" image="ka120.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="329.0" cellHeight="85.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>Plástico y envases</p>
+    </cell>
+    <cell>
+     <p>Papel y cartón</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Vidrio y cristal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="16o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Fíjate con mucha atención y memoriza.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="266.0" cellHeight="77.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="amarillo.jpg" />
+    <cell id="1" image="azul.jpg" />
+    <cell id="3" image="verde.jpg" />
+    <cell id="2" image="ka120.jpg" />
+   </cells>
+   <cells rows="4" cols="1" cellWidth="329.0" cellHeight="85.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <p>Plástico y envases</p>
+    </cell>
+    <cell>
+     <p>Papel y cartón</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Vidrio y cristal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@panels.Explore" name="16o1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea sobre las palabras y observa.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="311.0" cellHeight="102.0" border="true" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0">
+     <p>Plástico y envases</p>
+    </cell>
+    <cell id="1">
+     <p>Papel y cartón</p>
+    </cell>
+    <cell id="3">
+     <p>Vidrio y cristal</p>
+    </cell>
+    <cell id="2">
+     <p>Basura orgánica</p>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="329.0" cellHeight="85.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="amarillo.jpg">
+     <p>Plástico y envases</p>
+    </cell>
+    <cell image="azul.jpg">
+     <p>Papel y cartón</p>
+    </cell>
+    <cell image="ka120.jpg">
+     <p>Basura orgánica</p>
+    </cell>
+    <cell image="verde.jpg">
+     <p>Vidrio y cristal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="17" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relaciona los contenedores con las palabras.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Lo tienes claro!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡Inténtalo de nuevo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="4" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="154.0" cellHeight="116.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="amarillo.jpg">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFF00" />
+     </style>
+    </cell>
+    <cell image="azul.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+    </cell>
+    <cell image="ka120.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+    </cell>
+    <cell image="verde.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="371.0" cellHeight="116.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFF00" inactive="0xFFFF00" />
+     </style>
+     <p>Plástico y envases</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0x000099" inactive="0x000099" />
+     </style>
+     <p>Papel y cartón</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFF0000" inactive="0xFF0000" />
+     </style>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0x009933" inactive="0x009933" />
+     </style>
+     <p>Vidrio y cristal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="17o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relaciona.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Fantástico!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡ Te has equivocado, repítelo !!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="4" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="154.0" cellHeight="116.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="amarillo.jpg">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFF00" />
+     </style>
+    </cell>
+    <cell image="azul.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+    </cell>
+    <cell image="ka120.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+    </cell>
+    <cell image="verde.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="371.0" cellHeight="116.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFF00" />
+     </style>
+     <p>Plástico y envases</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+     <p>Papel y cartón</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+     <p>Vidrio y cristal</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="18" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué depositamos en cada contenedor?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Cómo te lo has currado!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Vidrio y cristal, papel y cartón,plásticos y envases, basura orgánica.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="168.0" cellHeight="82.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="verde.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+    </cell>
+    <cell id="1" image="azul.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+    </cell>
+    <cell id="2" image="amarillo.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFF00" />
+     </style>
+    </cell>
+    <cell id="3" image="ka120.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="328.0" cellHeight="84.0" border="true" id="answers">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+     <p>Vidrio y cristal</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+     <p>Papel y cartón</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+     <p>Plástico y envases</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+     <p>Basura orgánica</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.HolePuzzle" name="18o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza las piezas y descubre al ...</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Zorro</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="true" image="ZORRO.jpg">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="18o1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué echarías en cada contenedor?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Muy bien!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="366.0" cellHeight="70.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell id="0" image="verde.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+    </cell>
+    <cell id="1" image="azul.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+    </cell>
+    <cell id="2" image="amarillo.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFFFF00" />
+     </style>
+    </cell>
+    <cell id="3" image="ka120.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="328.0" cellHeight="84.0" border="true" id="answers">
+    <style>
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFFFF33" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x009933" />
+     </style>
+     <p>Vidrio y cristal</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+     <p>Papel y cartón</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0x000099" />
+     </style>
+     <p>Plástico y envases</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" inactive="0xFF0000" />
+     </style>
+     <p>Basura orgánica</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="19" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja las imágenes.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Has estado muy astuto!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡No puedes fallar tanto!!  ¡Inténtalo de nuevo!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="22" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="162.0" cellHeight="200.0" border="true" id="primary">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF66CC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="amarillo.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="ka120.jpg" />
+    <cell image="verde.jpg" />
+    <cell image="reciclado.jpg" />
+    <cell image="reciclaje 3 contenedores redimensionada.jpg" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="19o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Haz parejas !!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Fantástico!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Inténtalo de nuevo!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="16" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="122.0" cellHeight="152.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0x00CCCC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="amarillo.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="ka120.jpg" />
+    <cell image="verde.jpg" />
+    <cell image="reciclaje.jpg" />
+    <cell image="reciclaje2.gif" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="19o1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Busca nueve elementos relacionados con el reciclaje.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Te estás convirtiendo en un experto reciclador.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <textGrid rows="12" columns="9" cellWidth="46.0" cellHeight="46.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>RECICLARC***</row>
+     <row>*N******RR*C</row>
+     <row>*VIDRIO*IE*A</row>
+     <row>*A******SD*R</row>
+     <row>*S**L***TU*T</row>
+     <row>*E*E****AC*O</row>
+     <row>*SP*****LI*N</row>
+     <row>RAZILITUER**</row>
+     <row>P***OCITSALP</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">RECICLAR</clue>
+    <clue id="1">ENVASES</clue>
+    <clue id="2">PLASTICO</clue>
+    <clue id="3">VIDRIO</clue>
+    <clue id="4">CARTON</clue>
+    <clue id="5">PAPEL</clue>
+    <clue id="6">REDUCIR</clue>
+    <clue id="7">REUTILIZAR</clue>
+    <clue id="8">CRISTAL</clue>
+   </clues>
+   <cells rows="9" cols="1" cellWidth="158.0" cellHeight="46.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="9" />
+    <cell>
+     <p>Reciclar</p>
+    </cell>
+    <cell>
+     <p>Envases</p>
+    </cell>
+    <cell>
+     <p>Plástico</p>
+    </cell>
+    <cell>
+     <p>Vidrio</p>
+    </cell>
+    <cell>
+     <p>Cartón</p>
+    </cell>
+    <cell>
+     <p>Papel</p>
+    </cell>
+    <cell>
+     <p>Reducir</p>
+    </cell>
+    <cell>
+     <p>Reutilizar</p>
+    </cell>
+    <cell>
+     <p>Cristal</p>
+    </cell>
+   </cells>
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="1o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con atención.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="6" cols="1" cellWidth="889.0" cellHeight="96.0" border="false">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="6" />
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>ANTES  DE   EMPEZAR,   LEETE   ESTAS  INSTRUCCIONES:</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style>
+      <font family="Mi Cole" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>1. Necesitas un cuaderno y un lápiz o bolígrafo para hacer anotaciones.        </p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>2. Para realizar las actividades tienes un número máximo de intentos. Si los agotas tienes que empezar la actividad desde el principio hasta realizarla correctamente.</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>3. Consulta la ayuda (?) para poder resolver algunas actividades. El botón se encuentra en el lado izquierdo-abajo de la pantalla.</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>4. Las pantallas de información se pasan solas, transcurridos unos segundos para poderlas leer con tranquilidad. Si no te da tiempo leerlas, pulsa el botón de retroceso de actividad, situado en el lado izquierdo-abajo.</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="26" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>5. Cada vez que pases una pantalla lee con detenimiento el mensaje que sale en la parte inferior de la pantalla.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="1o_2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea en la opción elegida.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="2" cellWidth="452.0" cellHeight="481.0" border="false">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="2" rows="1" />
+    <cell txtAlign="middle,top" image="reciclaje.jpg">
+     <style shadow="true">
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="45" cycles="10" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="Que es reciclar" />
+     <p>1. ¿QUÉ ES RECICLAR?</p>
+    </cell>
+    <cell txtAlign="left,bottom" avoidOverlapping="true" image="menu para actividad redimensionada.jpg">
+     <style shadow="true" borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="135" cycles="10" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="menu 6 opciones" />
+     <p>   2.  MENÚ DE ACTIVIDADES</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con atención.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="597.0" cellHeight="327.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="middle,bottom" avoidOverlapping="true" image="reciclado.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>	Reciclar es volver a hacer utilizables los materiales que ya han sido utilizados. Muchos materiales son fácilmente reciclables, como el plástico, el vidrio, el papel, el aluminio, etc</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Organiza las piezas!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Qué bonita la Naturaleza!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Has agotado el número de movimientos posibles</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="11" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="false" image="lagochulo.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="30" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué nos dice Azulín?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="551.0" cellHeight="357.0" border="true">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF66CC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Soy Azulín y en mi podrás depositar los envases de cartón, como los de las galletas o cereales y el papel.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="31" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="694.0" cellHeight="462.0" border="true">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF66CC" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,bottom" avoidOverlapping="true" image="azul que habla.jpg">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Es muy importante que el papel no esté manchado de grasa para que sea posible reciclarlo y convertirlo en más papel. Si no, NO sirve, y sería una pena después de tanto esfuerzo, ¿verdad?</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="32" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p> Esta es mi familia, somos todos azules.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="167.0" cellHeight="159.0" border="true">
+    <style>
+     <font family="Arial" size="17" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF66CC" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="azul.jpg" />
+    <cell image="AZUL DOBLE MUY GRANDE.jpg" />
+    <cell image="AZUL GRANDE.jpg" />
+    <cell image="AZUL OVALADO GEANDE.jpg" />
+    <cell image="contenedor-basura-1000-azul.gif" />
+    <cell image="azul 2.jpg" />
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="33" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja los contenedores azules.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Tu si qué sabes!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Vamos, tu puedes!!   ¡¡Inténtalo otra vez!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="14" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="147.0" cellHeight="139.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="azul 2.jpg" />
+    <cell image="AZUL DOBLE MUY GRANDE.jpg" />
+    <cell image="AZUL GRANDE.jpg" />
+    <cell image="AZUL OVALADO GEANDE.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="contenedor-basura-1000-azul.gif" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="34" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja los contenedores azules.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Lo has bordado!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡No te rindas!  ¡Inténtalo otra vez!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="16" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="147.0" cellHeight="139.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="azul 2.jpg" />
+    <cell image="AZUL DOBLE MUY GRANDE.jpg" />
+    <cell image="AZUL GRANDE.jpg" />
+    <cell image="AZUL OVALADO GEANDE.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="contenedor-basura-1000-azul.gif" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="34o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué pone el cartel?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ Muy bien!!</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡ Tienes que fijarte más !, ¡ inténtalo de nuevo !</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="29" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="5" cols="5" border="true" image="cartel azul.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="5" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="34o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee y recuerda.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="583.0" cellHeight="394.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,bottom" image="azul que habla.jpg">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>SE DEBEN DEPOSITAR EN EL CONTENDOR AZUL:</p>
+     <p>Periódicos, revistas, cómics, cajas y embalajes de papel o cartón, libretas, cuadernos, libros, folios, sobres, folletos publicitarios,etc</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="34o1o1" code="">
+   <description />
+   <messages>
+    <cell image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="5" cols="1" cellWidth="1023.0" cellHeight="116.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Arial" size="24" />
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="5" />
+    <cell imgAlign="right,bottom">
+     <p>BENEFICIOS DE LA RECOGIDA SELECTIVA DE PAPEL Y CARTÓN</p>
+     <p> </p>
+     <p>    </p>
+    </cell>
+    <cell>
+     <p>1. Se evita la tala de árboles. </p>
+    </cell>
+    <cell>
+     <p>    </p>
+     <p>2. Disminuye la contaminación atmosférica y acuática. </p>
+     <p>  </p>
+    </cell>
+    <cell imgAlign="right,bottom">
+     <p>             </p>
+     <p>3. Se reduce el consumo de energía y  de agua. </p>
+    </cell>
+    <cell imgAlign="right,bottom" image="azul que habla.jpg">
+     <p>                           </p>
+     <p>4. Disminuye el volumen de residuos que van a parar a los vertederos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Explore" name="34o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea en cada imagen para conocer su nombre.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="99.0" cellHeight="89.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="basura organica.jpg" />
+    <cell id="1" image="BOLSA PA.jpg" />
+    <cell id="2" image="botellas vidrios.jpg" />
+    <cell id="3" image="caja cereales 2.jpg" />
+    <cell id="4" image="CAJA DE CARTON.jpg" />
+    <cell id="5" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="6" image="coca cola.jpg" />
+    <cell id="7" image="lata atun.jpg" />
+    <cell id="8" image="lata sardinas.jpg" />
+    <cell id="9" image="libretas.jpg" />
+    <cell id="10" image="libros.jpg" />
+    <cell id="11" image="plastico champu.jpg" />
+    <cell id="12" image="revistas.jpg" />
+    <cell id="13" image="sobres.jpg" />
+    <cell id="14" image="tetra zumo2.jpg" />
+    <cell id="15" image="tetrabrick solan.jpg" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="125.0" cellHeight="85.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Bolsas de papel</p>
+    </cell>
+    <cell>
+     <p>Botellas de cristal</p>
+    </cell>
+    <cell>
+     <p>Caja de cereales</p>
+    </cell>
+    <cell>
+     <p>Caja de cartón</p>
+    </cell>
+    <cell>
+     <p>Cartones</p>
+    </cell>
+    <cell>
+     <p>Lata de coca cola</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Latilla de conservas</p>
+    </cell>
+    <cell>
+     <p>Libretas</p>
+    </cell>
+    <cell>
+     <p>Libros</p>
+    </cell>
+    <cell>
+     <p>Bote de champú</p>
+    </cell>
+    <cell>
+     <p>Revistas</p>
+    </cell>
+    <cell>
+     <p>Sobres</p>
+    </cell>
+    <cell>
+     <p>Brick de zumo</p>
+    </cell>
+    <cell>
+     <p>Tetra brick</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="34o3" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escribe el nombre de cada imagen.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Fantástico!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡ Seguro que eres capaz de hacerlo , si lo intentas otra vez!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  la  actividad  anterior  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.  Ten  en  cuenta  los  acentos  a  la  hora  de  escribir  los  nombres.</p>
+    </helpWindow>
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="127.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="basura organica.jpg" />
+    <cell id="1" image="BOLSA PA.jpg" />
+    <cell id="2" image="botellas vidrios.jpg" />
+    <cell id="3" image="caja cereales 2.jpg" />
+    <cell id="4" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="5" image="CAJA DE CARTON.jpg" />
+    <cell id="6" image="coca cola.jpg" />
+    <cell id="7" image="lata atun.jpg" />
+    <cell id="8" image="lata sardinas.jpg" />
+    <cell id="9" image="libretas.jpg" />
+    <cell id="10" image="libros.jpg" />
+    <cell id="11" image="plastico champu.jpg" />
+    <cell id="12" image="revistas.jpg" />
+    <cell id="13" image="sobres.jpg" />
+    <cell id="14" image="tetra zumo2.jpg" />
+    <cell id="15" image="tetrabrick solan.jpg" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="103.0" cellHeight="57.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Bolsas de papel</p>
+    </cell>
+    <cell>
+     <p>Botellas de cristal</p>
+    </cell>
+    <cell>
+     <p>Caja de cereales</p>
+    </cell>
+    <cell>
+     <p>Cartones</p>
+    </cell>
+    <cell>
+     <p>Caja de cartón</p>
+    </cell>
+    <cell>
+     <p>Lata de coca cola</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Latilla de conservas</p>
+    </cell>
+    <cell>
+     <p>Libretas</p>
+    </cell>
+    <cell>
+     <p>Libros</p>
+    </cell>
+    <cell>
+     <p>Bote de champú</p>
+    </cell>
+    <cell>
+     <p>Revistas</p>
+    </cell>
+    <cell>
+     <p>Sobres</p>
+    </cell>
+    <cell>
+     <p>Brick de zumo</p>
+    </cell>
+    <cell>
+     <p>Tetra brick</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="35" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Deposita cada elemento en su contenedor.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Arial" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡GENIAL!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="18" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="130.0" cellHeight="113.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="libretas.jpg" />
+    <cell id="0" image="libros.jpg" />
+    <cell id="0" image="revistas.jpg" />
+    <cell id="0" image="sobres.jpg" />
+    <cell id="1" image="basura organica.jpg" />
+    <cell id="0" image="BOLSA PA.jpg" />
+    <cell id="0" image="caja cereales 2.jpg" />
+    <cell id="0" image="CAJA DE CARTON.jpg" />
+    <cell id="0" image="cartones.jpg" />
+    <cell id="1" image="lata atun.jpg" />
+    <cell id="1" image="tetrabrick solan.jpg" />
+    <cell id="1" image="tetra zumo2.jpg" />
+    <cell id="1" image="plastico champu.jpg" />
+    <cell id="1" image="lata sardinas.jpg" />
+    <cell id="1" image="coca cola.jpg" />
+    <cell id="1" image="botellas vidrios.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="246.0" cellHeight="111.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="azul que habla.jpg" />
+    <cell avoidOverlapping="true">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>OTROS CONTENEDORES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="36" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Coloca las piezas.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Tu si qué sabes!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="14" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="AZUL DOBLE MUY GRANDE.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@JigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.Explore" name="36o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea en cada imagen para saber cómo se llama cada elemento.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="127.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="bolsa de pipas.jpg" />
+    <cell id="1" image="botella plastico 2.jpg" />
+    <cell id="2" image="botellin5e.jpg" />
+    <cell id="3" image="caja cereales.jpg" />
+    <cell id="4" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="5" image="caja galletas maria.jpg" />
+    <cell id="6" image="comic_marvel_secret_wars.jpg" />
+    <cell id="7" image="lata comida perros.jpg" />
+    <cell id="8" image="latatunat100x85.gif" />
+    <cell id="9" image="NOTA.jpg" />
+    <cell id="10" image="PERIODICO2.jpg" />
+    <cell id="11" image="REVISTAS2.jpg" />
+    <cell id="12" image="basura organica 3.jpg" />
+    <cell id="13" image="brick puleva peque.jpg" />
+    <cell id="14" image="brick zumo.jpg" />
+    <cell id="15" image="FOLIOS.jpg" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="95.0" cellHeight="92.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell>
+     <p>Bolsas de pipas</p>
+    </cell>
+    <cell>
+     <p>Botella de agua</p>
+    </cell>
+    <cell>
+     <p>Botellín de cristal</p>
+    </cell>
+    <cell>
+     <p>Caja de cereales</p>
+    </cell>
+    <cell>
+     <p>Cartones</p>
+    </cell>
+    <cell>
+     <p>Caja de galletas</p>
+    </cell>
+    <cell>
+     <p>Cómic</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Papel</p>
+    </cell>
+    <cell>
+     <p>Periódicos</p>
+    </cell>
+    <cell>
+     <p>Revistas</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Brick de leche</p>
+    </cell>
+    <cell>
+     <p>Tetra brick</p>
+    </cell>
+    <cell>
+     <p>Folios</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="36o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pon nombre a cada imagen.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+     <p>¡¡ Muy bien  !!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>¡¡ Seguro que si lo intentas otra vez lo consigues.!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  la  actividad  anterior  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.  Ten  en  cuenta  los  acentos  a  la  hora  de  escribir  los  nombres.</p>
+    </helpWindow>
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="127.0" cellHeight="100.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="bolsa de pipas.jpg" />
+    <cell id="1" image="botella plastico 2.jpg" />
+    <cell id="2" image="botellin5e.jpg" />
+    <cell id="3" image="caja cereales.jpg" />
+    <cell id="4" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="5" image="caja galletas maria.jpg" />
+    <cell id="6" image="comic_marvel_secret_wars.jpg" />
+    <cell id="7" image="lata comida perros.jpg" />
+    <cell id="8" image="latatunat100x85.gif" />
+    <cell id="9" image="NOTA.jpg" />
+    <cell id="10" image="PERIODICO2.jpg" />
+    <cell id="11" image="REVISTAS2.jpg" />
+    <cell id="12" image="basura organica 3.jpg" />
+    <cell id="13" image="brick puleva peque.jpg" />
+    <cell id="14" image="brick zumo.jpg" />
+    <cell id="15" image="FOLIOS.jpg" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="103.0" cellHeight="57.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell>
+     <p>Bolsas de pipas</p>
+    </cell>
+    <cell>
+     <p>Botella de agua</p>
+    </cell>
+    <cell>
+     <p>Botellín de cristal</p>
+    </cell>
+    <cell>
+     <p>Caja de cereales</p>
+    </cell>
+    <cell>
+     <p>Cartones</p>
+    </cell>
+    <cell>
+     <p>Caja de galletas</p>
+    </cell>
+    <cell>
+     <p>cómic</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Papel</p>
+    </cell>
+    <cell>
+     <p>Periódicos</p>
+    </cell>
+    <cell>
+     <p>Revistas</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Brick de leche</p>
+    </cell>
+    <cell>
+     <p>Tetra brick</p>
+    </cell>
+    <cell>
+     <p>Folios</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="37" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Arrastra cada imagen a su sitio correcto.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="23" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="5" cols="4" cellWidth="133.0" cellHeight="89.0" border="true" id="primary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="5" />
+    <cell id="1" image="basura organica 3.jpg" />
+    <cell id="1" image="bolsa de pipas.jpg" />
+    <cell id="0" image="caja cereales.jpg" />
+    <cell id="0" image="caja galletas maria.jpg" />
+    <cell id="0" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="0" image="carton.jpg" />
+    <cell id="0" image="comic_marvel_secret_wars.jpg" />
+    <cell id="0" image="FOLIOS.jpg" />
+    <cell id="0" image="NOTA.jpg" />
+    <cell id="0" image="PERIDODICO1.jpg" />
+    <cell id="0" image="PERIODICO2.jpg" />
+    <cell id="0" image="REVISTAS2.jpg" />
+    <cell id="1" image="latatunat100x85.gif" />
+    <cell id="1" image="lata comida perros.jpg" />
+    <cell id="1" image="lata atun.jpg" />
+    <cell id="1" image="brick zumo.jpg" />
+    <cell id="1" image="brick puleva peque.jpg" />
+    <cell id="1" image="botellin5e.jpg" />
+    <cell id="1" image="botellas vidrios.jpg" />
+    <cell id="1" image="botella plastico 2.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="157.0" cellHeight="77.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="azul que habla.jpg" />
+    <cell>
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial" size="36" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>OTROS CONTENEDORES</p>
+    </cell>
+   </cells>
+   <cells rows="5" cols="4" cellWidth="50.0" cellHeight="30.0" border="true" id="solvedPrimary">
+    <style />
+    <shaper class="@Rectangular" cols="4" rows="5" />
+    <cell image="ka120.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="azul.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="verde.jpg" />
+    <cell image="verde.jpg" />
+    <cell image="amarillo.jpg" />
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="38" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pon orden en estas fichas.</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué bonitos los lobos y los lobeznos!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="11" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="false" image="lobitos.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="39" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con mucha atención y aprende</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="791.0" cellHeight="250.0" border="false">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" inactive="0x66FF66" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="40" bold="true" />
+      <color foreground="0x333333" background="0xFFFFFF" shadow="0xCCFF33" />
+      <gradient source="0x000099" dest="0xFFFFFF" angle="0" cycles="17" />
+     </style>
+     <p>"LA REGLA DE LAS TRES ERRES"</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" shadow="0xCCFF33" />
+     </style>
+     <p>Para fabricar papel se deben de talar muchos árboles. Si no queremos quedarnos sin bosques, </p>
+     <p>es necesario que todo el mundo aplique las tres erres: REDUCIR el consumo, REUTILIZAR el papel, encontrándole un nuevo uso antes de tirarlo, y RECICLARLO o usarlo de nuevo para fabricar otros productos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con detenimiento.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="512.0" cellHeight="393.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,bottom" image="reciclaje2.gif">
+     <p>	Con el reciclaje reducimos la contaminación, ya que no se generan tantos residuos, se ahorra energía y se reduce el consumo de recursos naturales</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="40" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa el texto escribiendo sobre las líneas azules.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Dialog" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡ OK !!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  la  actividad  anterior y anota  en  tu  cuaderno  la  información  que sea  necesaria.</p>
+    </helpWindow>
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true">
+     <size width="765" height="442" />
+    </window>
+    <skin file="@blue.xml" />
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="default" bold="true" family="Mi Cole" italic="false" tabWidth="12" size="28" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="true" family="Mi Cole" size="28">	</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="true" family="Mi Cole" size="28">Para fabricar papel se deben de </text>
+      <target>
+       <answer>talar</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>talar</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> muchos </text>
+      <target>
+       <answer>árboles</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>árboles</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF">.</text>
+      <text bold="true" family="Mi Cole" size="28"> Si no queremos quedarnos sin bosques, es necesario que todo el mundo aplique las tres erres: </text>
+      <target>
+       <answer>reducir</answer>
+       <answer>REDUCIR</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>REDUCIR</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> el consumo, </text>
+      <target>
+       <answer>reutilizar</answer>
+       <answer>REUTILIZAR</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>REUTILIZAR</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> el papel, encontrándole un nuevo uso antes de tirarlo, y </text>
+      <target>
+       <answer>reciclarlo</answer>
+       <answer>RECICLARLO</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>RECICLARLO</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> o usarlo de nuevo para fabricar otros productos.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="41" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza el paisaje moviendo las fichas.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="azul que habla.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué paisaje más impresionante!</p>
+    </cell>
+    <cell imgAlign="left,middle" border="false" image="azul que habla.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="24" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <cells rows="4" cols="5" border="false" image="bosque y canoa redimensionada.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="5" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="42" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="azul que habla.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Busca ocho elementos que se pueden depositar en el contenedor azul.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@blue.xml" />
+   </settings>
+   <textGrid rows="15" columns="10" cellWidth="41.0" cellHeight="44.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>PERIODICOS****C</row>
+     <row>A***********CU*</row>
+     <row>P******S****A**</row>
+     <row>E*****A****DR**</row>
+     <row>L*S**T****E*T*S</row>
+     <row>**E*E****R**O*O</row>
+     <row>**RR****N***N*I</row>
+     <row>**B****O******L</row>
+     <row>*IOSATSIVER***O</row>
+     <row>L*S***********F</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">PAPEL</clue>
+    <clue id="1">PERIODICOS</clue>
+    <clue id="2">FOLIOS</clue>
+    <clue id="3">REVISTAS</clue>
+    <clue id="4">CUADERNOS</clue>
+    <clue id="5">LIBRETAS</clue>
+    <clue id="6">SOBRES</clue>
+    <clue id="7">CARTON</clue>
+   </clues>
+   <cells rows="8" cols="1" cellWidth="236.0" cellHeight="55.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="8" />
+    <cell imgAlign="left,middle" image="NOTA.jpg">
+     <p>Papel</p>
+    </cell>
+    <cell imgAlign="left,middle" image="PERIODICO2.jpg">
+     <p>Periódicos</p>
+    </cell>
+    <cell imgAlign="left,middle" image="FOLIOS.jpg">
+     <p>Folios</p>
+    </cell>
+    <cell imgAlign="left,middle" image="REVISTAS2.jpg">
+     <p>Revistas</p>
+    </cell>
+    <cell imgAlign="left,middle" image="cuadernos.jpg">
+     <p>Cuadernos</p>
+    </cell>
+    <cell imgAlign="left,middle" image="libretas.jpg">
+     <p>Libretas</p>
+    </cell>
+    <cell imgAlign="left,middle" image="sobres.jpg">
+     <p>Sobres</p>
+    </cell>
+    <cell imgAlign="left,middle" image="CARTON PARA RECICLAR.jpg">
+     <p>Cartón</p>
+    </cell>
+   </cells>
+   <layout position="BA" />
+   <scramble times="31" secondary="true" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Pon cada ficha en su sitio correcto</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Si reciclas, ayudas a cuidar la Naturaleza</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Inténtalo otra vez!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="7" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" border="true" image="ATERRIZANDO PAJARO.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="50" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con atención.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="736.0" cellHeight="454.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="left,bottom" avoidOverlapping="true" image="Plastichan redimensionado.jpg">
+     <p>Soy Amarillín y en mi se pueden depositar distintos tipos de envases. Puedes depositar envases de plástico como los del yogurt, champú o bolsas del supermercado. También los  bricks, como los del zumo o la leche. </p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="51" code="">
+   <description />
+   <messages>
+    <cell image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Arial" size="17" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="695.0" cellHeight="452.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="36" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell imgAlign="right,bottom" avoidOverlapping="true" image="Plastichan redimensionado.jpg">
+     <p>Además, también podrás depositar las latas, como la de los refrescos, las conservas o las tapas de metal de los tarros. </p>
+     <p>Si no lo hacemos bien y lo mezclamos con otras cosas, hay que rechazarlo, y sería una pena después de tanto esfuerzo, ¿verdad?</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="52" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="PLASTICHAN.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Esta es mi familia, somos todos amarillos.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="211.0" cellHeight="212.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="amarillo grande redimensionada.jpg" />
+    <cell image="AMARILLO INTERMEDIO redimensionado.jpg" />
+    <cell image="AMARILLO peque.jpg" />
+    <cell image="amarillo retocado.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="contenedor-basura-1000-ama.gif" />
+   </cells>
+  </activity>
+  <activity class="@memory.MemoryGame" name="53" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Empareja los contenedores amarillos.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Lo has hecho muy bien!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="16" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="198.0" cellHeight="213.0" border="true" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="amarillo grande redimensionada.jpg" />
+    <cell image="AMARILLO INTERMEDIO redimensionado.jpg" />
+    <cell image="AMARILLO peque.jpg" />
+    <cell image="amarillo retocado.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="contenedor-basura-1000-ama.gif" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@memory.MemoryGame" name="54" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué tal estás de memoria?</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+     <p>¡¡Bravo!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="16" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="198.0" cellHeight="213.0" border="true" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell image="amarillo grande redimensionada.jpg" />
+    <cell image="AMARILLO INTERMEDIO redimensionado.jpg" />
+    <cell image="AMARILLO peque.jpg" />
+    <cell image="amarillo retocado.jpg" />
+    <cell image="amarillo.jpg" />
+    <cell image="contenedor-basura-1000-ama.gif" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="54o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Organiza las piezas del puzzle</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Arial" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+     <p>¡¡ Muy bien !!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="false" image="cartel envoltorios redimensionado.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@TriangularJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="54o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con atención y recuerda.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="736.0" cellHeight="133.0" border="false">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>EN EL CONTENEDOR AMARILLO SE DEBEN DE DEPOSITAR:</p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>1. ENVASES METÁLICOS (botes de bebida, latas de conserva, aerosoles, bandejas de aluminio para alimentos, tapaderas, chapas y latas de metal).            </p>
+    </cell>
+    <cell txtAlign="left,middle">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>2. ENVASES TIPO BRICK (brick de leche, de batidos o de zumos).</p>
+    </cell>
+    <cell txtAlign="left,top">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>3. ENVASES DE PLÁSTICO (botellas y botes de plástico, envases de productos lácteos, bandejas y cajas de poliestireno o corcho blanco, bolsas de plástico y alumnio).</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="54o1o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Aprende los beneficios de la recogida selectiva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="1" cellWidth="533.0" cellHeight="193.0" border="false">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="3" />
+    <cell>
+     <style shadow="true">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>BENEFICIOS DE LA RECOGIDA SELECTIVA DEL PLÁSTICO Y DE LOS ENVASES</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>1. Se reduce el consumo de energía y de agua.</p>
+    </cell>
+    <cell txtAlign="middle,top" imgAlign="left,top">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" shadow="0xFFFF00" />
+      <gradient source="0x3399FF" dest="0xFFFFFF" angle="0" />
+     </style>
+     <p>2. Disminuye de forma importante el número de residuos que van a los vertederos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.Explore" name="54o2" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea sobre los objetos.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="3" cellWidth="194.0" cellHeight="112.0" border="false" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0x99CCFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="bolsa de pipas.jpg" />
+    <cell id="1" image="bolsas patatas.jpg" />
+    <cell id="2" image="bote de kas.jpg" />
+    <cell id="3" image="bote de tomate.gif" />
+    <cell id="4" image="botella plastico 2.jpg" />
+    <cell id="5" image="brick puleva peque.jpg" />
+    <cell id="6" image="brick zumo.jpg" />
+    <cell id="7" image="coca cola.jpg" />
+    <cell id="8" image="lata atun.jpg" />
+    <cell id="9" image="lata sardinas.jpg" />
+    <cell id="10" image="plastico champu.jpg" />
+    <cell id="11" image="tetra zumo2.jpg" />
+   </cells>
+   <cells rows="4" cols="3" cellWidth="143.0" cellHeight="100.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell>
+     <p>Bolsas de pipas</p>
+    </cell>
+    <cell>
+     <p>Bolsa de patatas</p>
+    </cell>
+    <cell>
+     <p>Bote de Kas</p>
+    </cell>
+    <cell>
+     <p>Bote de tomate</p>
+    </cell>
+    <cell>
+     <p>Botella de agua</p>
+    </cell>
+    <cell>
+     <p>Brick de leche</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Tetra bricks</p>
+    </cell>
+    <cell>
+     <p>Bote de Coca Cola</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Latilla de conservas</p>
+    </cell>
+    <cell>
+     <p>Bote de champú</p>
+    </cell>
+    <cell>
+     <p>Brick de zumo</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="54o3" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Escribe el nombre de cada objeto.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+     <p>¡¡Estupendo!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="N.mp3" />
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  la  actividad  anterior  y  anota  en  tu  cuaderno  la  información  que  necesites.  Ten  en  cuenta  que  tienes  limitado  los  intentos  a  realizar.  Ten  en  cuenta  los  acentos  a  la  hora  de  escribir  los  nombres.</p>
+    </helpWindow>
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="3" cellWidth="158.0" cellHeight="102.0" border="false" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell id="0" image="bolsa de pipas.jpg" />
+    <cell id="1" image="bolsas patatas.jpg" />
+    <cell id="2" image="bote de kas.jpg" />
+    <cell id="3" image="bote de tomate.gif" />
+    <cell id="4" image="botella plastico 2.jpg" />
+    <cell id="5" image="brick puleva peque.jpg" />
+    <cell id="6" image="brick zumo.jpg" />
+    <cell id="7" image="coca cola.jpg" />
+    <cell id="8" image="lata atun.jpg" />
+    <cell id="9" image="lata sardinas.jpg" />
+    <cell id="10" image="plastico champu.jpg" />
+    <cell id="11" image="tetra zumo2.jpg" />
+   </cells>
+   <cells rows="4" cols="3" cellWidth="110.0" cellHeight="87.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="4" />
+    <cell>
+     <p>Bolsas de pipas</p>
+    </cell>
+    <cell>
+     <p>Bolsa de patatas</p>
+    </cell>
+    <cell>
+     <p>Bote de Kas</p>
+    </cell>
+    <cell>
+     <p>Bote de tomate</p>
+    </cell>
+    <cell>
+     <p>Botella de agua</p>
+    </cell>
+    <cell>
+     <p>Brick de leche</p>
+    </cell>
+    <cell>
+     <p>Tetra bricks</p>
+    </cell>
+    <cell>
+     <p>Bote de Coca Cola</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Latilla de conservas</p>
+    </cell>
+    <cell>
+     <p>Bote de champú</p>
+    </cell>
+    <cell>
+     <p>Brick de zumo</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="55" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relaciona desplazando las imágenes a su sitio.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Lo empiezas a tener claro!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="false" report="true" reportActions="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="129.0" cellHeight="105.0" border="false" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="1" image="basura organica.jpg" />
+    <cell id="0" image="bolsa de pipas.jpg" />
+    <cell id="0" image="bolsas patatas.jpg" />
+    <cell id="0" image="bote de kas.jpg" />
+    <cell id="0" image="bote de tomate.gif" />
+    <cell id="0" image="botella plastico 2.jpg" />
+    <cell id="0" image="brick puleva peque.jpg" />
+    <cell id="0" image="brick zumo.jpg" />
+    <cell id="1" image="caja cereales 2.jpg" />
+    <cell id="1" image="CARTON PARA RECICLAR.jpg" />
+    <cell id="0" image="lata atun.jpg" />
+    <cell id="1" image="PERIODICO2.jpg" />
+    <cell id="0" image="plastico champu.jpg" />
+    <cell id="0" image="tetra zumo2.jpg" />
+    <cell id="1" image="revistas.jpg" />
+    <cell id="1" image="botellas vidrios.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="269.0" cellHeight="129.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="PLASTICHAN.jpg" />
+    <cell>
+     <p>OTROS CONTENEDORES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="56" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Pon orden!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="aplauso2.wav" />
+     <p>¡¡Fantástico!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="5" cols="3" border="true" image="amarillo grande redimensionada.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="3" rows="5" />
+    <cell txtAlign="middle,top">
+     <p>ENVASES</p>
+    </cell>
+    <cell txtAlign="middle,top">
+     <p>BRICKS</p>
+    </cell>
+    <cell txtAlign="middle,top">
+     <p>PLÁSTICOS</p>
+    </cell>
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.Explore" name="56o" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Cliquea en cada imagen para saber su nombre.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="118.0" cellHeight="103.0" border="false" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="actimel.jpg" />
+    <cell id="1" image="activa.jpg" />
+    <cell id="2" image="basura organica 3.jpg" />
+    <cell id="3" image="BOLSA_CAMISETA_thumb.jpg" />
+    <cell id="4" image="botella vidrio.jpg" />
+    <cell id="5" image="botellin5e.jpg" />
+    <cell id="6" image="caja cereales.jpg" />
+    <cell id="7" image="caja galletas maria.jpg" />
+    <cell id="8" image="comic_marvel_secret_wars.jpg" />
+    <cell id="9" image="FOLIOS.jpg" />
+    <cell id="10" image="lata comida perros.jpg" />
+    <cell id="11" image="sobres.jpg" />
+    <cell id="12" image="TETRA8.jpg" />
+    <cell id="13" image="VASOS DE PLASTICO.jpg" />
+    <cell id="14" image="yogur1.jpg" />
+    <cell id="15" image="PERIODICO2.jpg" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="102.0" cellHeight="100.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell>
+     <p>Envase de yogur líquido</p>
+    </cell>
+    <cell>
+     <p>Envase de yogur</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Bolsa del supermercado</p>
+    </cell>
+    <cell>
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell>
+     <p>Botellín de vidrio</p>
+    </cell>
+    <cell>
+     <p>Caja de cereales</p>
+    </cell>
+    <cell>
+     <p>Caja de galletas</p>
+    </cell>
+    <cell>
+     <p>Cómic</p>
+    </cell>
+    <cell>
+     <p>Folios</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Sobres</p>
+    </cell>
+    <cell>
+     <p>Tetra brick</p>
+    </cell>
+    <cell>
+     <p>Vasos de plástico</p>
+    </cell>
+    <cell>
+     <p>Envase de yogur</p>
+    </cell>
+    <cell>
+     <p>Periódicos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@text.WrittenAnswer" name="56o1" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xCCFFFF" />
+     </style>
+     <p>Escribe el nombre de lo que representa cada imagen.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="estupendo.wav" />
+     <p>¡¡Estupendo!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="19" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede a la pantalla anterior y copia en tu cuaderno el nombre de cada uno de los elementos. Es importantísimo que te des cuenta donde se acentúan las palabras.</p>
+    </helpWindow>
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFFFF" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="118.0" cellHeight="103.0" border="false" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="actimel.jpg" />
+    <cell id="1" image="activa.jpg" />
+    <cell id="2" image="basura organica 3.jpg" />
+    <cell id="3" image="BOLSA_CAMISETA_thumb.jpg" />
+    <cell id="4" image="botella vidrio.jpg" />
+    <cell id="5" image="botellin5e.jpg" />
+    <cell id="6" image="caja cereales.jpg" />
+    <cell id="7" image="caja galletas maria.jpg" />
+    <cell id="8" image="comic_marvel_secret_wars.jpg" />
+    <cell id="9" image="FOLIOS.jpg" />
+    <cell id="10" image="lata comida perros.jpg" />
+    <cell id="11" image="sobres.jpg" />
+    <cell id="12" image="TETRA8.jpg" />
+    <cell id="13" image="VASOS DE PLASTICO.jpg" />
+    <cell id="14" image="yogur1.jpg" />
+    <cell id="15" image="PERIODICO2.jpg" />
+   </cells>
+   <cells rows="4" cols="4" cellWidth="107.0" cellHeight="105.0" border="true" id="answers">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell>
+     <p>Envase de yogur líquido</p>
+    </cell>
+    <cell>
+     <p>Envase de yogur</p>
+    </cell>
+    <cell>
+     <p>Basura orgánica</p>
+    </cell>
+    <cell>
+     <p>Bolsa del supermercado</p>
+    </cell>
+    <cell>
+     <p>Botellas de vidrio</p>
+    </cell>
+    <cell>
+     <p>Botellín de vidrio</p>
+    </cell>
+    <cell>
+     <p>Caja de cereales</p>
+    </cell>
+    <cell>
+     <p>Caja de galletas</p>
+    </cell>
+    <cell>
+     <p>Cómic</p>
+    </cell>
+    <cell>
+     <p>Folios</p>
+    </cell>
+    <cell>
+     <p>Lata de conservas</p>
+    </cell>
+    <cell>
+     <p>Sobres</p>
+    </cell>
+    <cell>
+     <p>Tetra brick</p>
+    </cell>
+    <cell>
+     <p>Vasos de plástico</p>
+    </cell>
+    <cell>
+     <p>Envase de yogur</p>
+    </cell>
+    <cell>
+     <p>Periódicos</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" />
+   <layout position="AUB" />
+  </activity>
+  <activity class="@associations.ComplexAssociation" name="57" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Relaciona</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Qué claro lo tienes!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="18" countDownActions="true" report="true" reportActions="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" cellWidth="129.0" cellHeight="105.0" border="false" id="primary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="4" rows="4" />
+    <cell id="0" image="actimel.jpg" />
+    <cell id="0" image="activa.jpg" />
+    <cell id="1" image="basura organica 3.jpg" />
+    <cell id="0" image="BOLSA_CAMISETA_thumb.jpg" />
+    <cell id="1" image="botella vidrio.jpg" />
+    <cell id="1" image="botellin5e.jpg" />
+    <cell id="1" image="caja cereales.jpg" />
+    <cell id="1" image="caja galletas maria.jpg" />
+    <cell id="1" image="comic_marvel_secret_wars.jpg" />
+    <cell id="1" image="FOLIOS.jpg" />
+    <cell id="0" image="lata comida perros.jpg" />
+    <cell id="1" image="PERIODICO2.jpg" />
+    <cell id="1" image="sobres.jpg" />
+    <cell id="0" image="TETRA8.jpg" />
+    <cell id="0" image="VASOS DE PLASTICO.jpg" />
+    <cell id="0" image="yogur1.jpg" />
+   </cells>
+   <cells rows="2" cols="1" cellWidth="181.0" cellHeight="123.0" border="true" id="secondary">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell image="PLASTICHAN.jpg" />
+    <cell txtAlign="middle,bottom" imgAlign="middle,top">
+     <p>OTROS CONTENEDORES</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="58" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Ordena las fichas del puzzle.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Genial!!</p>
+    </cell>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="28" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="15" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="true" image="mar.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@JigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="59" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con detenimiento y aprende.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="2" cols="1" cellWidth="791.0" cellHeight="250.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" inactive="0xFF6666" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="2" />
+    <cell>
+     <style shadow="true">
+      <font family="Arial" size="40" />
+      <color background="0xFFFFFF" shadow="0x3300CC" />
+      <gradient source="0xFFFF00" dest="0xFFFFFF" angle="0" cycles="17" />
+     </style>
+     <p>"LA REGLA DE LAS TRES ERRES"</p>
+    </cell>
+    <cell txtAlign="left,middle" imgAlign="left,middle" avoidOverlapping="true" image="PLASTICHAN.jpg">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" shadow="0xCCFF33" />
+     </style>
+     <p>Para fabricar envases de plástico y metal se deben de explotar muchos recursos naturales y estos son limitados.</p>
+     <p>Es necesario que todo el mundo aplique las tres erres: REDUCIR el consumo, REUTILIZAR los envases de plástico y de metal, encontrándole un nuevo uso antes de tirarlo, y RECICLARLO o usarlo de nuevo para fabricar otros productos.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="6" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Lee con atención y aprende.</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" cellWidth="427.0" cellHeight="347.0" border="true">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="1" />
+    <cell>
+     <p>	La primera medida para poder reciclar es que cada uno de nosotros separemos nuestros residuos y los depositemos en los contenedores correspondientes.</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@text.FillInBlanks" name="60" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Dialog" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa los espacios con las palabras adecuadas.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Tu si qué sabes!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Si  no  recuerdas  las  palabras  retrocede a  la  actividad  anterior y  búscalas  en el  texto. Después,  cópialas  en  tu  cuaderno. Recuerda  que tienes  limitos  los  intentos  a  realizar.</p>
+    </helpWindow>
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true">
+     <size width="714" height="411" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Cliquea AQUÍ para corregir la actividad. Lo que se escriba en ROJO NO es correcto.</checkButton>
+   <document>
+    <style name="default" bold="true" family="Mi Cole" italic="false" tabWidth="12" size="28" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="true" family="Mi Cole" size="28">	Para fabricar envases de plástico y metal se deben de explotar muchos recursos </text>
+      <target>
+       <answer>naturales</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>naturales</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> y estos son </text>
+      <target>
+       <answer>limitados</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>limitados</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28">.</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="true" family="Mi Cole" size="28">	Es necesario que todo el mundo aplique las tres erres: </text>
+      <target>
+       <answer>reducir</answer>
+       <answer>REDUCIR</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>REDUCIR</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> el consumo, </text>
+      <target>
+       <answer>reutilizar</answer>
+       <answer>REUTILIZAR</answer>
+       <response fill="_" length="10" maxLength="10" />
+       <text>REUTILIZAR</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> los envases de plástico y de metal, encontrándole un nuevo uso antes de tirarlo, y </text>
+      <target>
+       <answer>reciclarlos</answer>
+       <answer>RECICLARLOS</answer>
+       <response fill="_" length="11" maxLength="11" />
+       <text>RECICLARLOS</text>
+      </target>
+      <text bold="true" family="Mi Cole" size="28"> o usarlos de nuevo para fabricar otros productos.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="61" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Descubre lo que se esconde.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="PLAY_AUDIO" level="1" file="viva.wav" />
+     <p>¡¡Muy bien!!</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="14" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="4" border="false" image="PATO.jpg">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0x0066FF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@ClassicJigSaw" cols="4" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="62" code="">
+   <description />
+   <messages>
+    <cell imgAlign="left,middle" avoidOverlapping="true" image="Plastichan redimensionado.jpg" type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Busca 9 palabras relacionadas con el contendor amarillo.</p>
+    </cell>
+    <cell imgAlign="left,middle" image="Plastichan redimensionado.jpg" type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="12" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF66" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <textGrid rows="13" columns="10" cellWidth="37.0" cellHeight="45.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>POLIESTIRENO*</row>
+     <row>************A</row>
+     <row>BRICK**S***LO</row>
+     <row>*TAPADERASU*C</row>
+     <row>L****S***M**I</row>
+     <row>A***AA**IE**T</row>
+     <row>T**V*S*N*T**S</row>
+     <row>A*N**LI**A**A</row>
+     <row>SE***O***L**L</row>
+     <row>*****B******P</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">POLIESTIRENO</clue>
+    <clue id="1">BRICK</clue>
+    <clue id="2">ALUMINIO</clue>
+    <clue id="3">METAL</clue>
+    <clue id="4">BOLSAS</clue>
+    <clue id="5">ENVASES</clue>
+    <clue id="6">PLASTICO</clue>
+    <clue id="7">TAPADERAS</clue>
+    <clue id="8">LATAS</clue>
+   </clues>
+   <cells rows="9" cols="1" cellWidth="218.0" cellHeight="60.0" border="true" id="secondary">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xCC99FF" inactive="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="1" rows="9" />
+    <cell>
+     <p>Poliestireno</p>
+    </cell>
+    <cell>
+     <p>Brick</p>
+    </cell>
+    <cell>
+     <p>Aluminio</p>
+    </cell>
+    <cell>
+     <p>Metal</p>
+    </cell>
+    <cell>
+     <p>Bolsas</p>
+    </cell>
+    <cell>
+     <p>Envases</p>
+    </cell>
+    <cell>
+     <p>Plástico</p>
+    </cell>
+    <cell>
+     <p>Tapaderas</p>
+    </cell>
+    <cell>
+     <p>latas</p>
+    </cell>
+   </cells>
+   <layout position="BA" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="7" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¿Qué contenedores hay?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Estos son los contenedores de reciclaje!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>¡¡Inténtalo otra vez!!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="17" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="5" border="false" image="CONTENEDORES 2.jpg">
+    <style>
+     <font family="Mi Cole" size="28" bold="true" />
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="5" rows="3" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="8" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Completa el texto con lo leído anteriormente.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Bien, muy bien!!</p>
+    </cell>
+    <cell type="finalError">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true">
+     <size width="503" height="348" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Cliquea AQUÍ para corregir la actividad. </checkButton>
+   <document>
+    <style name="default" bold="true" family="Mi Cole" italic="false" tabWidth="12" size="28" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF" />
+     <p family="Arial" Alignment="1" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF">	</text>
+      <target>
+       <answer>Reciclar</answer>
+       <response fill="_" length="8" maxLength="8" />
+       <text>Reciclar</text>
+      </target>
+      <text family="Mi Cole" background="0xFFFFFF"> es volver a hacer utilizables los materiales que ya han sido utilizados. Muchos materiales son fácilmente re</text>
+      <target>
+       <answer>ciclables</answer>
+       <response fill="_" length="9" maxLength="9" />
+       <text>ciclables</text>
+      </target>
+      <text family="Mi Cole" background="0xFFFFFF">, como el pl</text>
+      <target>
+       <answer>ástico</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>ástico</text>
+      </target>
+      <text family="Mi Cole" background="0xFFFFFF">, el vi</text>
+      <target>
+       <answer>drio</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>drio</text>
+      </target>
+      <text family="Mi Cole" background="0xFFFFFF">, el pa</text>
+      <target>
+       <answer>pel</answer>
+       <response fill="_" length="3" maxLength="3" />
+       <text>pel</text>
+      </target>
+      <text family="Mi Cole" background="0xFFFFFF">, el alu</text>
+      <target>
+       <answer>minio</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>minio</text>
+      </target>
+      <text family="Mi Cole" background="0xFFFFFF">, etc</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.DoublePuzzle" name="8o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Coloca las piezas del símbolo del reciclaje.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Estupendo!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="10" countDownActions="true" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="3" cols="3" border="false" image="reciclaje.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="3" rows="3" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="9" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Elige las opciones adecuadas.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Lo has hecho muy bien!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" maxActions="3" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="false">
+     <p>Retrocede  a  las  actividades  anteriores  y  anota  en  tu  cuaderno  la  información  que  necesites.</p>
+    </helpWindow>
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true">
+     <size width="546" height="334" />
+    </window>
+    <skin file="@green.xml" />
+   </settings>
+   <checkButton>Cliquea AQUÍ para corregir la actividad.</checkButton>
+   <document>
+    <style name="default" bold="true" family="Mi Cole" italic="false" tabWidth="12" size="28" background="0xFFFFFF" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text bold="true" family="Mi Cole" background="0xFFFFFF">Con el reciclaje </text>
+      <target>
+       <answer>reducimos</answer>
+       <optionList>
+        <option>aumentamos</option>
+        <option>incrementamos</option>
+        <option>reducimos</option>
+       </optionList>
+       <text>reducimos</text>
+      </target>
+      <text bold="true" family="Mi Cole" background="0xFFFFFF"> la contaminación, ya que no se generan tantos </text>
+      <target>
+       <answer>residuos</answer>
+       <optionList>
+        <option>problemas</option>
+        <option>beneficios</option>
+        <option>residuos</option>
+       </optionList>
+       <text>residuos</text>
+      </target>
+      <text bold="true" family="Mi Cole" background="0xFFFFFF">, se </text>
+      <target>
+       <answer>ahorra</answer>
+       <optionList>
+        <option>gasta más</option>
+        <option>desperdicia más</option>
+        <option>ahorra</option>
+        <option>destruye más</option>
+       </optionList>
+       <text>ahorra</text>
+      </target>
+      <text bold="true" family="Mi Cole" background="0xFFFFFF"> energía y se </text>
+      <target>
+       <answer>reduce</answer>
+       <optionList>
+        <option>reduce</option>
+        <option>aumenta</option>
+        <option>incrementa</option>
+        <option>iguala</option>
+       </optionList>
+       <text>reduce</text>
+      </target>
+      <text bold="true" family="Mi Cole" background="0xFFFFFF"> el consumo de recursos </text>
+      <target>
+       <answer>naturales</answer>
+       <optionList>
+        <option>artificiales</option>
+        <option>consumistas</option>
+        <option>naturales</option>
+       </optionList>
+       <text>naturales</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="9o" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Seguro que eres capaz de hacer este puzzle!!</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡¡Muy bien!!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Mi Cole" size="36" bold="true" />
+      <color background="0xFFFF00" />
+     </style>
+     <p>Cliquea en el botón con la flecha curva.</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" maxActions="17" countDownActions="false" report="true" reportActions="false">
+    <helpWindow showSolution="true" />
+    <container bgColor="0x99CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x33FF33" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="ORCA.jpg">
+    <style />
+    <shaper class="@JigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="MENU" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Dialog" size="36" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Elige una opción</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFFFF00">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0x6633FF" border="true">
+     <gradient source="0xFF0000" dest="0xFFFFFF" angle="0" cycles="7" />
+    </window>
+    <skin file="@orange.xml" />
+   </settings>
+   <cells rows="2" cols="3" cellWidth="243.0" cellHeight="309.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+     <gradient source="0xFFFF00" dest="0x0099FF" angle="0" cycles="4" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="2" />
+    <cell txtAlign="middle,bottom" image="azul que habla.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="papel y carton" />
+     <p>1. PAPEL Y CARTÓN</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="Plastichan redimensionado.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="envases y plasticos" />
+     <p>2.ENVASES Y PLÁSTICOS</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="graciosos contenedor vidrio.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="vidrio" params="carton/carton.jclic" />
+     <p>3. VIDRIO </p>
+     <p>Y </p>
+     <p>CRISTAL</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="Organín.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="basura organica" params="organica/organica.jclic" />
+     <p>4.BASURAS ORGÁNICAS</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="Pilator1.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="residuos especiales" params="resi_esp/resi_esp.jclic" />
+     <p>5. RESIDUOS ESPECIALES</p>
+    </cell>
+    <cell txtAlign="middle,bottom" image="reciclaje.jpg">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <media type="RUN_CLIC_PACKAGE" level="1" file="resumen" params="resu_rec/resu_rec.jclic" />
+     <p>6.ACTIVIDADES RESUMEN</p>
+    </cell>
+   </cells>
+  </activity>
+  <activity class="@panels.InformationScreen" name="portada" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Mi Cole" size="48" bold="true" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>¡Hola! ¿Quieres jugar?</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xC0C0C0">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+    <skin file="@green.xml" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="PORTADA PROYECTO JCLIC.JPG">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="bote de tomate.gif" file="bote_de_tomate.gif" animated="false" />
+  <media name="contenedor-basura-1000-ama.gif" file="contenedor_basura_1000_ama.gif" animated="false" />
+  <media name="contenedor-basura-1000-azul.gif" file="contenedor_basura_1000_azul.gif" animated="false" />
+  <media name="latatunat100x85.gif" file="latatunat100x85.gif" animated="false" />
+  <media name="reciclaje2.gif" file="reciclaje2.gif" animated="false" />
+  <media name="actimel.jpg" file="actimel.jpg" />
+  <media name="activa.jpg" file="activa.jpg" />
+  <media name="amarillo grande redimensionada.jpg" file="amarillo_grande_redimensionada.jpg" />
+  <media name="AMARILLO INTERMEDIO redimensionado.jpg" file="c_amarillo_intermedio_redimensionado.jpg" />
+  <media name="AMARILLO peque.jpg" file="c_pequeno_amarillo.jpg" />
+  <media name="amarillo retocado.jpg" file="amarillo_retocado.jpg" />
+  <media name="amarillo.jpg" file="amarillo.jpg" />
+  <media name="ATERRIZANDO PAJARO.jpg" file="aterrizando_pajaro.jpg" />
+  <media name="azul 2.jpg" file="azul_2.jpg" />
+  <media name="AZUL DOBLE MUY GRANDE.jpg" file="azul_doble_muy_grande.jpg" />
+  <media name="AZUL GRANDE.jpg" file="azul_grande.jpg" />
+  <media name="AZUL OVALADO GEANDE.jpg" file="azul_ovalado_geande.jpg" />
+  <media name="azul que habla.jpg" file="azul_que_habla.jpg" />
+  <media name="azul.jpg" file="azul.jpg" />
+  <media name="basura organica 3.jpg" file="basura_organica_3.jpg" />
+  <media name="basura organica.jpg" file="basura_organica.jpg" />
+  <media name="basurero.jpg" file="basurero.jpg" />
+  <media name="bolsa de pipas.jpg" file="bolsa_de_pipas.jpg" />
+  <media name="BOLSA PA.jpg" file="bolsa_pa.jpg" />
+  <media name="BOLSA_CAMISETA_thumb.jpg" file="bolsa_camiseta_thumb.jpg" />
+  <media name="bolsas patatas.jpg" file="bolsas_patatas.jpg" />
+  <media name="bosque y canoa redimensionada.jpg" file="bosque_y_canoa_redimensionada.jpg" />
+  <media name="bote de kas.jpg" file="bote_de_kas.jpg" />
+  <media name="botella plastico 2.jpg" file="botella_plastico_2.jpg" />
+  <media name="botella vidrio.jpg" file="botella_vidrio.jpg" />
+  <media name="botellas vidrios.jpg" file="botellas_vidrios.jpg" />
+  <media name="botellin5e.jpg" file="botellin5e.jpg" />
+  <media name="brick puleva peque.jpg" file="brick_puleva_peque.jpg" />
+  <media name="brick zumo.jpg" file="brick_zumo.jpg" />
+  <media name="caja cereales 2.jpg" file="caja_cereales_2.jpg" />
+  <media name="caja cereales.jpg" file="caja_cereales.jpg" />
+  <media name="CAJA DE CARTON.jpg" file="caja_de_carton.jpg" />
+  <media name="caja galletas maria.jpg" file="caja_galletas_maria.jpg" />
+  <media name="cartel azul.jpg" file="cartel_azul.jpg" />
+  <media name="cartel envoltorios redimensionado.jpg" file="cartel_envoltorios_redimensionado.jpg" />
+  <media name="cartel juega limpio.JPG" file="cartel_juega_limpio.jpg" />
+  <media name="CARTON PARA RECICLAR.jpg" file="carton_para_reciclar.jpg" />
+  <media name="carton.jpg" file="carton.jpg" />
+  <media name="cartones.jpg" file="cartones.jpg" />
+  <media name="coca cola.jpg" file="coca_cola.jpg" />
+  <media name="comic_marvel_secret_wars.jpg" file="comic_marvel_secret_wars.jpg" />
+  <media name="CONTENEDORES 2.jpg" file="contenedores_2.jpg" />
+  <media name="cuadernos.jpg" file="cuadernos.jpg" />
+  <media name="FOLIOS.jpg" file="folios.jpg" />
+  <media name="graciosos contenedor vidrio.jpg" file="graciosos_contenedor_vidrio.jpg" />
+  <media name="ka120.jpg" file="ka120.jpg" />
+  <media name="lagochulo.jpg" file="lagochulo.jpg" />
+  <media name="lata atun.jpg" file="lata_atun.jpg" />
+  <media name="lata comida perros.jpg" file="lata_comida_perros.jpg" />
+  <media name="lata sardinas.jpg" file="lata_sardinas.jpg" />
+  <media name="libretas.jpg" file="libretas.jpg" />
+  <media name="libros.jpg" file="libros.jpg" />
+  <media name="lobitos.jpg" file="lobitos.jpg" />
+  <media name="mar.jpg" file="mar.jpg" />
+  <media name="menu para actividad redimensionada.jpg" file="menu_para_actividad_redimensionada.jpg" />
+  <media name="NOTA.jpg" file="nota.jpg" />
+  <media name="ORCA.jpg" file="orca.jpg" />
+  <media name="Organín.jpg" file="organin.jpg" />
+  <media name="PATO.jpg" file="pato.jpg" />
+  <media name="PERIDODICO1.jpg" file="peridodico1.jpg" />
+  <media name="PERIODICO2.jpg" file="periodico2.jpg" />
+  <media name="Pilator1.jpg" file="pilator1.jpg" />
+  <media name="Plastichan redimensionado.jpg" file="plastichan_redimensionado.jpg" />
+  <media name="PLASTICHAN.jpg" file="plastichan.jpg" />
+  <media name="plastico champu.jpg" file="plastico_champu.jpg" />
+  <media name="PORTADA PROYECTO JCLIC.JPG" file="portada_proyecto_jclic.jpg" />
+  <media name="q es reciclar con tilde.jpg" file="q_es_reciclar_con_tilde.jpg" />
+  <media name="reciclado.jpg" file="reciclado.jpg" />
+  <media name="reciclaje 3 contenedores redimensionada.jpg" file="reciclaje_3_contenedores_redimensionada.jpg" />
+  <media name="reciclaje.jpg" file="reciclaje.jpg" />
+  <media name="recogida selectiva.jpg" file="recogida_selectiva.jpg" />
+  <media name="revistas.jpg" file="revistas.jpg" />
+  <media name="REVISTAS2.jpg" file="revistas2.jpg" />
+  <media name="sobres.jpg" file="sobres.jpg" />
+  <media name="tetra zumo2.jpg" file="tetra_zumo2.jpg" />
+  <media name="TETRA8.jpg" file="tetra8.jpg" />
+  <media name="tetrabrick solan.jpg" file="tetrabrick_solan.jpg" />
+  <media name="VASOS DE PLASTICO.jpg" file="vasos_de_plastico.jpg" />
+  <media name="verde.jpg" file="verde.jpg" />
+  <media name="yogur1.jpg" file="yogur1.jpg" />
+  <media name="ZORRO.jpg" file="zorro.jpg" />
+  <media name="N.mp3" file="n.mp3" />
+  <media name="MiCole_n.TTF" file="micole_n.ttf" />
+  <media name="aplauso2.wav" file="aplauso2.wav" />
+  <media name="estupendo.wav" file="estupendo.wav" />
+  <media name="viva.wav" file="viva.wav" />
+ </mediaBag>
+</JClicProject>
+

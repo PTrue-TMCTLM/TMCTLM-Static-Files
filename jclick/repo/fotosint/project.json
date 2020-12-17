@@ -1,0 +1,100 @@
+{
+ "title": "La fotosíntesis",
+ "author": "Marian Riquelme Toledo",
+ "date": "12/11/15",
+ "languages": {
+  "en": "Spanish",
+  "ca": "espanyol",
+  "es": "español"
+ },
+ "langCodes": [
+  "es"
+ ],
+ "areas": {
+  "en": "Experimental sciences",
+  "ca": "Ciències experimentals",
+  "es": "Ciencias experimentales"
+ },
+ "areaCodes": [
+  "exp"
+ ],
+ "levels": {
+  "en": "Primary school (6-12)",
+  "ca": "Primària (6-12)",
+  "es": "Primaria (6-12)"
+ },
+ "levelCodes": [
+  "PRI"
+ ],
+ "descriptors": {
+  "ca": "biologia, botànica, plantes, vocabulari",
+  "es": "biología, botánica, plantas, vocabulario",
+  "en": "biology, botany, plants, vocabulary"
+ },
+ "descCodes": [
+  58,
+  59,
+  96,
+  150
+ ],
+ "description": {
+  "en": "In these activities is to make a review about the process of photosynthesis and plant reproduction.",
+  "ca": "En aquestes activitats es pretén fer un repàs sobre el procés de la fotosíntesi i de la reproducció de les plantes.",
+  "es": "En estas actividades se pretende hacer un repaso acerca del proceso de la fotosíntesis y de la reproducción de las plantas."
+ },
+ "license": {
+  "en": "Licensed under a Creative Commons license <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>",
+  "ca": "Aquesta obra està sota una llicència de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>",
+  "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA</a>"
+ },
+ "mainFile": "fotosint.jclic",
+ "cover": "cover.png",
+ "thumbnail": "thumb.png",
+ "zipFile": "jclic/fotosint.jclic.zip",
+ "instFile": "jclic/fotosint.jclic.inst",
+ "clicZoneId": 3923,
+ "clicZoneURL": "http://clic.xtec.cat/db/act_es.jsp?id=3923",
+ "clicZoneAppletURL": "http://clic.xtec.cat/db/jclicApplet.jsp?project=http://clic.xtec.cat/projects/fotosint/jclic/fotosint.jclic.zip",
+ "meta_langs": [
+  "ca",
+  "es",
+  "en"
+ ],
+ "activities": 19,
+ "mediaFiles": 22,
+ "totalSize": 939002,
+ "files": [
+  "cover.png",
+  "11740712_plantas_agricolas_en_el_campo_con_la_luz_del_sol.jpg",
+  "aguaimage003.jpg",
+  "bruta.jpg",
+  "cagada.mp3",
+  "caliz.jpg",
+  "corola.gif",
+  "corola.jpg",
+  "dioxido_de_carbono.jpg",
+  "elaborada.jpg",
+  "estambre.jpg",
+  "estambres2.jpg",
+  "formula_de_oxigeno__resized.jpg",
+  "fotosint.jclic",
+  "fotosintesis.png",
+  "icon-192.png",
+  "icon-72.png",
+  "ovulos.jpg",
+  "partes_flor.gif",
+  "petalos_resized.jpg",
+  "polen.jpg",
+  "polen2.jpg",
+  "raiz.gif",
+  "risa_de_pajaro_loco.mp3",
+  "sales_minerales.jpg",
+  "sepalos.gif",
+  "project.json",
+  "thumb.png",
+  "index.html",
+  "fotosint.jclic.js",
+  "favicon.ico",
+  "imsmanifest.xml"
+ ]
+}
