@@ -1,0 +1,32 @@
+Reemplazar *RUTAACTIVIDAD* por la ruta de la actividad y *NOMBREACT* por el nombre, ej:
+	Para *RUTAACTIVIDAD*:
+		Entra a TMCTLM-Static-Files
+		Dentro, entra a Games
+		Dentro, entra a Ardora
+		y escribe la ruta,
+		NO PONER: /games/ardora/
+		PONER ASI: *NOMBREACT*/*NOMBREACT*
+		O PONER ASI: Naiel/*NOMBREACT*/*NOMBREACT*
+		
+Para el nombre:
+	Cambia *Nombre* por tu nombre, (ej: Imanol)
+
+Aqui el codigo:
+
+
+<h1 style="text-align: left;">Actividad *NOMBREACT*</h1><p style="text-align: left;">Esta actividad contiene:</p><p style="text-align: left;"></p><ul style="text-align: left;"><li>Puzle</li><li>Relacionar fotos con palabras</li></ul><h3 style="text-align: left;">Actividad:</h3>
+
+<iframe src="https://tmctlm-static-files.netlify.app/games/ardora/*RUTAACTIVIDAD*">
+Cargando...</iframe>
+
+<br />
+<br />
+<br />
+<br />
+<div class="sora-author-box">
+  <img alt="Author Image" class="avatar avatar-60 photo" height="100" src="https://www.tmctlm.cf/static/img/Logo-tmctlm.png" width="100" />
+<p>
+<b>Naiel</b>
+  <br />
+Colaborador en TMCTLM Games</p>
+</div>
